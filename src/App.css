@@ -2,20 +2,9 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  min-height: 70px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -24,15 +13,44 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.App-main {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.App-main-left {
+  background-color: gray;
+  min-height: 100vh;
+  width: 15%;
+}
+
+.App-main-right {
+  background-color: gray;
+  min-height: 100vh;
+  width: 15%;
+}
+
+.Windows-all {
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 50px;
+}
+
+.Windows-all ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 3em;
+  justify-content: center;
+  list-style: none;
+  padding-left: 0;
+}
+
+.Window-box {
+  width: 50px;
+  height: 65px;
+  border: 2px solid black;
+  border-radius: 5px;
 }
