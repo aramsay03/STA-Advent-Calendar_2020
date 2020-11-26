@@ -13,8 +13,8 @@ class App extends Component {
     this.togglePopup = this.togglePopup.bind(this);
   }
 
-  togglePopup = () => {  
-    this.setState({ showPopup: !this.state.showPopup });  
+  togglePopup = () => {
+    this.setState({ showPopup: !this.state.showPopup });
   };
 
   render() {
@@ -29,12 +29,11 @@ class App extends Component {
           </div>
           <div className="App-main-center">
             <Windows openPopup={this.togglePopup}/>
-            {this.state.showPopup ?  
-            <Popup  
-                text="PopUp Window"
-                closePopup={this.togglePopup} 
-            />  
-            : null  
+            {this.state.showPopup ?
+            <Popup
+              closePopup={this.togglePopup} 
+            />
+            : null
             }
           </div>
           <div className="App-main-right">

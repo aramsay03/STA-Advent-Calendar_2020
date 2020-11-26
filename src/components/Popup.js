@@ -1,20 +1,17 @@
-import React from 'react';
-import '../App.css';
+import React from "react";
+import VideoPlayer from "./VideoPlayer";
 
-const PopUp = ({text, closePopup}) => {
-    return (
-        <div className="popup">  
-        <div className="popupInner">
-          
-          <h1>{text}</h1>  
-          <button
-            onClick={closePopup}
-            variant="contained"
-            color="gray"
-            >CLOSE</button>  
-        </div>  
+const PopUp = ({ closePopup, url }) => {
+  return (
+    <div className="popup">
+      <div className="popupInner">
+        <VideoPlayer url="https://www.youtube.com/watch?v=9jTyxdNgsZE" />
+        <button onClick={closePopup} variant="contained" color="gray">
+          CLOSE
+        </button>
       </div>
-    );
-}
- 
+    </div>
+  );
+};
+
 export default PopUp;
