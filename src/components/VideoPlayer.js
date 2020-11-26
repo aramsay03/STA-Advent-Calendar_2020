@@ -7,6 +7,7 @@ function VideoPlayer({url}) {
     <Container className="video-container">
       <h3>Embed video</h3>
       <ReactPlayer
+        className="video-player"
         url={url}
       />
     </Container>
