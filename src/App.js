@@ -1,34 +1,55 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
+import moment from "moment";
 import "./App.css";
+import config from "./config.json";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import CalendarPage from "./pages/CalendarPage";
 import ActivityPage from "./pages/ActivityPage";
+import Snowflakes from "./components/Snowflakes/Snowflakes";
 
 function App() {
   const [page, setPage] = useState("calendar-page");
+  const [openWindow, setOpenWindow] = useState(null);
+  const currentDate = moment().format("D MMM YYYY");
+  const allDays = config.days;
 
   return (
     <div className="App">
-      <header className="App-header">
-        <h1>STA Advent Calendar 2020</h1>
-      </header>
+      <Snowflakes />
       <main className="App-main">
         <Container fluid>
           <Row>
-            <Col className="App-main-left flex-grow-1">
-              <h2>left side</h2>
-            </Col>
-            <Col className="App-main-center flex-grow-1">
+            <header>
+              <img
+                id="logo"
+                src="/STA_Christmas_20.svg"
+                alt="Scottish Tech Army Christmas Logo"
+              />
+              <span className="title">
+                <h1>SCOTTISH TECH ARMY</h1>
+                <h2>Advent Calendar 2020</h2>
+              </span>
+            </header>
+          </Row>
+          <Row>
+            <Col>
               {page === "activity-page" ? (
-                 <ActivityPage setPage={setPage} />
+                <ActivityPage
+                  setPage={setPage}
+                  openWindow={openWindow}
+                  setOpenWindow={setOpenWindow}
+                  allDays={allDays}
+                />
               ) : (
-                <CalendarPage setPage={setPage} />
+                <CalendarPage
+                  setPage={setPage}
+                  allDays={allDays}
+                  currentDate={currentDate}
+                  setOpenWindow={setOpenWindow}
+                />
               )}
-            </Col>
-            <Col className="App-main-right flex-grow-1">
-              <h2>right side</h2>
             </Col>
           </Row>
         </Container>
