@@ -1,4 +1,5 @@
 import React from 'react';
+import './VideoPlayer.css';
 import ReactPlayer from "react-player/lazy";
 import Container from "react-bootstrap/Container";
 
