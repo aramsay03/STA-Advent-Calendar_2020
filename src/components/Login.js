@@ -9,7 +9,7 @@ export default function Login({ setShowPasswordEntry }) {
     e.preventDefault();
     setPasswordInput(e);
     if (passwordInput === XMAS_PASSWORD) {
-      setShowPasswordEntry(true);
+      setShowPasswordEntry(false);
     }
   };
 

@@ -1,172 +1,214 @@
 {
   "days": [
     {
-      "id": 1,
-      "Date": "01 Dec 2020",
-      "day": 1,
-      "activity": "Christmas Jumper Submission",
-      "component": ""
-    },
-    {
-      "id": 2,
-      "Date": "02 Dec 2020",
-      "day": 2,
-      "activity": "Challenge Crossword/CSS Challenge",
-      "component": ""
-    },
-    {
-      "id": 3,
-      "Date": "03 Dec 2020",
-      "day": 3,
-      "activity": "White Stripes Single",
-      "component": "VideoPlayer"
-    },
-    {
-      "id": 4,
-      "Date": "04 Dec 2020",
-      "day": 4,
-      "activity": "Town Hall",
-      "component": "VideoPlayer"
-    },
-    {
-      "id": 5,
-      "Date": "05 Dec 2020",
-      "day": 5,
-      "activity": "Recipe Video",
-      "component": "VideoPlayer"
-    },
-    {
-      "id": 6,
-      "Date": "06 Dec 2020",
-      "day": 6,
-      "activity": "Outdoor Photography Submission",
-      "component": "VideoPlayer"
-    },
-    {
-      "id": 7,
-      "Date": "07 Dec 2020",
-      "day": 7,
-      "activity": "Origami",
-      "component": ""
-    },
-    {
-      "id": 8,
-      "Date": "08 Dec 2020",
-      "day": 8,
-      "activity": "Whiskey Kiss Music Video",
-      "component": "VideoPlayer"
-    },
-    {
-      "id": 9,
-      "Date": "09 Dec 2020",
-      "day": 9,
-      "activity": "Joke Exchange",
-      "component": ""
-    },
-    {
-      "id": 10,
-      "Date": "10 Dec 2020",
-      "day": 10,
-      "activity": "Well Wishing Message Submission",
-      "component": ""
-    },
-    {
-      "id": 11,
-      "Date": "11 Dec 2020",
-      "day": 11,
-      "activity": "Town Hall",
-      "component": "VideoPlayer"
-    },
-    {
-      "id": 12,
-      "Date": "12 Dec 2020",
-      "day": 12,
-      "activity": "Festive Recipes",
-      "component": ""
-    },
-    {
-      "id": 13,
-      "Date": "13 Dec 2020",
-      "day": 13,
-      "activity": "Pet Photographs Submission",
-      "component": ""
-    },
-    {
-      "id": 14,
-      "Date": "14 Dec 2020",
-      "day": 14,
-      "activity": "Poem to Enjoy and Limerick Challenge",
-      "component": ""
-    },
-    {
-      "id": 15,
-      "Date": "15 Dec 2020",
-      "day": 15,
-      "activity": "CSS Art",
-      "component": ""
-    },
-    {
-      "id": 16,
-      "Date": "16 Dec 2020",
-      "day": 16,
-      "activity": "STA Themed Crossword",
-      "component": ""
-    },
-    {
-      "id": 17,
-      "Date": "17 Dec 2020",
-      "day": 17,
-      "activity": "Homebrew Challenge Video",
-      "component": "VideoPlayer"
-    },
-    {
-      "id": 18,
+      "#": 1,
       "Date": "18 Dec 2020",
       "day": 18,
       "activity": "Town Hall",
       "component": "VideoPlayer"
     },
     {
-      "id": 19,
-      "Date": "19 Dec 2020",
-      "day": 19,
-      "activity": "Best Cocktail/Mocktail",
+      "#": 2,
+      "Date": "16 Dec 2020",
+      "day": 16,
+      "activity": "STA Themed Crossword",
       "component": ""
     },
     {
-      "id": 20,
-      "Date": "20 Dec 2020",
-      "day": 20,
-      "activity": "Christmas Bake Off",
+      "#": 3,
+      "Date": "17 Dec 2020",
+      "day": 17,
+      "activity": "Homebrew Challenge Video",
+      "component": "VideoPlayer"
+    },
+    {
+      "#": 4,
+      "Date": "15 Dec 2020",
+      "day": 11,
+      "activity": "CSS Art",
       "component": ""
     },
     {
-      "id": 21,
+      "#": 5,
+      "Date": "12 Dec 2020",
+      "day": 12,
+      "activity": "Festive Recipes",
+      "component": "CarouselComponent",
+      "urls": []
+    },
+    {
+      "#": 6,
+      "Date": "08 Dec 2020",
+      "day": 8,
+      "activity": "Whiskey Kiss Music Video",
+      "component": "VideoPlayer"
+    },
+    {
+      "#": 7,
+      "Date": "05 Dec 2020",
+      "day": 5,
+      "activity": "Edinburgh Community Food Recipe Videos",
+      "component": "CarouselComponent",
+      "urls": [
+        "https://www.youtube.com/watch?v=v4Vg9Ac8_sg",
+        "https://www.youtube.com/watch?v=GGGZw_QKeBQ",
+        "https://www.youtube.com/watch?v=iBbEl2G0hwo",
+        "https://www.youtube.com/watch?v=Q5ZyWCk8-Qg"
+      ]
+    },
+    {
+      "#": 8,
+      "Date": "11 Dec 2020",
+      "day": 11,
+      "activity": "Town Hall",
+      "component": "VideoPlayer"
+    },
+    {
+      "#": 9,
+      "Date": "04 Dec 2020",
+      "day": 4,
+      "activity": "Town Hall",
+      "component": "VideoPlayer"
+    },
+    {
+      "#": 10,
       "Date": "21 Dec 2020",
       "day": 21,
       "activity": "Number Puzzle",
       "component": ""
     },
     {
-      "id": 22,
+      "#": 11,
       "Date": "22 Dec 2020",
       "day": 22,
       "activity": "CSS Art Exhibition",
-      "component": ""
+      "component": "CarouselComponent",
+      "urls": [],
+      "images": [
+        "cake-1914463_640.jpg",
+        "christmas-cake-992651_640.jpg",
+        "christmas-cookies-1051884_640.jpg"
+      ]
     },
     {
-      "id": 23,
-      "Date": "23 Dec 2020",
-      "day": 23,
-      "activity": "Christmas Food Picture Reveal",
-      "component": ""
+      "#": 12,
+      "Date": "10 Dec 2020",
+      "day": 10,
+      "activity": "Well Wishing Message Submission",
+      "component": "PhotoChallengeComponent",
+      "image": "assets/mailbox-3175638_640.jpg",
+      "instructions": "It is the season of good cheer, Goodness knows we need it this year.  A video is what we need, To spread some joy as one good deed. We can’t do this face to face, So share your messages in this space. Mark the calendar day by day, To wait to hear what we all have to say. You have ten days to get it right, Your deadline’s 20th at midnight."
     },
     {
-      "id": 24,
+      "#": 13,
+      "Date": "03 Dec 2020",
+      "day": 3,
+      "activity": "White Stripe Donuts - Seven Nation Army/Caledonia",
+      "component": "VideoPlayer",
+      "urls": ["assets/caledonia_sta_final.mp4"]
+    },
+    {
+      "#": 14,
       "Date": "24 Dec 2020",
       "day": 24,
       "activity": "Christmas Jumper Reveal",
+      "component": "CarouselComponent",
+      "urls": [],
+      "images": [
+        "cake-1914463_640.jpg",
+        "christmas-cake-992651_640.jpg",
+        "christmas-cookies-1051884_640.jpg"
+      ]
+    },
+    {
+      "#": 15,
+      "Date": "20 Dec 2020",
+      "day": 20,
+      "activity": "Christmas Bake Off",
       "component": ""
+    },
+    {
+      "#": 16,
+      "Date": "14 Dec 2020",
+      "day": 14,
+      "activity": "Poem to Enjoy and Limerick Challenge",
+      "component": ""
+    },
+    {
+      "#": 17,
+      "Date": "09 Dec 2020",
+      "day": 9,
+      "activity": "Joke Exchange",
+      "component": ""
+    },
+    {
+      "#": 18,
+      "Date": "06 Dec 2020",
+      "day": 6,
+      "activity": "Outdoor Photography Challenge",
+      "component": "PhotoChallengeComponent",
+      "image": "assets/Holidays.png",
+      "instructions": "Instructions for challenge."
+    },
+    {
+      "#": 19,
+      "Date": "02 Dec 2020",
+      "day": 2,
+      "activity": "Challenge Crossword/CSS Challenge",
+      "component": "CrosswordComponent"
+    },
+    {
+      "#": 20,
+      "Date": "23 Dec 2020",
+      "day": 23,
+      "activity": "Christmas Food Picture Reveal",
+      "component": "CarouselComponent",
+      "urls": [],
+      "images": [
+        "cake-1914463_640.jpg",
+        "christmas-cake-992651_640.jpg",
+        "christmas-cookies-1051884_640.jpg"
+      ]
+    },
+    {
+      "#": 21,
+      "Date": "19 Dec 2020",
+      "day": 19,
+      "activity": "Best Cocktail/Mocktail Photo Challenge",
+      "component": "PhotoChallengeComponent",
+      "image": "assets/christmas-3550494_640.jpg",
+      "instructions": "Instructions for challenge."
+    },
+    {
+      "#": 22,
+      "Date": "13 Dec 2020",
+      "day": 13,
+      "activity": "Pet Photograph Challenge",
+      "component": "PhotoChallengeComponent",
+      "image": "assets/cavalier-king-charles-spaniel-3923643_640.jpg",
+      "instructions": "Instructions for challenge."
+    },
+    {
+      "#": 23,
+      "Date": "07 Dec 2020",
+      "day": 7,
+      "activity": "Origami Challenge",
+      "component": "CarouselComponent",
+      "urls": [
+        "https://www.youtube.com/watch?v=QtsQt_xxINQ",
+        "https://www.youtube.com/watch?v=TEe9pFE9rnE",
+        "https://www.youtube.com/watch?v=4pk0goxMvsA",
+        "https://www.youtube.com/watch?v=Ahlid7S0nOc"
+      ]
+    },
+    {
+      "#": 24,
+      "Date": "01 Dec 2020",
+      "day": 1,
+      "activity": "Christmas Jumper Photo Challenge",
+      "component": "PhotoChallengeComponent",
+      "image": "assets/Untitled_design.png",
+      "instructions": "Instructions for challenge."
     }
   ]
 }
