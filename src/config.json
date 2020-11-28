@@ -173,7 +173,8 @@
       "day": 19,
       "activity": "Best Cocktail/Mocktail Photo Challenge",
       "component": "PhotoChallengeComponent",
-      "image": "assets/christmas-3550494_640.jpg"
+      "image": "assets/christmas-3550494_640.jpg",
+      "instructions": "Instructions for challenge."
     },
     {
       "#": 22,
@@ -190,7 +191,12 @@
       "day": 7,
       "activity": "Origami Challenge",
       "component": "CarouselComponent",
-      "urls": ["https://youtu.be/gTwCKc-xx94", "https://youtu.be/t3CuwMKACvU"]
+      "urls": [
+        "https://www.youtube.com/watch?v=QtsQt_xxINQ",
+        "https://www.youtube.com/watch?v=TEe9pFE9rnE",
+        "https://www.youtube.com/watch?v=4pk0goxMvsA",
+        "https://www.youtube.com/watch?v=Ahlid7S0nOc"
+      ]
     },
     {
       "#": 24,
