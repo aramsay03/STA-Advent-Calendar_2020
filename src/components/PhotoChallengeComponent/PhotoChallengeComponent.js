@@ -12,7 +12,7 @@ function PhotoChallengeComponent({instructions, image}) {
           <img
             className="d-block w-100"
             src={image}
-            alt="Third slide"
+            alt=""
           />
         </Col>
         <Col className="challenge-text" md={6}>
