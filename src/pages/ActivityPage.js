@@ -1,4 +1,6 @@
 import React from "react";
+import CarouselComponent from "../components/CarouselComponent/CarouselComponent";
+import PhotoChallengeComponent from "../components/PhotoChallengeComponent/PhotoChallengeComponent";
 import VideoPlayer from "../components/VideoPlayer/VideoPlayer";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
@@ -14,15 +16,24 @@ function ActivityPage({ setPage, openWindow, setOpenWindow, currentDate }) {
   function activityComponentHeader() {
     return (
       <>
-        <h2>{openWindow.Date}</h2>
-        <h3>{openWindow.activity}</h3>
+        <h3>{openWindow.Date}</h3>
+        <h4>{openWindow.activity}</h4>
       </>
     );
   }
 
   function activityComponent() {
     if (openWindow.component === "VideoPlayer") {
-      return <VideoPlayer url="https://www.youtube.com/watch?v=mcWp_17fAF4" />;
+      return <VideoPlayer url="" />;
+    } else if (openWindow.component === "CarouselComponent") {
+      return <CarouselComponent day={openWindow}/>;
+    } else if (openWindow.component === "PhotoChallengeComponent") {
+      return (
+        <PhotoChallengeComponent
+          instructions={openWindow.instructions}
+          image={openWindow.image}
+        />
+      );
     } else {
       return <></>;
     }
