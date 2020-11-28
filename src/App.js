@@ -13,7 +13,7 @@ import Login from "./components/Login";
 function App() {
   const [page, setPage] = useState("calendar-page");
   const [openWindow, setOpenWindow] = useState(null);
-  const [showPasswordEntry, setShowPasswordEntry] = useState(false);
+  const [showPasswordEntry, setShowPasswordEntry] = useState(true); //<---- just set this to false until we go live
   const currentDate = "14 Dec 2020";
   const allDays = config.days;
 
@@ -23,15 +23,15 @@ function App() {
 
   const ActivateChristmasCheer = () => {
     if (showPasswordEntry === true) {
-      return null;
-    }
-    if (showPasswordEntry === false) {
       return (
         <Login
           showPasswordEntry={showPasswordEntry}
           setShowPasswordEntry={setShowPasswordEntry}
         />
       );
+    }
+    if (showPasswordEntry === false) {
+      return null;
     }
   };
 
@@ -40,7 +40,7 @@ function App() {
       <div className="App">
         <ActivateChristmasCheer />
         <Snowflakes />
-        <main className={showPasswordEntry ? null : "App-main"}>
+        <main className={showPasswordEntry ? "App-main" : null}>
           <Container fluid>
             <Row>
               <header>
