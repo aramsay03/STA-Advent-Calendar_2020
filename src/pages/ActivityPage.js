@@ -1,5 +1,6 @@
 import React from "react";
 import CarouselComponent from "../components/CarouselComponent/CarouselComponent";
+import CrosswordComponent from "../components/CrosswordComponent/CrosswordComponent";
 import PhotoChallengeComponent from "../components/PhotoChallengeComponent/PhotoChallengeComponent";
 import VideoPlayer from "../components/VideoPlayer/VideoPlayer";
 import Container from "react-bootstrap/Container";
@@ -24,7 +25,7 @@ function ActivityPage({ setPage, openWindow, setOpenWindow, currentDate }) {
 
   function activityComponent() {
     if (openWindow.component === "VideoPlayer") {
-      return <VideoPlayer url="" />;
+      return <VideoPlayer url={openWindow.urls} />;
     } else if (openWindow.component === "CarouselComponent") {
       return <CarouselComponent day={openWindow}/>;
     } else if (openWindow.component === "PhotoChallengeComponent") {
@@ -32,6 +33,11 @@ function ActivityPage({ setPage, openWindow, setOpenWindow, currentDate }) {
         <PhotoChallengeComponent
           instructions={openWindow.instructions}
           image={openWindow.image}
+        />
+      );
+    } else if (openWindow.component === "CrosswordComponent") {
+      return (
+        <CrosswordComponent
         />
       );
     } else {

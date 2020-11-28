@@ -95,14 +95,17 @@
       "Date": "10 Dec 2020",
       "day": 10,
       "activity": "Well Wishing Message Submission",
-      "component": ""
+      "component": "PhotoChallengeComponent",
+      "image": "assets/mailbox-3175638_640.jpg",
+      "instructions": "It is the season of good cheer, Goodness knows we need it this year.  A video is what we need, To spread some joy as one good deed. We can’t do this face to face, So share your messages in this space. Mark the calendar day by day, To wait to hear what we all have to say. You have ten days to get it right, Your deadline’s 20th at midnight."
     },
     {
       "#": 13,
       "Date": "03 Dec 2020",
       "day": 3,
-      "activity": "White Stripes Single",
-      "component": "VideoPlayer"
+      "activity": "White Stripe Donuts - Seven Nation Army/Caledonia",
+      "component": "VideoPlayer",
+      "urls": ["assets/caledonia_sta_final.mp4"]
     },
     {
       "#": 14,
@@ -144,7 +147,7 @@
       "day": 6,
       "activity": "Outdoor Photography Challenge",
       "component": "PhotoChallengeComponent",
-      "image": "assets/street-performance-5679821_640.jpg",
+      "image": "assets/Holidays.png",
       "instructions": "Instructions for challenge."
     },
     {
@@ -152,7 +155,7 @@
       "Date": "02 Dec 2020",
       "day": 2,
       "activity": "Challenge Crossword/CSS Challenge",
-      "component": ""
+      "component": "CrosswordComponent"
     },
     {
       "#": 20,
@@ -204,7 +207,7 @@
       "day": 1,
       "activity": "Christmas Jumper Photo Challenge",
       "component": "PhotoChallengeComponent",
-      "image": "assets/nicholas-201281_640.jpg",
+      "image": "assets/Untitled_design.png",
       "instructions": "Instructions for challenge."
     }
   ]
