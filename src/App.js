@@ -8,11 +8,11 @@ import Col from "react-bootstrap/Col";
 import CalendarPage from "./pages/CalendarPage";
 import ActivityPage from "./pages/ActivityPage";
 import Snowflakes from "./components/Snowflakes/Snowflakes";
-
+// const currentDate = moment().format("D MMM YYYY");
 function App() {
   const [page, setPage] = useState("calendar-page");
   const [openWindow, setOpenWindow] = useState(null);
-  const currentDate = moment().format("D MMM YYYY");
+  const currentDate = "14 Dec 2020";
   const allDays = config.days;
 
   return (

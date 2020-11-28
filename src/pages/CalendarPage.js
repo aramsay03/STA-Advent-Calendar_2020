@@ -16,10 +16,10 @@ function CalendarPage({ setPage, setOpenWindow, currentDate, allDays }) {
     return (
       <Col key={index} className="calendar-window" xs={4} sm={3} md={2}>
         <b>{day.day}</b>
-        {day.day ? (
+        {day.Date <= currentDate ? (
           <Button onClick={() => handleClick(day)}>Open</Button>
         ) : (
-          <Button disabled>Open</Button>
+          <Button hidden>Open</Button>
         )}
       </Col>
     );

@@ -13,8 +13,11 @@ function ActivityPage({ setPage, openWindow, setOpenWindow, currentDate }) {
 
   function activityComponentHeader() {
     return (
-      <h2>{openWindow.activity}</h2>
-    )
+      <>
+        <h2>{openWindow.Date}</h2>
+        <h3>{openWindow.activity}</h3>
+      </>
+    );
   }
 
   function activityComponent() {
