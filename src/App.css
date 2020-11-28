@@ -9,6 +9,11 @@
   background-position: center;
 }
 
+.App-main {
+  filter: blur(10px);
+  pointer-events: none;
+}
+
 .App header {
   display: flex;
   text-align: left;
@@ -16,7 +21,7 @@
   justify-content: center;
   align-items: center;
   margin: 0 auto;
-  padding:  0 20px;
+  padding: 0 20px;
   width: 100vw;
 }
 
@@ -33,7 +38,7 @@
 }
 
 .App header h2 {
-  color: #3C3C3B;
+  color: #3c3c3b;
   font-weight: bold;
   margin-bottom: 0;
   /* background-color: #8abbc1; */
