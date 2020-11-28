@@ -1,34 +1,54 @@
 .App {
   text-align: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  background-image: url("./images/Moon_Santa_STA.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  height: 10vh;
+.App header {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  text-align: left;
+  flex-direction: row;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-main {
+  align-items: center;
+  margin: 0 auto;
+  padding:  0 20px;
   width: 100vw;
 }
 
-.App-main-center {
-  padding: 0;
+.App header .title {
+  display: flex;
+  flex-direction: column;
 }
 
-.App-main-left {
-  background-color: gray;
-  min-height: 90vh;
+.App header h1 ,
+.App header h2 {
+  opacity: 1;
 }
 
-.App-main-right {
-  background-color: gray;
-  min-height: 90vh;
+.App header h1 {
+  font-size: 2.5rem;
+  color: #3C3C3B;
+  font-weight: bold;
+  /* background-color: #8abbc1; */
+}
+
+.App header h2 {
+  color: #3C3C3B;
+  font-weight: bold;
+  margin-bottom: 0;
+  /* background-color: #8abbc1; */
+}
+
+#logo {
+  height: 140px;
+  /* background-color: #8abbc1; */
+  padding: 5px;
+  margin-right: 5px;
 }
 
 .calendar-window {
@@ -40,6 +60,15 @@
   padding: 20px 0;
 }
 
+.calendar-window b {
+  font-size: 2rem;
+  font-weight: bolder;
+  background-color: #8abbc1;
+  color: #3C3C3B;
+  height: 50px;
+  width: 50px;
+}
+
 .calendar-page-container {
   width: 60vw;
 }
@@ -49,20 +78,12 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 60vw;
+  height: 40vw;
+  width: 50vw;
+  background-color: #3C3C3B;
+  color: white;
 }
 
 Button {
-  margin: 20px auto;
-}
-
-.video-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 20px 0;
-}
-
-.video-player {
   margin: 20px auto;
 }

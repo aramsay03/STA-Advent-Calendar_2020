@@ -1,11 +1,11 @@
 import React from 'react';
-import ReactPlayer from "react-player";
+import './VideoPlayer.css';
+import ReactPlayer from "react-player/lazy";
 import Container from "react-bootstrap/Container";
 
 function VideoPlayer({url}) {
   return (
     <Container className="video-container">
-      <h3>Embed video</h3>
       <ReactPlayer
         className="video-player"
         url={url}

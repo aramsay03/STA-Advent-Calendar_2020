@@ -1,124 +1,172 @@
 {
-    "days":[
-        {
-            "id":1,
-            "Date":"1 Dec 2020",
-            "day":"1st"
-        },
-        {
-            "id":2,
-            "Date":"2 Dec 2020",
-            "day":"2nd"
-        },
-        {
-            "id":3,
-            "Date":"3 Dec 2020",
-            "day":"3rd"
-        },
-        {
-            "id":4,
-            "Date":"4 Dec 2020",
-            "day":"4th"
-        },
-        {
-            "id":5,
-            "Date":"5 Dec 2020",
-            "day":"5th"
-        },
-        {
-            "id":6,
-            "Date":"6 Dec 2020",
-            "day":"6th"
-        },
-        {
-            "id":7,
-            "Date":"7 Dec 2020",
-            "day":"7th"
-        },
-        {
-            "id":8,
-            "Date":"8 Dec 2020",
-            "day":"8th"
-        },
-        {
-            "id":9,
-            "Date":"9 Dec 2020",
-            "day":"9th"
-        },
-        {
-            "id":10,
-            "Date":"10 Dec 2020",
-            "day":"10th"
-        },
-        {
-            "id":11,
-            "Date":"11 Dec 2020",
-            "day":"11th"
-        },
-        {
-            "id":12,
-            "Date":"12 Dec 2020",
-            "day":"12th"
-        },
-        {
-            "id":13,
-            "Date":"13 Dec 2020",
-            "day":"13th"
-        },
-        {
-            "id":14,
-            "Date":"14 Dec 2020",
-            "day":"14th"
-        },
-        {
-            "id":15,
-            "Date":"15 Dec 2020",
-            "day":"15th"
-        },
-        {
-            "id":16,
-            "Date":"16 Dec 2020",
-            "day":"16th"
-        },
-        {
-            "id":17,
-            "Date":"17 Dec 2020",
-            "day":"17th"
-        },
-        {
-            "id":18,
-            "Date":"18 Dec 2020",
-            "day":"18th"
-        },
-        {
-            "id":19,
-            "Date":"19 Dec 2020",
-            "day":"19th"
-        },
-        {
-            "id":20,
-            "Date":"20 Dec 2020",
-            "day":"20th"
-        },
-        {
-            "id":21,
-            "Date":"21 Dec 2020",
-            "day":"21st"
-        },
-        {
-            "id":22,
-            "Date":"22 Dec 2020",
-            "day":"22nd"
-        },
-        {
-            "id":23,
-            "Date":"23 Dec 2020",
-            "day":"23rd"
-        },
-        {
-            "id":24,
-            "Date":"24 Dec 2020",
-            "day":"24th"
-        }
-    ]
+  "days": [
+    {
+      "id": 1,
+      "Date": "01 Dec 2020",
+      "day": 1,
+      "activity": "Christmas Jumper Submission",
+      "component": ""
+    },
+    {
+      "id": 2,
+      "Date": "02 Dec 2020",
+      "day": 2,
+      "activity": "Challenge Crossword/CSS Challenge",
+      "component": ""
+    },
+    {
+      "id": 3,
+      "Date": "03 Dec 2020",
+      "day": 3,
+      "activity": "White Stripes Single",
+      "component": "VideoPlayer"
+    },
+    {
+      "id": 4,
+      "Date": "04 Dec 2020",
+      "day": 4,
+      "activity": "Town Hall",
+      "component": "VideoPlayer"
+    },
+    {
+      "id": 5,
+      "Date": "05 Dec 2020",
+      "day": 5,
+      "activity": "Recipe Video",
+      "component": "VideoPlayer"
+    },
+    {
+      "id": 6,
+      "Date": "06 Dec 2020",
+      "day": 6,
+      "activity": "Outdoor Photography Submission",
+      "component": "VideoPlayer"
+    },
+    {
+      "id": 7,
+      "Date": "07 Dec 2020",
+      "day": 7,
+      "activity": "Origami",
+      "component": ""
+    },
+    {
+      "id": 8,
+      "Date": "08 Dec 2020",
+      "day": 8,
+      "activity": "Whiskey Kiss Music Video",
+      "component": "VideoPlayer"
+    },
+    {
+      "id": 9,
+      "Date": "09 Dec 2020",
+      "day": 9,
+      "activity": "Joke Exchange",
+      "component": ""
+    },
+    {
+      "id": 10,
+      "Date": "10 Dec 2020",
+      "day": 10,
+      "activity": "Well Wishing Message Submission",
+      "component": ""
+    },
+    {
+      "id": 11,
+      "Date": "11 Dec 2020",
+      "day": 11,
+      "activity": "Town Hall",
+      "component": "VideoPlayer"
+    },
+    {
+      "id": 12,
+      "Date": "12 Dec 2020",
+      "day": 12,
+      "activity": "Festive Recipes",
+      "component": ""
+    },
+    {
+      "id": 13,
+      "Date": "13 Dec 2020",
+      "day": 13,
+      "activity": "Pet Photographs Submission",
+      "component": ""
+    },
+    {
+      "id": 14,
+      "Date": "14 Dec 2020",
+      "day": 14,
+      "activity": "Poem to Enjoy and Limerick Challenge",
+      "component": ""
+    },
+    {
+      "id": 15,
+      "Date": "15 Dec 2020",
+      "day": 15,
+      "activity": "CSS Art",
+      "component": ""
+    },
+    {
+      "id": 16,
+      "Date": "16 Dec 2020",
+      "day": 16,
+      "activity": "STA Themed Crossword",
+      "component": ""
+    },
+    {
+      "id": 17,
+      "Date": "17 Dec 2020",
+      "day": 17,
+      "activity": "Homebrew Challenge Video",
+      "component": "VideoPlayer"
+    },
+    {
+      "id": 18,
+      "Date": "18 Dec 2020",
+      "day": 18,
+      "activity": "Town Hall",
+      "component": "VideoPlayer"
+    },
+    {
+      "id": 19,
+      "Date": "19 Dec 2020",
+      "day": 19,
+      "activity": "Best Cocktail/Mocktail",
+      "component": ""
+    },
+    {
+      "id": 20,
+      "Date": "20 Dec 2020",
+      "day": 20,
+      "activity": "Christmas Bake Off",
+      "component": ""
+    },
+    {
+      "id": 21,
+      "Date": "21 Dec 2020",
+      "day": 21,
+      "activity": "Number Puzzle",
+      "component": ""
+    },
+    {
+      "id": 22,
+      "Date": "22 Dec 2020",
+      "day": 22,
+      "activity": "CSS Art Exhibition",
+      "component": ""
+    },
+    {
+      "id": 23,
+      "Date": "23 Dec 2020",
+      "day": 23,
+      "activity": "Christmas Food Picture Reveal",
+      "component": ""
+    },
+    {
+      "id": 24,
+      "Date": "24 Dec 2020",
+      "day": 24,
+      "activity": "Christmas Jumper Reveal",
+      "component": ""
+    }
+  ]
 }

@@ -1,28 +1,26 @@
 import React from "react";
-import config from "../config.json";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
 
-function CalendarPage({setPage}) {
+function CalendarPage({ setPage, setOpenWindow, currentDate, allDays }) {
 
-  const allDays = config.days;
-
-  function handleClick() {
+  function handleClick(day) {
+    setOpenWindow(day);
     setPage("activity-page");
-  };
+  }
 
-  const daysWindow = allDays.map((days) => {
+  const daysWindow = allDays.map((day, index) => {
+
     return (
-      <Col
-        className="calendar-window"
-        xs={4}
-        sm={3}
-        md={2}
-      >
-        {days.day}
-        <Button onClick={handleClick}>Open</Button>
+      <Col key={index} className="calendar-window" xs={4} sm={3} md={2}>
+        <b>{day.day}</b>
+        {day.Date <= currentDate ? (
+          <Button onClick={() => handleClick(day)}>Open</Button>
+        ) : (
+          <Button hidden>Open</Button>
+        )}
       </Col>
     );
   });
@@ -32,7 +30,6 @@ function CalendarPage({setPage}) {
       <Row>{daysWindow}</Row>
     </Container>
   );
-
 }
 
 export default CalendarPage;
