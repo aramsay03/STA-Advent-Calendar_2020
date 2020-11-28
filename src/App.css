@@ -25,13 +25,8 @@
   flex-direction: column;
 }
 
-.App header h1 ,
-.App header h2 {
-  opacity: 1;
-}
-
 .App header h1 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   color: #3C3C3B;
   font-weight: bold;
   /* background-color: #8abbc1; */
@@ -45,7 +40,7 @@
 }
 
 #logo {
-  height: 140px;
+  height: 120px;
   /* background-color: #8abbc1; */
   padding: 5px;
   margin-right: 5px;
@@ -57,16 +52,14 @@
   align-items: center;
   justify-content: center;
   border: 1px solid black;
-  padding: 20px 0;
+  background-color: rgb(138, 187, 193, 0.25);
+  height: 12.5vh;
 }
 
 .calendar-window b {
   font-size: 2rem;
   font-weight: bolder;
-  background-color: #8abbc1;
   color: #3C3C3B;
-  height: 50px;
-  width: 50px;
 }
 
 .calendar-page-container {
@@ -80,10 +73,47 @@
   align-items: center;
   height: 40vw;
   width: 50vw;
-  background-color: #3C3C3B;
+  background-color: rgba(60, 60, 59, 0.75);
   color: white;
 }
 
-Button {
-  margin: 20px auto;
+Button.btn.btn-primary {
+  margin: 10px auto;
+  background-color: #44747c;
+  border-color: white;
+}
+
+img {
+  height: 500px;
+}
+
+.carousel-caption {
+  background-color: rgba(60, 60, 59, 0.75);
+}
+
+.carousel-caption h2,
+.carousel-caption h3 {
+  margin: 0;
+  padding: 0;
+}
+
+.challenge-text {
+  background-color: #f2f2f2;
+  margin: 0;
+  color: #3C3C3B;
+}
+
+.challenge-text p {
+  padding-top: 20px;
+}
+
+.challenge-img {
+  margin: 0;
+  padding: 0;
+}
+
+video {
+  height: 75%;
+  width: 75%;
+  margin: 0 auto;
 }

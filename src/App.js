@@ -12,7 +12,7 @@ import Snowflakes from "./components/Snowflakes/Snowflakes";
 function App() {
   const [page, setPage] = useState("calendar-page");
   const [openWindow, setOpenWindow] = useState(null);
-  const currentDate = "14 Dec 2020";
+  const currentDate = "24 Dec 2020";
   const allDays = config.days;
 
   return (
@@ -24,7 +24,7 @@ function App() {
             <header>
               <img
                 id="logo"
-                src="/STA_Christmas_20.svg"
+                src="/assets/STA_Christmas_20.svg"
                 alt="Scottish Tech Army Christmas Logo"
               />
               <span className="title">
