@@ -5,7 +5,8 @@
       "Date": "18 Dec 2020",
       "day": 18,
       "activity": "Town Hall",
-      "component": "VideoPlayer"
+      "component": "VideoPlayer",
+      "urls": []
     },
     {
       "#": 2,
@@ -19,7 +20,8 @@
       "Date": "17 Dec 2020",
       "day": 17,
       "activity": "Homebrew Challenge Video",
-      "component": "VideoPlayer"
+      "component": "VideoPlayer",
+      "urls": ["https://vimeo.com/485107578"]
     },
     {
       "#": 4,
@@ -40,35 +42,33 @@
       "#": 6,
       "Date": "08 Dec 2020",
       "day": 8,
-      "activity": "Whiskey Kiss Music Video",
-      "component": "VideoPlayer"
+      "activity": "Whisky Kiss Music Video",
+      "component": "VideoPlayer",
+      "urls": []
     },
     {
       "#": 7,
       "Date": "05 Dec 2020",
       "day": 5,
       "activity": "Edinburgh Community Food Recipe Videos",
-      "component": "CarouselComponent",
-      "urls": [
-        "https://www.youtube.com/watch?v=v4Vg9Ac8_sg",
-        "https://www.youtube.com/watch?v=GGGZw_QKeBQ",
-        "https://www.youtube.com/watch?v=iBbEl2G0hwo",
-        "https://www.youtube.com/watch?v=Q5ZyWCk8-Qg"
-      ]
+      "component": "VideoPlayer",
+      "urls": ["https://www.youtube.com/watch?v=iBbEl2G0hwo"]
     },
     {
       "#": 8,
       "Date": "11 Dec 2020",
       "day": 11,
       "activity": "Town Hall",
-      "component": "VideoPlayer"
+      "component": "VideoPlayer",
+      "urls": []
     },
     {
       "#": 9,
       "Date": "04 Dec 2020",
       "day": 4,
       "activity": "Town Hall",
-      "component": "VideoPlayer"
+      "component": "VideoPlayer",
+      "urls": []
     },
     {
       "#": 10,
@@ -83,12 +83,7 @@
       "day": 22,
       "activity": "CSS Art Exhibition",
       "component": "CarouselComponent",
-      "urls": [],
-      "images": [
-        "cake-1914463_640.jpg",
-        "christmas-cake-992651_640.jpg",
-        "christmas-cookies-1051884_640.jpg"
-      ]
+      "urls": []
     },
     {
       "#": 12,
@@ -104,7 +99,7 @@
       "Date": "03 Dec 2020",
       "day": 3,
       "activity": "White Stripe Donuts - Seven Nation Army/Caledonia",
-      "component": "VideoPlayer",
+      "component": "CarouselComponent",
       "urls": ["https://vimeo.com/426205180", "https://vimeo.com/454385594"]
     },
     {
@@ -113,12 +108,7 @@
       "day": 24,
       "activity": "Christmas Jumper Reveal",
       "component": "CarouselComponent",
-      "urls": [],
-      "images": [
-        "cake-1914463_640.jpg",
-        "christmas-cake-992651_640.jpg",
-        "christmas-cookies-1051884_640.jpg"
-      ]
+      "urls": []
     },
     {
       "#": 15,
@@ -154,7 +144,7 @@
       "#": 19,
       "Date": "02 Dec 2020",
       "day": 2,
-      "activity": "Challenge Crossword/CSS Challenge",
+      "activity": "Challenge Crossword",
       "component": "CrosswordComponent"
     },
     {
@@ -163,12 +153,7 @@
       "day": 23,
       "activity": "Christmas Food Picture Reveal",
       "component": "CarouselComponent",
-      "urls": [],
-      "images": [
-        "cake-1914463_640.jpg",
-        "christmas-cake-992651_640.jpg",
-        "christmas-cookies-1051884_640.jpg"
-      ]
+      "urls": []
     },
     {
       "#": 21,
@@ -206,9 +191,8 @@
       "Date": "01 Dec 2020",
       "day": 1,
       "activity": "Christmas Jumper Photo Challenge",
-      "component": "PhotoChallengeComponent",
-      "image": "assets/Untitled_design.png",
-      "instructions": "Instructions for challenge."
+      "component": "VideoPlayer",
+      "urls": []
     }
   ]
 }
