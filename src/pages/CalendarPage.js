@@ -5,28 +5,36 @@ import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
 
 function CalendarPage({ setPage, setOpenWindow, currentDate, allDays }) {
-
   function handleClick(day) {
     setOpenWindow(day);
     setPage("activity-page");
   }
 
-  const daysWindow = allDays.map((day, index) => {
+  function calendarWindow(day) {
+    if (day.Date === currentDate) {
+      return (
+        <img
+          src={"assets/Advent" + day.day + ".svg"}
+          alt=""
+          onClick={() => handleClick(day)}
+        />
+      );
+    } else if (day.Date > currentDate) {
+      return <img src={"assets/Advent" + day.day + ".svg"} alt="" />;
+    } else {
+      return (
+        <>
+          <b>{day.day}</b>
+          <Button onClick={() => handleClick(day)}>Replay</Button>
+        </>
+      );
+    }
+  }
 
+  const daysWindow = allDays.map((day, index) => {
     return (
       <Col key={index} className="calendar-window" xs={4} sm={3} md={2}>
-        {day.Date <= currentDate ? (
-          <img
-            src={"assets/Advent" + day.day + ".svg"}
-            alt=""
-            onClick={() => handleClick(day)}
-          />
-        ) : (
-          <img
-            src={"assets/Advent" + day.day + ".svg"}
-            alt=""
-          />
-        )}
+        {calendarWindow(day)}
       </Col>
     );
   });
