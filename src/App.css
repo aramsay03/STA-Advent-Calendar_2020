@@ -66,6 +66,10 @@
   width: 10vh;
 }
 
+.calendar-window b {
+  font-size: 2rem;
+}
+
 .calendar-page-container {
   width: 60vw;
 }
