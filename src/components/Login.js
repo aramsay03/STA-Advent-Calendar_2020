@@ -14,7 +14,6 @@ export default function Login({ setShowPasswordEntry }) {
   };
 
   const showHidePassword = () => {
-    console.log('function runs');
     let passwordInput = document.getElementById('password');
     if (passwordInput.type === 'password') {
       passwordInput.type = 'text';
