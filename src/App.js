@@ -13,8 +13,8 @@ import Login from "./components/Login";
 function App() {
   const [page, setPage] = useState("calendar-page");
   const [openWindow, setOpenWindow] = useState(null);
-  const [showPasswordEntry, setShowPasswordEntry] = useState(true); //<---- just set this to false until we go live
-  const currentDate = "24 Dec 2020";
+  const [showPasswordEntry, setShowPasswordEntry] = useState(false); //<---- just set this to false until we go live
+  const currentDate = "12 Dec 2020";
   const allDays = config.days;
 
   useEffect(() => {

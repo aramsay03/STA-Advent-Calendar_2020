@@ -110,6 +110,7 @@ img {
 
 .challenge-text p {
   padding-top: 20px;
+  color: #3C3C3B;
 }
 
 .challenge-img {
@@ -121,4 +122,13 @@ video {
   height: 75%;
   width: 75%;
   margin: 0 auto;
+}
+
+.crossword-container {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 50vw;
+  height: 40vw;
+  overflow-y: scroll;
 }

@@ -24,7 +24,7 @@
     {
       "#": 4,
       "Date": "15 Dec 2020",
-      "day": 11,
+      "day": 15,
       "activity": "CSS Art",
       "component": ""
     },
@@ -105,7 +105,7 @@
       "day": 3,
       "activity": "White Stripe Donuts - Seven Nation Army/Caledonia",
       "component": "VideoPlayer",
-      "urls": ["assets/caledonia_sta_final.mp4"]
+      "urls": ["https://vimeo.com/426205180", "https://vimeo.com/454385594"]
     },
     {
       "#": 14,
