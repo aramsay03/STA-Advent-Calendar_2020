@@ -4,7 +4,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
 
-function CalendarPage({ setPage, setOpenWindow, currentDate, allDays }) {
+function CalendarPage({ setPage, setOpenWindow, currentDate, allDays, togglePopup, showPopup }) {
   function handleClick(day) {
     setOpenWindow(day);
     setPage("activity-page");
@@ -20,7 +20,13 @@ function CalendarPage({ setPage, setOpenWindow, currentDate, allDays }) {
         />
       );
     } else if (day.Date > currentDate) {
-      return <img src={"assets/Advent" + day.day + ".svg"} alt="" />;
+      return (
+        <img
+          src={"assets/Advent" + day.day + ".svg"}
+          alt=""
+          onClick={() => togglePopup(showPopup)}
+        />
+      );
     } else {
       return (
         <>
