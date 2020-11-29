@@ -22,7 +22,10 @@ function CalendarPage({ setPage, setOpenWindow, currentDate, allDays }) {
             onClick={() => handleClick(day)}
           />
         ) : (
-          <Button hidden>Open</Button>
+          <img
+            src={"assets/Advent" + day.day + ".svg"}
+            alt=""
+          />
         )}
       </Col>
     );
