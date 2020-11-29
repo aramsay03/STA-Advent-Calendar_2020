@@ -38,23 +38,21 @@ function App() {
   return (
     <div>
       <div className="App">
+        <header>
+          <img
+            id="logo"
+            src="/STA_Christmas_20.svg"
+            alt="Scottish Tech Army Christmas Logo"
+          />
+          <span className="title">
+            <h1>SCOTTISH TECH ARMY</h1>
+            <h2>Advent Calendar 2020</h2>
+          </span>
+        </header>
         <ActivateChristmasCheer />
         <Snowflakes />
         <main className={showPasswordEntry ? "App-main" : null}>
           <Container fluid>
-            <Row>
-              <header>
-                <img
-                  id="logo"
-                  src="/STA_Christmas_20.svg"
-                  alt="Scottish Tech Army Christmas Logo"
-                />
-                <span className="title">
-                  <h1>SCOTTISH TECH ARMY</h1>
-                  <h2>Advent Calendar 2020</h2>
-                </span>
-              </header>
-            </Row>
             <Row>
               <Col>
                 {page === "activity-page" ? (
