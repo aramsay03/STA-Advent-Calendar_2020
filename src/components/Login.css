@@ -48,6 +48,16 @@ p {
   color: white;
 }
 
+.checkbox-container {
+  margin-top: 3%;
+  color: white;
+  background-color: green;
+}
+
+.show-hide-checkbox {
+  margin-right: 3%;
+}
+
 .login-btn {
   background: #2ecc71;
   width: 90%;

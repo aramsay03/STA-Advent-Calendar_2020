@@ -1,20 +1,20 @@
-import React, { useEffect, useState } from "react";
-import moment from "moment";
-import "./App.css";
-import config from "./config.json";
-import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
-import CalendarPage from "./pages/CalendarPage";
-import ActivityPage from "./pages/ActivityPage";
-import Snowflakes from "./components/Snowflakes/Snowflakes";
-import Login from "./components/Login";
+import React, { useEffect, useState } from 'react';
+import moment from 'moment';
+import './App.css';
+import config from './config.json';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import CalendarPage from './pages/CalendarPage';
+import ActivityPage from './pages/ActivityPage';
+import Snowflakes from './components/Snowflakes/Snowflakes';
+import Login from './components/Login';
 // const currentDate = moment().format("D MMM YYYY");
 function App() {
-  const [page, setPage] = useState("calendar-page");
+  const [page, setPage] = useState('calendar-page');
   const [openWindow, setOpenWindow] = useState(null);
   const [showPasswordEntry, setShowPasswordEntry] = useState(true); //<---- just set this to false until we go live
-  const currentDate = "24 Dec 2020";
+  const currentDate = '24 Dec 2020';
   const allDays = config.days;
 
   useEffect(() => {
@@ -51,11 +51,11 @@ function App() {
         </header>
         <ActivateChristmasCheer />
         <Snowflakes />
-        <main className={showPasswordEntry ? "App-main" : null}>
+        <main className={showPasswordEntry ? 'App-main' : null}>
           <Container fluid>
             <Row>
               <Col>
-                {page === "activity-page" ? (
+                {page === 'activity-page' ? (
                   <ActivityPage
                     setPage={setPage}
                     openWindow={openWindow}
