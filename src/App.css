@@ -56,15 +56,14 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border: 1px solid black;
-  background-color: rgb(138, 187, 193, 0.25);
   height: 12.5vh;
+  width: 12.5vh;
+  padding: 0;
 }
 
-.calendar-window b {
-  font-size: 2rem;
-  font-weight: bolder;
-  color: #3C3C3B;
+.calendar-window img {
+  height: 10vh;
+  width: 10vh;
 }
 
 .calendar-page-container {
@@ -110,6 +109,7 @@ img {
 
 .challenge-text p {
   padding-top: 20px;
+  color: #3C3C3B;
 }
 
 .challenge-img {
@@ -121,4 +121,13 @@ video {
   height: 75%;
   width: 75%;
   margin: 0 auto;
+}
+
+.crossword-container {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 50vw;
+  height: 40vw;
+  overflow-y: scroll;
 }

@@ -15,11 +15,17 @@ function CalendarPage({ setPage, setOpenWindow, currentDate, allDays }) {
 
     return (
       <Col key={index} className="calendar-window" xs={4} sm={3} md={2}>
-        <b>{day.day}</b>
         {day.Date <= currentDate ? (
-          <Button onClick={() => handleClick(day)}>Open</Button>
+          <img
+            src={"assets/Advent" + day.day + ".svg"}
+            alt=""
+            onClick={() => handleClick(day)}
+          />
         ) : (
-          <Button hidden>Open</Button>
+          <img
+            src={"assets/Advent" + day.day + ".svg"}
+            alt=""
+          />
         )}
       </Col>
     );
