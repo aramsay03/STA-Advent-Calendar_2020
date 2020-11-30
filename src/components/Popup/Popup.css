@@ -9,8 +9,9 @@
   bottom: 20%;
   margin: auto;
   border-radius: 10px;
-  border: 5px red solid;
-  background: rgba(255, 255, 255, 0.75);
+  border: 0px;
+  /* border: 5px solid #B32329; */
+  background: rgba(255, 255, 255, 0.55);
   text-align: center;
   padding: 20px;
   height: 20vh;
