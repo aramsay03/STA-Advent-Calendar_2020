@@ -3,6 +3,7 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
+import moment from "moment";
 
 function CalendarPage({ setPage, setOpenWindow, currentDate, allDays, togglePopup, showPopup }) {
   function handleClick(day) {
@@ -11,7 +12,8 @@ function CalendarPage({ setPage, setOpenWindow, currentDate, allDays, togglePopu
   }
 
   function calendarWindow(day) {
-    if (day.Date === currentDate) {
+    // if (day.Date === currentDate) {
+    if (moment(day.Date).isSame(currentDate) === true) {
       return (
         <img
           src={"assets/Advent" + day.day + ".svg"}
@@ -19,7 +21,8 @@ function CalendarPage({ setPage, setOpenWindow, currentDate, allDays, togglePopu
           onClick={() => handleClick(day)}
         />
       );
-    } else if (day.Date > currentDate) {
+    // } else if (day.Date > currentDate) {
+    } else if (moment(day.Date).isAfter(currentDate) === true) {
       return (
         <img
           src={"assets/Advent" + day.day + ".svg"}
