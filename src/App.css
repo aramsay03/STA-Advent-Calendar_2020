@@ -76,6 +76,7 @@
 
 .activity-page-container {
   display: flex;
+  border-radius: 10px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
