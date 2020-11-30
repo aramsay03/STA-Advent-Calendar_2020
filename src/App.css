@@ -8,7 +8,6 @@
   background-size: cover;
   background-position: center;
   padding-top: 10px;
-  /* color:white; */
 }
 
 .App-main {
@@ -18,7 +17,6 @@
 
 .App header {
   display: flex;
-  text-align: left;
   flex-direction: row;
   justify-content: center;
   align-items: center;
@@ -55,22 +53,11 @@
 }
 
 #logo {
-  /* height: 120px; */
-
-  /* background-color: #8abbc1; */
-  /* padding: 5px; */
-  /* margin-right: 5px; */
-
-  /* height: 140px; */
   border-radius: 90px;
   background-color: #fff;
-  /* width: 140px; */
-
   height: 85px;
-  /* width: 85px; */
   margin-right: 10px;
   margin-left: 10px;
-  /* border-radius: 50%; */
 }
 
 .calendar-window {
@@ -78,8 +65,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 20vh;
-  width: 20vh;
+  height: 17vh;
+  width: 17vh;
   padding: 0;
   color: #ffffff;
 }
@@ -89,9 +76,55 @@
   width: 15vh;
 }
 
+@media screen and (max-width: 1024px) {
+  .calendar-window {
+    height: 12vh;
+    width: 12vh;
+  }
+  .calendar-window img {
+    height: 10vh;
+    width: 10vh;
+  }
+  .calendar-windows-container {
+    overflow-y: scroll;
+    height: 80vh;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .calendar-window {
+    height: 11vh;
+    width: 11vh;
+  }
+  .calendar-window img {
+    height: 9vh;
+    width: 9vh;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .calendar-window b {
+    font-size: 0.5rem !important;
+    line-height: 1.5rem !important;
+    height: 1.5rem !important;
+    width: 1.5rem !important;
+  }
+  Button.btn.btn-primary {
+    font-size: 0.5rem !important;
+    font-weight: bold;
+  }
+  #logo {
+    height: 3rem;
+  }
+}
+
 .calendar-window b {
   font-size: 2rem;
   color: white;
+  height: 3rem;
+  width: 3rem;
+  background-color: rgba(60, 60, 59, 0.75);
+  border-radius: 50%;
 }
 
 .activity-page-container {
@@ -108,7 +141,7 @@
 
 Button.btn.btn-primary {
   margin: 10px auto;
-  background-color: #44747c;
+  background-color: rgba(60, 60, 59, 0.75);
   border-color: white;
 }
 
@@ -140,12 +173,6 @@ img {
 .challenge-img {
   margin: 0;
   padding: 0;
-}
-
-video {
-  height: 75%;
-  width: 75%;
-  margin: 0 auto;
 }
 
 .crossword-container {

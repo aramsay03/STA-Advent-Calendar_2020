@@ -14,7 +14,7 @@ import Popup from "./components/Popup/Popup";
 function App() {
   const [page, setPage] = useState("calendar-page");
   const [openWindow, setOpenWindow] = useState(null);
-  const [showPasswordEntry, setShowPasswordEntry] = useState(false); //<---- just set this to false until we go live
+  const [showPasswordEntry, setShowPasswordEntry] = useState(true); //<---- just set this to false until we go live
   const currentDate = "12 Dec 2020"; // const currentDate = moment().format("D MMM YYYY"); <---- set to 24 Dec 2020 for development
   const allDays = config.days;
   const popupMessage =
@@ -60,20 +60,14 @@ function App() {
           <img
             id="logo"
             src="/STA_Christmas20Official.png"
-            // src="/STA_santa_hat.png"
-            // src="/STA_Christmas_20.svg"
             alt="Scottish Tech Army Christmas Logo"
           />
           <span className="title">
-            {/* <h1>SCOTTISH TECH ARMY</h1> */}
             <h2>Advent Calendar 2020</h2>
           </span>
           <img
             id="logo"
-            // src="/On_It_Format.png"
             src="/On-It.gif"
-            // src="/STA_santa_hat.png"
-            // src="/STA_Christmas_20.svg"
             alt="Scottish Tech Army On It Logo"
           />
         </header>

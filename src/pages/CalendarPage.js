@@ -32,14 +32,15 @@ function CalendarPage({
           src={"assets/Advent" + day.day + ".svg"}
           alt=""
           onClick={() => togglePopup(showPopup)}
+          className="calendar-window"
         />
       );
     } else {
       return (
-        <>
+        <div className="calendar-window">
           <b>{day.day}</b>
           <Button onClick={() => handleClick(day)}>Replay</Button>
-        </>
+        </div>
       );
     }
   }
@@ -53,7 +54,7 @@ function CalendarPage({
   });
 
   return (
-    <Container fluid>
+    <Container className="calendar-windows-container">
       <Row>{daysWindow}</Row>
     </Container>
   );
