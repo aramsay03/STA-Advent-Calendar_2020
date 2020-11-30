@@ -10,6 +10,10 @@
   padding-top: 10px;
 }
 
+.space-between-header {
+  padding-top: 20px;
+}
+
 .App-main {
   filter: blur(10px);
   pointer-events: none;
@@ -20,10 +24,8 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin: 0 auto;
-  padding: 0 20px;
-  padding-bottom: 15px;
   width: 100vw;
+  height: 10vh;
 }
 
 .App header .title {
@@ -35,14 +37,11 @@
 .App header h1 {
   font-size: 2rem;
   color: #ffffff;
-  /* color: #3C3C3B; */
   font-weight: bold;
-  /* background-color: #8abbc1; */
 }
 
 .App header h2 {
   color: #ffffff;
-  /* color: #3c3c3b; */
   font-weight: bold;
   margin-bottom: 0;
 }
@@ -66,8 +65,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 17vh;
-  width: 17vh;
+  height: 20vh;
+  width: 15vh;
   padding: 0;
   color: #ffffff;
 }
@@ -75,48 +74,7 @@
 .calendar-window img {
   height: 15vh;
   width: 15vh;
-}
-
-@media screen and (max-width: 1024px) {
-  .calendar-window {
-    height: 12vh;
-    width: 12vh;
-  }
-  .calendar-window img {
-    height: 10vh;
-    width: 10vh;
-  }
-  .calendar-windows-container {
-    overflow-y: scroll;
-    height: 80vh;
-  }
-}
-
-@media screen and (max-width: 770px) {
-  .calendar-window {
-    height: 11vh;
-    width: 11vh;
-  }
-  .calendar-window img {
-    height: 9vh;
-    width: 9vh;
-  }
-}
-
-@media screen and (max-width: 500px) {
-  .calendar-window b {
-    font-size: 0.5rem !important;
-    line-height: 1.5rem !important;
-    height: 1.5rem !important;
-    width: 1.5rem !important;
-  }
-  Button.btn.btn-primary {
-    font-size: 0.5rem !important;
-    font-weight: bold;
-  }
-  #logo {
-    height: 3rem;
-  }
+  padding-bottom: 10px;
 }
 
 .calendar-window b {
@@ -176,11 +134,74 @@ img {
   padding: 0;
 }
 
-.crossword-container {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  width: 50vw;
-  height: 40vw;
-  overflow-y: scroll;
+@media screen and (max-width: 1024px) {
+  .calendar-window {
+    height: 17vh;
+    width: 12vh;
+    margin: 0;
+  }
+  .calendar-window img {
+    height: 10vh;
+    width: 10vh;
+  }
+  .calendar-windows-container {
+    overflow-y: scroll;
+    height: 85vh;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .calendar-window {
+    height: 14vh;
+    width: 11vh;
+  }
+  .calendar-window img {
+    height: 11vh;
+    width: 11vh;
+  }
+  .App header h1 {
+    font-size: 1.5rem;
+  }
+  .App header h2 {
+    font-size: 1.25rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .calendar-window b {
+    font-size: 0.5rem !important;
+    line-height: 1.5rem !important;
+    height: 1.5rem !important;
+    width: 1.5rem !important;
+  }
+  Button.btn.btn-primary {
+    font-size: 0.5rem !important;
+    font-weight: bold;
+  }
+  #logo {
+    height: 3rem;
+  }
+  .App header h1 {
+    font-size: 0.75rem;
+  }
+  .App header h2 {
+    font-size: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  #logo {
+    height: 2rem;
+  }
+  Button.btn.btn-primary {
+    font-size: 0.25rem !important;
+    font-weight: bold;
+    padding: 2.5px;
+  }
+  .calendar-window b {
+    font-size: 0.25rem !important;
+    line-height: 1rem !important;
+    height: 1rem !important;
+    width: 1rem !important;
+  }
 }

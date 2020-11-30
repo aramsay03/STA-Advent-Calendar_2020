@@ -1,4 +1,13 @@
 .crossword-container {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 50vw;
+  height: 40vw;
+  overflow-y: scroll;
+}
+
+.crossword-container {
   position: relative;
   left: 50%;
   top: 50%;

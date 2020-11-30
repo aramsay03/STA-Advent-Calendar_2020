@@ -15,7 +15,7 @@ function App() {
   const [page, setPage] = useState("calendar-page");
   const [openWindow, setOpenWindow] = useState(null);
   const [showPasswordEntry, setShowPasswordEntry] = useState(true); //<---- just set this to false until we go live
-  const currentDate = "12 Dec 2020"; // const currentDate = moment().format("D MMM YYYY"); <---- set to 24 Dec 2020 for development
+  const currentDate = "25 Dec 2020"; // const currentDate = moment().format("D MMM YYYY"); <---- set to 24 Dec 2020 for development
   const allDays = config.days;
   const popupMessage =
     "You will need to wait for that day!";
@@ -77,7 +77,7 @@ function App() {
         <main className={showPasswordEntry ? "App-main" : null}>
           <Container fluid>
             <Row>
-              <Col>
+              <Col className="space-between-header">
                 {page === "activity-page" ? (
                   <ActivityPage
                     setPage={setPage}
