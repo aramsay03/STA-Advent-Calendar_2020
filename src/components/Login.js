@@ -8,7 +8,8 @@ export default function Login({ setShowPasswordEntry }) {
   const handleSubmit = (e) => {
     e.preventDefault();
     setPasswordInput(e);
-    if (passwordInput === XMAS_PASSWORD) {
+    const LowerCasePass = passwordInput.toLowerCase();
+    if (LowerCasePass === XMAS_PASSWORD) {
       setShowPasswordEntry(false);
     }
   };
