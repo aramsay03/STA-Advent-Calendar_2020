@@ -8,7 +8,9 @@ export default function Login({ setShowPasswordEntry }) {
   const handleSubmit = (e) => {
     e.preventDefault();
     setPasswordInput(e);
-    setShowPasswordEntry(false);
+    if (passwordInput === XMAS_PASSWORD) {
+      setShowPasswordEntry(false);
+    }
   };
 
   const showHidePassword = () => {

@@ -5,7 +5,14 @@ import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
 import moment from "moment";
 
-function CalendarPage({ setPage, setOpenWindow, currentDate, allDays, togglePopup, showPopup }) {
+function CalendarPage({
+  setPage,
+  setOpenWindow,
+  currentDate,
+  allDays,
+  togglePopup,
+  showPopup,
+}) {
   function handleClick(day) {
     setOpenWindow(day);
     setPage("activity-page");
@@ -28,14 +35,15 @@ function CalendarPage({ setPage, setOpenWindow, currentDate, allDays, togglePopu
           src={"assets/Advent" + day.day + ".svg"}
           alt=""
           onClick={() => togglePopup(showPopup)}
+          className="calendar-window"
         />
       );
     } else {
       return (
-        <>
+        <div className="calendar-window">
           <b>{day.day}</b>
           <Button onClick={() => handleClick(day)}>Replay</Button>
-        </>
+        </div>
       );
     }
   }
@@ -49,7 +57,7 @@ function CalendarPage({ setPage, setOpenWindow, currentDate, allDays, togglePopu
   });
 
   return (
-    <Container fluid className="calendar-page-container">
+    <Container className="calendar-windows-container">
       <Row>{daysWindow}</Row>
     </Container>
   );

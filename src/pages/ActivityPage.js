@@ -47,9 +47,9 @@ function ActivityPage({ setPage, openWindow, setOpenWindow, currentDate }) {
 
   return (
     <Container className="activity-page-container">
-      <Row>
+      <Row className="activity-row">
         <Col sm={12}>{activityComponentHeader()}</Col>
-        <Col sm={12}>{activityComponent()}</Col>
+        <Col className="middle-col" md={12}>{activityComponent()}</Col>
         <Col sm={12}>
           <Button onClick={handleClick}>Back</Button>
         </Col>

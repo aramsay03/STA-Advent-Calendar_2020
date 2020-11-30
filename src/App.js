@@ -16,8 +16,7 @@ function App() {
   const [openWindow, setOpenWindow] = useState(null);
   const [showPasswordEntry, setShowPasswordEntry] = useState(true); //<---- just set this to false until we go live
   // const [currentDate, setCurrentDate] = useState("02 Dec 2020");
-  const [currentDate] = useState(moment().format("D MMM YYYY"));
-  // const [currentDate] = useState(moment().format("D MMM YYYY")); // const currentDate = moment().format("D MMM YYYY"); <---- set to 24 Dec 2020 for development
+  const [currentDate] = useState(moment().format("D MMM YYYY")); // <---- set to 24 Dec 2020 for development
   const allDays = config.days;
   const popupMessage =
     "You will need to wait for that day!";
@@ -26,9 +25,6 @@ function App() {
   useEffect(() => {
     ActivateChristmasCheer();
   });
-
-  useEffect(() => {
-  }, [showPopup]);
 
   const ActivateChristmasCheer = () => {
     if (showPasswordEntry === true) {
@@ -62,8 +58,6 @@ function App() {
           <img
             id="logo"
             src="/STA_Christmas20Official2.png"
-            // src="/STA_santa_hat.png"
-            // src="/STA_Christmas_20.svg"
             alt="Scottish Tech Army Christmas Logo"
           />
           <span className="title">
@@ -72,10 +66,7 @@ function App() {
           </span>
           <img
             id="logo"
-            // src="/On_It_Format.png"
             src="/On-It.gif"
-            // src="/STA_santa_hat.png"
-            // src="/STA_Christmas_20.svg"
             alt="Scottish Tech Army On It Logo"
           />
         </header>
@@ -84,7 +75,7 @@ function App() {
         <main className={showPasswordEntry ? "App-main" : null}>
           <Container fluid>
             <Row>
-              <Col>
+              <Col className="space-between-header">
                 {page === "activity-page" ? (
                   <ActivityPage
                     setPage={setPage}
