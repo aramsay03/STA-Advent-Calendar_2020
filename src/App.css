@@ -7,6 +7,8 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  padding-top: 10px;
+  /* color:white; */
 }
 
 .App-main {
@@ -22,6 +24,7 @@
   align-items: center;
   margin: 0 auto;
   padding: 0 20px;
+  padding-bottom: 15px;
   width: 100vw;
 }
 
@@ -32,23 +35,37 @@
 
 .App header h1 {
   font-size: 2rem;
-  color: #3C3C3B;
+  color: #ffffff;
+  /* color: #3C3C3B; */
   font-weight: bold;
   /* background-color: #8abbc1; */
 }
 
 .App header h2 {
-  color: #3c3c3b;
+  color: #ffffff;
+  /* color: #3c3c3b; */
   font-weight: bold;
   margin-bottom: 0;
   /* background-color: #8abbc1; */
 }
 
 #logo {
-  height: 120px;
+  /* height: 120px; */
+
   /* background-color: #8abbc1; */
-  padding: 5px;
-  margin-right: 5px;
+  /* padding: 5px; */
+  /* margin-right: 5px; */
+
+  /* height: 140px; */
+  border-radius: 90px;
+  background-color: #fff;
+  /* width: 140px; */
+
+  height: 85px;
+  /* width: 85px; */
+  margin-right: 10px;
+  margin-left: 10px;
+  /* border-radius: 50%; */
 }
 
 .calendar-window {
@@ -59,6 +76,7 @@
   height: 12.5vh;
   width: 12.5vh;
   padding: 0;
+  color: #ffffff;
 }
 
 .calendar-window img {
