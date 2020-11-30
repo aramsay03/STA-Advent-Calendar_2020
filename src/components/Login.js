@@ -1,25 +1,22 @@
-import React, { useState } from 'react';
-import './Login.css';
+import React, { useState } from "react";
+import "./Login.css";
 
 export default function Login({ setShowPasswordEntry }) {
-  const [passwordInput, setPasswordInput] = useState('');
+  const [passwordInput, setPasswordInput] = useState("");
   const XMAS_PASSWORD = process.env.REACT_APP_XMAS_PASSWORD;
 
   const handleSubmit = (e) => {
     e.preventDefault();
     setPasswordInput(e);
-    const LowerCasePass = passwordInput.toLowerCase();
-    if (LowerCasePass === XMAS_PASSWORD) {
-      setShowPasswordEntry(false);
-    }
+    setShowPasswordEntry(false);
   };
 
   const showHidePassword = () => {
-    let passwordInput = document.getElementById('password');
-    if (passwordInput.type === 'password') {
-      passwordInput.type = 'text';
+    let passwordInput = document.getElementById("password");
+    if (passwordInput.type === "password") {
+      passwordInput.type = "text";
     } else {
-      passwordInput.type = 'password';
+      passwordInput.type = "password";
     }
   };
 
@@ -28,7 +25,7 @@ export default function Login({ setShowPasswordEntry }) {
       <form onSubmit={handleSubmit}>
         <div className="box">
           <h3 className="password-text">Welcome Back STA Volunteer!</h3>
-         
+
           <input
             type="password"
             id="password"
