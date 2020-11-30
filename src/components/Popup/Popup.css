@@ -17,3 +17,16 @@
   height: 20vh;
   width: 50vw;
 }
+
+@media only screen and (max-width: 600px)  {
+  h1  {
+    font-size: small;
+  }
+}
+​
+​
+@media only screen and (max-width: 1024px) {
+  h1 {
+    font-size: medium;
+  }
+}
