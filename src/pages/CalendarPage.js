@@ -3,6 +3,7 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
+import moment from 'moment';
 
 function CalendarPage({
   setPage,
@@ -18,7 +19,10 @@ function CalendarPage({
   }
 
   function calendarWindow(day) {
-    if (day.Date === currentDate) {
+    if (moment(day.Date) === currentDate) {
+      console.log(day.Date);
+      console.log(currentDate);
+
       return (
         <img
           src={"assets/Advent" + day.day + ".svg"}

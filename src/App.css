@@ -88,14 +88,17 @@
 
 .activity-page-container {
   display: flex;
-  border-radius: 10px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 40vw;
-  width: 50vw;
-  background-color: rgba(60, 60, 59, 0.75);
   color: white;
+}
+
+.activity-row {
+  background-color: rgba(60, 60, 59, 0.75);
+  padding: 10px 0;
+  width: 50vw;
+  margin: 0;
 }
 
 Button.btn.btn-primary {
@@ -134,6 +137,18 @@ img {
   padding: 0;
 }
 
+@media screen and (max-width: 1300px) {
+  .activity-row {
+    width: 80vw;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .activity-row {
+    width: 100vw;
+  }
+}
+
 @media screen and (max-width: 1024px) {
   .calendar-window {
     height: 17vh;
@@ -168,6 +183,10 @@ img {
 }
 
 @media screen and (max-width: 500px) {
+  .activity-page-container h3,
+  .activity-page-container h4 {
+    font-size: 0.75rem;
+  }
   .calendar-window b {
     font-size: 0.5rem !important;
     line-height: 1.5rem !important;
@@ -186,6 +205,9 @@ img {
   }
   .App header h2 {
     font-size: 0.5rem;
+  }
+  .middle-col {
+    padding: 0;
   }
 }
 
