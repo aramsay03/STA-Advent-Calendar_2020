@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
-import './Login.css';
+import React, { useState } from "react";
+import "./Login.css";
 
 export default function Login({ setShowPasswordEntry }) {
-  const [passwordInput, setPasswordInput] = useState('');
+  const [passwordInput, setPasswordInput] = useState("");
   const XMAS_PASSWORD = process.env.REACT_APP_XMAS_PASSWORD;
 
   const handleSubmit = (e) => {
@@ -14,11 +14,11 @@ export default function Login({ setShowPasswordEntry }) {
   };
 
   const showHidePassword = () => {
-    let passwordInput = document.getElementById('password');
-    if (passwordInput.type === 'password') {
-      passwordInput.type = 'text';
+    let passwordInput = document.getElementById("password");
+    if (passwordInput.type === "password") {
+      passwordInput.type = "text";
     } else {
-      passwordInput.type = 'password';
+      passwordInput.type = "password";
     }
   };
 
