@@ -29,6 +29,7 @@
 .App header .title {
   display: flex;
   flex-direction: column;
+  text-align: center;
 }
 
 .App header h1 {

@@ -59,10 +59,11 @@ function App() {
         <header>
           <img
             id="logo"
-            src="/STA_Christmas20Official.png"
+            src="/STA_Christmas20Official2.png"
             alt="Scottish Tech Army Christmas Logo"
           />
           <span className="title">
+            <h1>SCOTTISH TECH ARMY</h1>
             <h2>Advent Calendar 2020</h2>
           </span>
           <img
