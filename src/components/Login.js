@@ -3,7 +3,7 @@ import './Login.css';
 
 export default function Login({ setShowPasswordEntry }) {
   const [passwordInput, setPasswordInput] = useState('');
-  const XMAS_PASSWORD = process.env.REACT_APP_XMAS_PASSWORD;
+  const XMAS_PASSWORD = "whatever";
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -27,12 +27,13 @@ export default function Login({ setShowPasswordEntry }) {
       <form onSubmit={handleSubmit}>
         <div className="box">
           <h3 className="password-text">Welcome Back STA Volunteer!</h3>
-          <label className="password-text">Please enter password</label>
+         
           <input
             type="password"
             id="password"
             name="password"
             className="password"
+            placeholder="Password"
             onChange={(e) => setPasswordInput(e.target.value)}
             autoFocus
             required

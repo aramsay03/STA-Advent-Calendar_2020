@@ -9,6 +9,7 @@ import CalendarPage from "./pages/CalendarPage";
 import ActivityPage from "./pages/ActivityPage";
 import Snowflakes from "./components/Snowflakes/Snowflakes";
 import Login from "./components/Login";
+import Popup from "./components/Popup/Popup";
 
 function App() {
   const [page, setPage] = useState("calendar-page");
@@ -16,10 +17,16 @@ function App() {
   const [showPasswordEntry, setShowPasswordEntry] = useState(false); //<---- just set this to false until we go live
   const currentDate = "12 Dec 2020"; // const currentDate = moment().format("D MMM YYYY"); <---- set to 24 Dec 2020 for development
   const allDays = config.days;
+  const popupMessage =
+    "You will need to wait for that day!";
+  const [showPopup, setShowPopup] = useState(false);
 
   useEffect(() => {
     ActivateChristmasCheer();
   });
+
+  useEffect(() => {
+  }, [showPopup]);
 
   const ActivateChristmasCheer = () => {
     if (showPasswordEntry === true) {
@@ -34,6 +41,17 @@ function App() {
       return null;
     }
   };
+
+  function togglePopup(showPopup) {
+    const popupStatus = () => {
+      if (showPopup === true) {
+        return false;
+      } else {
+        return true;
+      }
+    }
+    setShowPopup(popupStatus);
+  }
 
   return (
     <div>
@@ -68,9 +86,18 @@ function App() {
                     allDays={allDays}
                     currentDate={currentDate}
                     setOpenWindow={setOpenWindow}
+                    togglePopup={togglePopup}
+                    showPopup={showPopup}
                   />
                 )}
               </Col>
+              {showPopup ? (
+                <Popup
+                  text={popupMessage}
+                  showPopup={showPopup}
+                  closePopup={togglePopup}
+                />
+              ) : null}
             </Row>
           </Container>
         </main>
