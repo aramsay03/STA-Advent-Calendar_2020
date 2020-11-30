@@ -1,0 +1,21 @@
+.crossword-container {
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 10.6px;
+  overflow: auto;
+  max-height: 64vh;
+}
+
+.crossword {
+  max-height: 100px;
+}
+.grid {
+  margin-left: 2%;
+}
+
+.direction > h3 {
+  font-size: 18px;
+  text-decoration: underline;
+}
