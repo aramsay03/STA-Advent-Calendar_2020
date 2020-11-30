@@ -32,21 +32,20 @@
 
 .App header h1 {
   font-size: 2rem;
-  color: #3C3C3B;
-  font-weight: bold;
-  /* background-color: #8abbc1; */
 }
 
 .App header h2 {
-  color: #3c3c3b;
-  font-weight: bold;
   margin-bottom: 0;
-  /* background-color: #8abbc1; */
+}
+
+.App header h1,
+.App header h2 {
+  color: #f2f2f2;
+  font-weight: bold;
 }
 
 #logo {
   height: 120px;
-  /* background-color: #8abbc1; */
   padding: 5px;
   margin-right: 5px;
 }
@@ -56,22 +55,19 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 12.5vh;
-  width: 12.5vh;
+  height: 20vh;
+  width: 20vh;
   padding: 0;
 }
 
 .calendar-window img {
-  height: 10vh;
-  width: 10vh;
+  height: 15vh;
+  width: 15vh;
 }
 
 .calendar-window b {
   font-size: 2rem;
-}
-
-.calendar-page-container {
-  width: 60vw;
+  color: white;
 }
 
 .activity-page-container {

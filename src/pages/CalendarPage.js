@@ -4,7 +4,14 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
 
-function CalendarPage({ setPage, setOpenWindow, currentDate, allDays, togglePopup, showPopup }) {
+function CalendarPage({
+  setPage,
+  setOpenWindow,
+  currentDate,
+  allDays,
+  togglePopup,
+  showPopup,
+}) {
   function handleClick(day) {
     setOpenWindow(day);
     setPage("activity-page");
@@ -46,7 +53,7 @@ function CalendarPage({ setPage, setOpenWindow, currentDate, allDays, togglePopu
   });
 
   return (
-    <Container fluid className="calendar-page-container">
+    <Container fluid>
       <Row>{daysWindow}</Row>
     </Container>
   );
