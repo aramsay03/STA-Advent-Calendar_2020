@@ -3,7 +3,7 @@ import './Login.css';
 
 export default function Login({ setShowPasswordEntry }) {
   const [passwordInput, setPasswordInput] = useState('');
-  const XMAS_PASSWORD = "whatever";
+  const XMAS_PASSWORD = process.env.REACT_APP_XMAS_PASSWORD;
 
   const handleSubmit = (e) => {
     e.preventDefault();

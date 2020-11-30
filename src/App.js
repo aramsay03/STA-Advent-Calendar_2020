@@ -14,7 +14,7 @@ import Popup from "./components/Popup/Popup";
 function App() {
   const [page, setPage] = useState("calendar-page");
   const [openWindow, setOpenWindow] = useState(null);
-  const [showPasswordEntry, setShowPasswordEntry] = useState(false); //<---- just set this to false until we go live
+  const [showPasswordEntry, setShowPasswordEntry] = useState(true); //<---- just set this to false until we go live
   const currentDate = "12 Dec 2020"; // const currentDate = moment().format("D MMM YYYY"); <---- set to 24 Dec 2020 for development
   const allDays = config.days;
   const popupMessage =
