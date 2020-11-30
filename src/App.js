@@ -59,7 +59,8 @@ function App() {
         <header>
           <img
             id="logo"
-            src="/STA_Christmas_20.svg"
+            src="/STA_santa_hat.png"
+            // src="/STA_Christmas_20.svg"
             alt="Scottish Tech Army Christmas Logo"
           />
           <span className="title">
