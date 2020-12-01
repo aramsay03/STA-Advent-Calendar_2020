@@ -2,29 +2,19 @@
   display: flex;
   justify-content: center;
   align-content: center;
-  width: 50vw;
-  height: 40vw;
+  margin: 0;
+}
+
+.clue {
+  font-size: 12px;
+}
+
+.direction .header {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+div.clues {
+  height: 50vh;
   overflow-y: scroll;
-}
-
-.crossword-container {
-  position: relative;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 10.6px;
-  overflow: auto;
-  max-height: 64vh;
-}
-
-.crossword {
-  max-height: 100px;
-}
-.grid {
-  margin-left: 2%;
-}
-
-.direction > h3 {
-  font-size: 18px;
-  text-decoration: underline;
 }

@@ -14,12 +14,12 @@ import Popup from "./components/Popup/Popup";
 function App() {
   const [page, setPage] = useState("calendar-page");
   const [openWindow, setOpenWindow] = useState(null);
-  const [showPasswordEntry, setShowPasswordEntry] = useState(true); //<---- just set this to false until we go live
-  // const [currentDate, setCurrentDate] = useState("02 Dec 2020");
-  const [currentDate] = useState(moment().format("D MMM YYYY")); // <---- set to 24 Dec 2020 for development
+  const [showPasswordEntry, setShowPasswordEntry] = useState(false); //<---- just set this to false until we go live
+  const [currentDate, setCurrentDate] = useState("02 Dec 2020");
+  // const [currentDate] = useState(moment().format("D MMM YYYY")); // <---- set to 24 Dec 2020 for development
   const allDays = config.days;
   const popupMessage =
-    "You will need to wait for that day!";
+    "Aren't you a clever cookie!";
   const [showPopup, setShowPopup] = useState(false);
 
   useEffect(() => {
@@ -82,6 +82,8 @@ function App() {
                     openWindow={openWindow}
                     setOpenWindow={setOpenWindow}
                     allDays={allDays}
+                    showPopup={showPopup}
+                    togglePopup={togglePopup}
                   />
                 ) : (
                   <CalendarPage

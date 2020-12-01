@@ -2,16 +2,20 @@
   text-align: center;
   width: 100vw;
   height: 100vh;
-  background-color: black;
+  padding-top: 10px;
+}
+
+body {
   background-image: url("./images/Moon_Santa_STA.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  padding-top: 10px;
+  background-attachment: fixed;
 }
 
 .space-between-header {
   padding-top: 20px;
+  justify-content: center;
 }
 
 .App-main {
@@ -198,13 +202,13 @@ img {
     font-weight: bold;
   }
   #logo {
-    height: 3rem;
+    height: 4rem !important;
   }
   .App header h1 {
-    font-size: 0.75rem;
+    font-size: 1rem !important;
   }
   .App header h2 {
-    font-size: 0.5rem;
+    font-size: 0.75rem  !important;
   }
   .middle-col {
     padding: 0;
@@ -213,7 +217,13 @@ img {
 
 @media screen and (max-width: 320px) {
   #logo {
-    height: 2rem;
+    height: 3rem;
+  }
+  .App header h1 {
+    font-size: 0.75rem !important;
+  }
+  .App header h2 {
+    font-size: 0.5rem  !important;
   }
   Button.btn.btn-primary {
     font-size: 0.25rem !important;
