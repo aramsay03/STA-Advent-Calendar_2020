@@ -106,14 +106,13 @@ const data = {
   },
 };
 
-export default function CrosswordComponent({togglePopup, showPopup}) {
+export default function CrosswordComponent() {
 
   return (
     <div className="crossword-container">
       <Crossword
         data={data}
         theme={{ numberColor: 'black', highlightBackground: '#66B2B2' }}
-        onCrosswordCorrect={(a, b, c) => togglePopup(showPopup)}
       />
     </div>
   );

@@ -82,8 +82,6 @@ function App() {
                     openWindow={openWindow}
                     setOpenWindow={setOpenWindow}
                     allDays={allDays}
-                    showPopup={showPopup}
-                    togglePopup={togglePopup}
                   />
                 ) : (
                   <CalendarPage
