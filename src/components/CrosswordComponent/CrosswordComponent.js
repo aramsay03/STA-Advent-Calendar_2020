@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import Crossword from '@jaredreisinger/react-crossword';
 import './CrosswordComponent.css';
 
@@ -56,7 +56,7 @@ const data = {
   },
   down: {
     1: {
-      clue: "Favourite side dish for my curry, but only of you can't spell (4)",
+      clue: "Favourite side dish for my curry, but only if you can't spell (4)",
       answer: 'JIRA',
       row: 0,
       col: 16,
@@ -107,6 +107,7 @@ const data = {
 };
 
 export default function CrosswordComponent() {
+
   return (
     <div className="crossword-container">
       <Crossword
