@@ -14,13 +14,20 @@ import Popup from "./components/Popup/Popup";
 function App() {
   const [page, setPage] = useState("calendar-page");
   const [openWindow, setOpenWindow] = useState(null);
+  
+  // For Production
   const [showPasswordEntry, setShowPasswordEntry] = useState(true); //<---- just set this to false until we go live
-  // const [currentDate, setCurrentDate] = useState("02 Dec 2020");
   const [currentDate] = useState(moment().format("D MMM YYYY")); // <---- set to 24 Dec 2020 for development
+
+  // For Development
+  // const [showPasswordEntry, setShowPasswordEntry] = useState(false); //<---- Use for development only
+  // const [currentDate, setCurrentDate] = useState("02 Dec 2020");
+  
   const allDays = config.days;
   const popupMessage =
     "You will need to wait for that day!";
   const [showPopup, setShowPopup] = useState(false);
+  const [showPete, setShowPete] = useState(false);
 
   useEffect(() => {
     ActivateChristmasCheer();
@@ -40,7 +47,20 @@ function App() {
     }
   };
 
-  function togglePopup(showPopup) {
+  const CheckForPete = (returnDay) => {
+    console.log("return day:", returnDay)
+    const showPeteStatus = () => {
+      if ( returnDay === 3 ) {
+        return true
+      } else {
+        return false
+      }
+    }
+    setShowPete(showPeteStatus);
+  }
+
+  function togglePopup(showPopup, returnDay) {
+    CheckForPete(returnDay);
     const popupStatus = () => {
       if (showPopup === true) {
         return false;
@@ -55,11 +75,18 @@ function App() {
     <div>
       <div className="App">
         <header>
-          <img
+          {showPete === true ? (
+              <img src="/assets/Pete-Head.gif" alt="Pete" id="logo" />
+              ) : <img
+              id="logo"
+              src="/STA_Christmas20Official2.png"
+              alt="Scottish Tech Army Christmas Logo"
+          />}
+          {/* <img
             id="logo"
             src="/STA_Christmas20Official2.png"
             alt="Scottish Tech Army Christmas Logo"
-          />
+          /> */}
           <span className="title">
             <h1>SCOTTISH TECH ARMY</h1>
             <h2>Advent Calendar 2020</h2>

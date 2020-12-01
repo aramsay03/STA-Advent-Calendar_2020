@@ -30,11 +30,12 @@ function CalendarPage({
       );
     // } else if (day.Date > currentDate) {
     } else if (moment(day.Date).isAfter(currentDate) === true) {
+      const returnDay = day.day;
       return (
         <img
           src={"assets/Advent" + day.day + ".svg"}
           alt=""
-          onClick={() => togglePopup(showPopup)}
+          onClick={() => togglePopup(showPopup, returnDay)}
           className="calendar-window"
         />
       );
