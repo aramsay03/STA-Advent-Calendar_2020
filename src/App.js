@@ -19,7 +19,7 @@ function App() {
   // const [currentDate] = useState(moment().format("D MMM YYYY")); // <---- set to 24 Dec 2020 for development
   const allDays = config.days;
   const popupMessage =
-    "Aren't you a clever cookie!";
+    "You will need to wait for that day!";
   const [showPopup, setShowPopup] = useState(false);
 
   useEffect(() => {
@@ -82,8 +82,6 @@ function App() {
                     openWindow={openWindow}
                     setOpenWindow={setOpenWindow}
                     allDays={allDays}
-                    showPopup={showPopup}
-                    togglePopup={togglePopup}
                   />
                 ) : (
                   <CalendarPage

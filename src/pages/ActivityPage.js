@@ -8,7 +8,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
 
-function ActivityPage({ setPage, openWindow, setOpenWindow, currentDate, showPopup, togglePopup }) {
+function ActivityPage({ setPage, openWindow, setOpenWindow, currentDate }) {
   function handleClick() {
     setOpenWindow(null);
     setPage("calendar-page");
@@ -38,8 +38,6 @@ function ActivityPage({ setPage, openWindow, setOpenWindow, currentDate, showPop
     } else if (openWindow.component === "CrosswordComponent") {
       return (
         <CrosswordComponent
-          togglePopup={togglePopup}
-          showPopup={showPopup}
         />
       );
     } else {
