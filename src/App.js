@@ -16,12 +16,12 @@ function App() {
   const [openWindow, setOpenWindow] = useState(null);
   
   // For Production
-  const [showPasswordEntry, setShowPasswordEntry] = useState(true); //<---- just set this to false until we go live
-  const [currentDate] = useState(moment().format("D MMM YYYY")); // <---- set to 24 Dec 2020 for development
+  // const [showPasswordEntry, setShowPasswordEntry] = useState(true); //<---- just set this to false until we go live
+  // const [currentDate] = useState(moment().format("D MMM YYYY")); // <---- set to 24 Dec 2020 for development
 
   // For Development
-  // const [showPasswordEntry, setShowPasswordEntry] = useState(false); //<---- Use for development only
-  // const [currentDate, setCurrentDate] = useState("08 Dec 2020");
+  const [showPasswordEntry, setShowPasswordEntry] = useState(false); //<---- Use for development only
+  const [currentDate, setCurrentDate] = useState("02 Dec 2020");
   
   const allDays = config.days;
   const popupMessage =
@@ -48,9 +48,9 @@ function App() {
   };
 
   const CheckForPete = (returnDay) => {
-    console.log("return day:", returnDay)
+    // console.log("return day:", returnDay)
     const showPeteStatus = () => {
-      if ( returnDay === 3 ) {
+      if ( returnDay === 21 ) {
         return true
       } else {
         return false
@@ -75,18 +75,11 @@ function App() {
     <div>
       <div className="App">
         <header>
-          {showPete === true ? (
-              <img src="/assets/Pete-Head.gif" alt="Pete" id="logo" />
-              ) : <img
-              id="logo"
-              src="/STA_Christmas20Official2.png"
-              alt="Scottish Tech Army Christmas Logo"
-          />}
-          {/* <img
+          <img
             id="logo"
             src="/STA_Christmas20Official2.png"
             alt="Scottish Tech Army Christmas Logo"
-          /> */}
+          />
           <span className="title">
             <h1>SCOTTISH TECH ARMY</h1>
             <h2>Advent Calendar 2020</h2>
@@ -98,7 +91,7 @@ function App() {
           />
         </header>
         <ActivateChristmasCheer />
-        <Snowflakes />
+        <Snowflakes showPete={showPete} />
         <main className={showPasswordEntry ? "App-main" : null}>
           <Container fluid>
             <Row>
