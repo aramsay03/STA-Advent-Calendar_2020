@@ -52,7 +52,8 @@
       "day": 5,
       "activity": "Edinburgh Community Food Recipe Videos",
       "component": "VideoPlayer",
-      "urls": ["https://www.youtube.com/watch?v=iBbEl2G0hwo"]
+      "urls": ["https://www.youtube.com/watch?v=iBbEl2G0hwo"],
+      "instructions": "Instructions for challenge."
     },
     {
       "#": 8,
@@ -138,7 +139,7 @@
       "activity": "Outdoor Photography Challenge",
       "component": "PhotoChallengeComponent",
       "image": "assets/FromSTAWithLove.png",
-      "instructions": "Instructions for challenge."
+      "instructions": "There’s nothing like a breath of fresh air to clear the mind and soothe the spirit. Take a trip outside and send us a photo from round your way. Keep it landscape and keep it festive! Best one joins the Wall of Awesome."
     },
     {
       "#": 19,
