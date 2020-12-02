@@ -48,7 +48,7 @@ function App() {
   };
 
   const CheckForPete = (returnDay) => {
-    console.log("return day:", returnDay)
+    // console.log("return day:", returnDay)
     const showPeteStatus = () => {
       if ( returnDay === 3 ) {
         return true
@@ -60,7 +60,7 @@ function App() {
   }
 
   function togglePopup(showPopup, returnDay) {
-    CheckForPete(returnDay);
+    // CheckForPete(returnDay);
     const popupStatus = () => {
       if (showPopup === true) {
         return false;
@@ -75,18 +75,18 @@ function App() {
     <div>
       <div className="App">
         <header>
-          {showPete === true ? (
+          {/* {showPete === true ? (
               <img src="/assets/Pete-Head.gif" alt="Pete" id="logo" />
               ) : <img
               id="logo"
               src="/STA_Christmas20Official2.png"
               alt="Scottish Tech Army Christmas Logo"
-          />}
-          {/* <img
+          />} */}
+          <img
             id="logo"
             src="/STA_Christmas20Official2.png"
             alt="Scottish Tech Army Christmas Logo"
-          /> */}
+          />
           <span className="title">
             <h1>SCOTTISH TECH ARMY</h1>
             <h2>Advent Calendar 2020</h2>
