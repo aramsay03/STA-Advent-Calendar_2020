@@ -29,7 +29,7 @@ const data = {
       col: 0,
     },
     11: {
-      clue: 'Al crochets myths but loves it here (11)',
+      clue: 'Al crochets myths but loves it here (16)',
       answer: 'SCOTTISHTECHARMY',
       row: 13,
       col: 2,

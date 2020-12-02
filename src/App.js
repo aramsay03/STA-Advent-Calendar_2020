@@ -21,7 +21,7 @@ function App() {
 
   // For Development
   // const [showPasswordEntry, setShowPasswordEntry] = useState(false); //<---- Use for development only
-  // const [currentDate, setCurrentDate] = useState("02 Dec 2020");
+  // const [currentDate, setCurrentDate] = useState("08 Dec 2020");
   
   const allDays = config.days;
   const popupMessage =
