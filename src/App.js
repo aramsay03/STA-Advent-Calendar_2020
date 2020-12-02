@@ -16,7 +16,6 @@ function App() {
   const [openWindow, setOpenWindow] = useState(null);
 
   // For Production
-<<<<<<< HEAD
   // const [showPasswordEntry, setShowPasswordEntry] = useState(true); //<---- just set this to false until we go live
   // const [currentDate] = useState(moment().format("D MMM YYYY")); // <---- set to 24 Dec 2020 for development
 
@@ -24,15 +23,6 @@ function App() {
   const [showPasswordEntry, setShowPasswordEntry] = useState(false); //<---- Use for development only
   const [currentDate, setCurrentDate] = useState("02 Dec 2020");
   
-=======
-  const [showPasswordEntry, setShowPasswordEntry] = useState(true);
-  const [currentDate] = useState(moment().format("D MMM YYYY"));
-
-  // For Development
-  // const [showPasswordEntry, setShowPasswordEntry] = useState(false); //<---- Use for development only
-  // const [currentDate, setCurrentDate] = useState("03 Dec 2020");
-
->>>>>>> main
   const allDays = config.days;
   const popupMessage =
     "You will need to wait for that day!";
@@ -85,16 +75,6 @@ function App() {
     <div>
       <div className="App">
         <header>
-<<<<<<< HEAD
-=======
-          {/* {showPete === true ? (
-              <img src="/assets/Pete-Head.gif" alt="Pete" id="logo" />
-              ) : <img
-              id="logo"
-              src="/STA_Christmas20Official2.png"
-              alt="Scottish Tech Army Christmas Logo"
-          />} */}
->>>>>>> main
           <img
             id="logo"
             src="/STA_Christmas20Official2.png"
