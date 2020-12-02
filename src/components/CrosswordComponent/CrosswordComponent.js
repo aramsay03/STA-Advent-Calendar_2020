@@ -68,7 +68,7 @@ const data = {
       col: 7,
     },
     3: {
-      clue: 'A fishy new way to keep yout feet and your money nearby (4)',
+      clue: 'A fishy new way to keep your feet and your money nearby (4)',
       answer: 'SOLE',
       row: 2,
       col: 11,
