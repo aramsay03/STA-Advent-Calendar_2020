@@ -18,7 +18,7 @@ function CarouselComponent({day}) {
 
   return (
     <Col>
-      <Carousel>
+      <Carousel interval={null}>
         {carouselPages}
       </Carousel>
     </Col>
@@ -26,28 +26,3 @@ function CarouselComponent({day}) {
 }
 
 export default CarouselComponent;
-
-// <Carousel.Item>
-//   <img
-//     className="d-block w-100"
-//     src="assets/christmas-cake-992651_640.jpg"
-//     alt="Third slide"
-//   />
-//
-//   <Carousel.Caption className="carousel-caption">
-//     <h3>Christmas Recipe 2</h3>
-//     <p>Photo submitted by Jack Frost</p>
-//   </Carousel.Caption>
-// </Carousel.Item>
-// <Carousel.Item>
-//   <img
-//     className="d-block w-100"
-//     src="assets/christmas-cookies-1051884_640.jpg"
-//     alt="Third slide"
-//   />
-//
-//   <Carousel.Caption>
-//   <h3>Christmas Recipe 3</h3>
-//   <p>Photo submitted by Rudolph</p>
-//   </Carousel.Caption>
-// </Carousel.Item>
