@@ -16,6 +16,7 @@ function PhotoChallengeComponent({instructions, image}) {
           />
         </Col>
         <Col className="challenge-text" md={6}>
+          <h3>Instructions</h3>
           <p>{instructions}</p>
         </Col>
       </Row>
