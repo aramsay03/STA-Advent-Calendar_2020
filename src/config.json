@@ -44,7 +44,8 @@
       "day": 8,
       "activity": "Whisky Kiss Music Video",
       "component": "VideoPlayer",
-      "urls": ["https://www.youtube.com/watch?v=U6UabZV94is"]
+      "urls": ["https://www.youtube.com/watch?v=U6UabZV94is"],
+      "instructions": "Kirsty McIntosh was looking for an upbeat, Scottish, techy tune for the podcast and co-host Graham Johnston let slip his brother-in-law had a band, Whisky Kiss. He gave us permission to use 'Jock's Revenge (Hold)'. We know you like it, so here's a chance to enjoy their great video and hear the whole song. Not for nothing have they been described as: 'The best ceilidh band in the World' (at HebCelt). Thank you Whisky Kiss!"
     },
     {
       "#": 7,
@@ -53,7 +54,7 @@
       "activity": "Edinburgh Community Food Recipe Videos",
       "component": "VideoPlayer",
       "urls": ["https://www.youtube.com/watch?v=iBbEl2G0hwo"],
-      "instructions": "Instructions for challenge."
+      "instructions": "They say an army marches on its stomach. At the Scottish Tech Army, volunteers Kim Anderson and Riccy Clark worked with Edinburgh Community Food to help edit recipe videos when they couldn't hold cookery classes. Here's one for you to try - post your (landscape) photos in the #advent-2020 channel on Slack, or for added fun why not set up a Zoom dinner party with some of your fellow volunteers? Bon Appetit!"
     },
     {
       "#": 8,

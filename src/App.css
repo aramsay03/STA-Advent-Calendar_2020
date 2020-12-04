@@ -103,6 +103,7 @@ body {
   padding: 10px 0;
   width: 50vw;
   margin: 0;
+  border-radius: 5px;
 }
 
 Button.btn.btn-primary {
@@ -149,7 +150,7 @@ img {
 
 @media screen and (max-width: 1150px) {
   .activity-row {
-    width: 100vw;
+    /* width: 100vw; */
   }
 }
 
@@ -183,6 +184,10 @@ img {
   }
   .App header h2 {
     font-size: 1.25rem;
+  }
+  .activity-row {
+    width: 100vw;
+    border-radius: 0px;
   }
 }
 

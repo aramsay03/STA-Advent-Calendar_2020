@@ -16,12 +16,12 @@ function App() {
   const [openWindow, setOpenWindow] = useState(null);
 
   // For Production
-  const [showPasswordEntry, setShowPasswordEntry] = useState(true);
-  const [currentDate] = useState(moment().format("D MMM YYYY"));
+  // const [showPasswordEntry, setShowPasswordEntry] = useState(true);
+  // const [currentDate] = useState(moment().format("D MMM YYYY"));
 
   // For Development
-  // const [showPasswordEntry, setShowPasswordEntry] = useState(false); //<---- Use for development only
-  // const [currentDate, setCurrentDate] = useState("04 Dec 2020");
+  const [showPasswordEntry, setShowPasswordEntry] = useState(false); //<---- Use for development only
+  const [currentDate, setCurrentDate] = useState("08 Dec 2020");
 
   const allDays = config.days;
   const popupMessage =

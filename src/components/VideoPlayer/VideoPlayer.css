@@ -18,6 +18,13 @@
   opacity: 0;
 }
 
+.video-instructions {
+  display: inline-block;
+  /* margin: 20px auto; */
+  max-width: 640px;
+  /* justify-self: center; */
+}
+
 @keyframes videoFadeIn {
   from {
     opacity: 0;
@@ -83,5 +90,9 @@
   .video-player {
     width: 100vw !important;
     height: 180px !important;
+  }
+  .video-instructions {
+    padding-left: 1em;
+    padding-right: 1em;
   }
 }

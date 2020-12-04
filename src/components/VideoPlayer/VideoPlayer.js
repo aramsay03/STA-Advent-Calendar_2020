@@ -24,7 +24,9 @@ function VideoPlayer({ url, instructions }) {
           animation: videoLoaded ? "videoFadeIn 0.5s 0.5s ease forwards" : "",
         }}
       />
-      <p>{instructions}</p>
+      <div className="video-instructions">
+        <p>{instructions}</p>
+      </div>
     </>
   );
 }
