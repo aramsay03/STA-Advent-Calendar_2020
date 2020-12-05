@@ -16,11 +16,11 @@ function App() {
   const [openWindow, setOpenWindow] = useState(null);
 
   // For Production
-  const [showPasswordEntry, setShowPasswordEntry] = useState(true);
+  // const [showPasswordEntry, setShowPasswordEntry] = useState(true);
   const [currentDate] = useState(moment().format("D MMM YYYY"));
 
   // For Development
-  // const [showPasswordEntry, setShowPasswordEntry] = useState(false); //<---- Use for development only
+  const [showPasswordEntry, setShowPasswordEntry] = useState(false); //<---- Use for development only
   // const [currentDate, setCurrentDate] = useState("08 Dec 2020");
 
   const allDays = config.days;
@@ -50,8 +50,8 @@ function App() {
   const CheckForPete = (returnDay) => {
     // console.log("return day:", returnDay)
     const showPeteStatus = () => {
-      if ( returnDay === 3 ) {
-        return true
+      if ( returnDay === 21 ) {
+        return true;
       } else {
         return false
       }
@@ -60,7 +60,7 @@ function App() {
   }
 
   function togglePopup(showPopup, returnDay) {
-    // CheckForPete(returnDay);
+    CheckForPete(returnDay);
     const popupStatus = () => {
       if (showPopup === true) {
         return false;
@@ -74,6 +74,8 @@ function App() {
   return (
     <div>
       <div className="App">
+      {/* <div className="hiddenPete"><img src="/assets/Pete-tree.gif" alt="Pete" id="treepete" /></div> */}
+        {showPete === true ? ( <img className="hiddenPete" style={{visibility: "visible"}} src="/assets/Pete-tree.gif" alt="Pete" id="treepete" /> ) : null }
         <header>
           {/* {showPete === true ? (
               <img src="/assets/Pete-Head.gif" alt="Pete" id="logo" />

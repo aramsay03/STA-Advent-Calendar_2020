@@ -64,6 +64,15 @@ body {
   margin-left: 10px;
 }
 
+.hiddenPete {
+  visibility: hidden;
+  position: absolute;
+  height: 255px;
+  z-index: -1;
+  bottom: 0px;
+  right: 0px;
+}
+
 .calendar-window {
   display: flex;
   flex-direction: column;
