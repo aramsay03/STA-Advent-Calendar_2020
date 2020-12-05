@@ -108,7 +108,6 @@ function App() {
                     setPage={setPage}
                     allDays={allDays}
                     currentDate={currentDate}
-                    openWindow={openWindow}
                     setOpenWindow={setOpenWindow}
                     togglePopup={togglePopup}
                     showPopup={showPopup}

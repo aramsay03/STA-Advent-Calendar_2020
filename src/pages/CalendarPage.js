@@ -7,7 +7,6 @@ import moment from "moment";
 
 function CalendarPage({
   setPage,
-  openWindow,
   setOpenWindow,
   currentDate,
   allDays,
