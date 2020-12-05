@@ -7,19 +7,24 @@ import moment from "moment";
 
 function CalendarPage({
   setPage,
+  openWindow,
   setOpenWindow,
   currentDate,
   allDays,
   togglePopup,
   showPopup,
+  setShowPete
 }) {
+
   function handleClick(day) {
+    if (day.day === 7) {
+      setShowPete(true);
+    }
     setOpenWindow(day);
     setPage("activity-page");
   }
 
   function calendarWindow(day) {
-    // if (day.Date === currentDate) {
     if (moment(day.Date).isSame(currentDate) === true) {
       return (
         <img
@@ -28,14 +33,12 @@ function CalendarPage({
           onClick={() => handleClick(day)}
         />
       );
-    // } else if (day.Date > currentDate) {
     } else if (moment(day.Date).isAfter(currentDate) === true) {
-      const returnDay = day.day;
       return (
         <img
           src={"assets/Advent" + day.day + ".svg"}
           alt=""
-          onClick={() => togglePopup(showPopup, returnDay)}
+          onClick={() => togglePopup(showPopup)}
           className="calendar-window"
         />
       );

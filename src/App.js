@@ -21,8 +21,8 @@ function App() {
 
   // For Development
   const [showPasswordEntry, setShowPasswordEntry] = useState(false); //<---- Use for development only
-  const [currentDate, setCurrentDate] = useState("02 Dec 2020");
-  
+  const [currentDate, setCurrentDate] = useState("07 Dec 2020");
+
   const allDays = config.days;
   const popupMessage =
     "You will need to wait for that day!";
@@ -47,20 +47,20 @@ function App() {
     }
   };
 
-  const CheckForPete = (returnDay) => {
-    // console.log("return day:", returnDay)
-    const showPeteStatus = () => {
-      if ( returnDay === 21 ) {
-        return true
-      } else {
-        return false
-      }
-    }
-    setShowPete(showPeteStatus);
-  }
+  // const checkForPete = (returnDay) => {
+  //   // console.log("return day:", returnDay)
+  //   const showPeteStatus = () => {
+  //     if ( returnDay === 21 ) {
+  //       return true
+  //     } else {
+  //       return false
+  //     }
+  //   }
+  //   setShowPete(showPeteStatus);
+  // }
 
-  function togglePopup(showPopup, returnDay) {
-    // CheckForPete(returnDay);
+  function togglePopup(showPopup) {
+    // checkForPete(returnDay);
     const popupStatus = () => {
       if (showPopup === true) {
         return false;
@@ -108,9 +108,11 @@ function App() {
                     setPage={setPage}
                     allDays={allDays}
                     currentDate={currentDate}
+                    openWindow={openWindow}
                     setOpenWindow={setOpenWindow}
                     togglePopup={togglePopup}
                     showPopup={showPopup}
+                    setShowPete={setShowPete}
                   />
                 )}
               </Col>
