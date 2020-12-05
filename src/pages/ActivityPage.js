@@ -8,9 +8,16 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
 
-function ActivityPage({ setPage, openWindow, setOpenWindow, currentDate }) {
+function ActivityPage({
+  setPage,
+  openWindow,
+  setOpenWindow,
+  currentDate,
+  setShowPete,
+}) {
   function handleClick() {
     setOpenWindow(null);
+    setShowPete(false);
     setPage("calendar-page");
   }
 
@@ -27,7 +34,7 @@ function ActivityPage({ setPage, openWindow, setOpenWindow, currentDate }) {
     if (openWindow.component === "VideoPlayer") {
       return <VideoPlayer url={openWindow.urls[0]} />;
     } else if (openWindow.component === "CarouselComponent") {
-      return <CarouselComponent day={openWindow}/>;
+      return <CarouselComponent day={openWindow} />;
     } else if (openWindow.component === "PhotoChallengeComponent") {
       return (
         <PhotoChallengeComponent
@@ -36,10 +43,7 @@ function ActivityPage({ setPage, openWindow, setOpenWindow, currentDate }) {
         />
       );
     } else if (openWindow.component === "CrosswordComponent") {
-      return (
-        <CrosswordComponent
-        />
-      );
+      return <CrosswordComponent />;
     } else {
       return <></>;
     }
@@ -49,7 +53,9 @@ function ActivityPage({ setPage, openWindow, setOpenWindow, currentDate }) {
     <Container className="activity-page-container">
       <Row className="activity-row">
         <Col sm={12}>{activityComponentHeader()}</Col>
-        <Col className="middle-col" md={12}>{activityComponent()}</Col>
+        <Col className="middle-col" md={12}>
+          {activityComponent()}
+        </Col>
         <Col sm={12}>
           <Button onClick={handleClick}>Back</Button>
         </Col>

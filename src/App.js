@@ -102,6 +102,7 @@ function App() {
                     openWindow={openWindow}
                     setOpenWindow={setOpenWindow}
                     allDays={allDays}
+                    setShowPete={setShowPete}
                   />
                 ) : (
                   <CalendarPage
