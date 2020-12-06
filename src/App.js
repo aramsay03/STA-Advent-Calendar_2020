@@ -5,8 +5,11 @@ import config from "./config.json";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import Button from "react-bootstrap/Button";
+import Header from "./components/Header/Header";
 import CalendarPage from "./pages/CalendarPage";
 import ActivityPage from "./pages/ActivityPage";
+import WallOfAwesome from "./pages/WallOfAwesome";
 import Snowflakes from "./components/Snowflakes/Snowflakes";
 import Login from "./components/Login";
 import Popup from "./components/Popup/Popup";
@@ -16,16 +19,15 @@ function App() {
   const [openWindow, setOpenWindow] = useState(null);
 
   // For Production
-  const [showPasswordEntry, setShowPasswordEntry] = useState(true);
-  const [currentDate] = useState(moment().format("D MMM YYYY"));
+  // const [showPasswordEntry, setShowPasswordEntry] = useState(true);
+  // const [currentDate] = useState(moment().format("D MMM YYYY"));
 
   // For Development
-  // const [showPasswordEntry, setShowPasswordEntry] = useState(false); //<---- Use for development only
-  // const [currentDate, setCurrentDate] = useState("08 Dec 2020");
+  const [showPasswordEntry, setShowPasswordEntry] = useState(false); //<---- Use for development only
+  const [currentDate, setCurrentDate] = useState("24 Dec 2020");
 
   const allDays = config.days;
-  const popupMessage =
-    "You will need to wait for that day!";
+  const popupMessage = "You will need to wait for that day!";
   const [showPopup, setShowPopup] = useState(false);
   const [showPete, setShowPete] = useState(false);
 
@@ -50,79 +52,77 @@ function App() {
   const CheckForPete = (returnDay) => {
     // console.log("return day:", returnDay)
     const showPeteStatus = () => {
-      if ( returnDay === 21 ) {
+      if (returnDay === 21) {
         return true;
       } else {
-        return false
+        return false;
       }
-    }
+    };
     setShowPete(showPeteStatus);
-  }
+  };
 
   function togglePopup(showPopup, returnDay) {
-    CheckForPete(returnDay);
+    {
+      /*CheckForPete(returnDay);*/
+    }
     const popupStatus = () => {
       if (showPopup === true) {
         return false;
       } else {
         return true;
       }
-    }
+    };
     setShowPopup(popupStatus);
+  }
+
+  function pageInView(page) {
+    if (page === "activity-page") {
+      return (
+        <ActivityPage
+          setPage={setPage}
+          openWindow={openWindow}
+          setOpenWindow={setOpenWindow}
+          allDays={allDays}
+        />
+      );
+    } else if (page === "calendar-page") {
+      return (
+        <CalendarPage
+          setPage={setPage}
+          allDays={allDays}
+          currentDate={currentDate}
+          setOpenWindow={setOpenWindow}
+          togglePopup={togglePopup}
+          showPopup={showPopup}
+        />
+      );
+    } else if (page === "wall-of-awesome") {
+      return <WallOfAwesome />;
+    } else {
+      return <></>;
+    }
   }
 
   return (
     <div>
       <div className="App">
-      {/* <div className="hiddenPete"><img src="/assets/Pete-tree.gif" alt="Pete" id="treepete" /></div> */}
-        {showPete === true ? ( <img className="hiddenPete" style={{visibility: "visible"}} src="/assets/Pete-tree.gif" alt="Pete" id="treepete" /> ) : null }
-        <header>
-          {/* {showPete === true ? (
-              <img src="/assets/Pete-Head.gif" alt="Pete" id="logo" />
-              ) : <img
-              id="logo"
-              src="/STA_Christmas20Official2.png"
-              alt="Scottish Tech Army Christmas Logo"
-          />} */}
+        {/* <div className="hiddenPete"><img src="/assets/Pete-tree.gif" alt="Pete" id="treepete" /></div> */}
+        {showPete === true ? (
           <img
-            id="logo"
-            src="/STA_Christmas20Official2.png"
-            alt="Scottish Tech Army Christmas Logo"
+            className="hiddenPete"
+            style={{ visibility: "visible" }}
+            src="/assets/Pete-tree.gif"
+            alt="Pete"
+            id="treepete"
           />
-          <span className="title">
-            <h1>SCOTTISH TECH ARMY</h1>
-            <h2>Advent Calendar 2020</h2>
-          </span>
-          <img
-            id="logo"
-            src="/On-It.gif"
-            alt="Scottish Tech Army On It Logo"
-          />
-        </header>
+        ) : null}
+        <Header page={page} setPage={setPage} />
         <ActivateChristmasCheer />
         <Snowflakes />
         <main className={showPasswordEntry ? "App-main" : null}>
           <Container fluid>
             <Row>
-              <Col className="space-between-header">
-                {page === "activity-page" ? (
-                  <ActivityPage
-                    setPage={setPage}
-                    openWindow={openWindow}
-                    setOpenWindow={setOpenWindow}
-                    allDays={allDays}
-                  />
-                ) : (
-                  <CalendarPage
-                    setPage={setPage}
-                    allDays={allDays}
-                    currentDate={currentDate}
-                    setOpenWindow={setOpenWindow}
-                    togglePopup={togglePopup}
-                    showPopup={showPopup}
-                  />
-                )}
-              </Col>
+              <Col className="space-between-header">{pageInView(page)}</Col>
               {showPopup ? (
                 <Popup
                   text={popupMessage}
