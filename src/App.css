@@ -23,47 +23,6 @@ body {
   pointer-events: none;
 }
 
-.App header {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  width: 100vw;
-  height: 10vh;
-}
-
-.App header .title {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-}
-
-.App header h1 {
-  font-size: 2rem;
-  color: #ffffff;
-  font-weight: bold;
-}
-
-.App header h2 {
-  color: #ffffff;
-  font-weight: bold;
-  margin-bottom: 0;
-}
-
-.App header h1,
-.App header h2 {
-  color: #f2f2f2;
-  font-weight: bold;
-}
-
-#logo {
-  border-radius: 90px;
-  background-color: #fff;
-  height: 85px;
-  margin-right: 10px;
-  margin-left: 10px;
-}
-
 .hiddenPete {
   visibility: hidden;
   position: absolute;
@@ -99,7 +58,8 @@ body {
   border-radius: 50%;
 }
 
-.activity-page-container {
+.activity-page-container,
+.awesome-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -107,12 +67,22 @@ body {
   color: white;
 }
 
-.activity-row {
+.activity-row,
+.awesome {
   background-color: rgba(60, 60, 59, 0.75);
   padding: 10px 0;
-  width: 50vw;
+  height: auto;
   margin: 0;
   border-radius: 5px;
+}
+
+.activity-row {
+  width: 50vw;
+}
+
+.awesome {
+  width: 70vw;
+  height: 70vh;
 }
 
 Button.btn.btn-primary {
@@ -121,8 +91,9 @@ Button.btn.btn-primary {
   border-color: white;
 }
 
-img {
-  height: 500px;
+.wall-of-awesome-image {
+  height: 50vh;
+  width: 50vw;
 }
 
 .carousel-caption {
@@ -160,7 +131,7 @@ img {
 
 @media screen and (max-width: 1150px) {
   .activity-row {
-    /* width: 100vw; */
+    width: 100vw;
   }
 }
 
@@ -195,6 +166,7 @@ img {
   .App header h2 {
     font-size: 1.25rem;
   }
+  .awesome,
   .activity-row {
     width: 100vw;
     border-radius: 0px;
@@ -227,6 +199,22 @@ img {
   }
   .middle-col {
     padding: 0;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .wall-of-awesome-image {
+    height: 50vh;
+    width: 100vw;
+  }
+  .awesome {
+    height: 65vh;
+  }
+  .woa-carousel h1 {
+    font-size: 1rem;
+  }
+  .woa-carousel h2 {
+    font-size: 0.75rem;
   }
 }
 

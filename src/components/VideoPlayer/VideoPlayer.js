@@ -25,7 +25,7 @@ function VideoPlayer({ url, instructions }) {
         }}
       />
       <div className="video-instructions">
-        <p>{instructions}</p>
+        {instructions}
       </div>
     </>
   );
