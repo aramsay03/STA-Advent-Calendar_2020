@@ -129,6 +129,12 @@ Button.btn.btn-primary {
   }
 }
 
+@media screen and (max-width: 1150px) {
+  .activity-row {
+    width: 100vw;
+  }
+}
+
 @media screen and (max-width: 1024px) {
   .calendar-window {
     height: 17vh;
