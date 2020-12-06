@@ -16,8 +16,8 @@ function App() {
   const [openWindow, setOpenWindow] = useState(null);
 
   // For Production
-  const [showPasswordEntry, setShowPasswordEntry] = useState(true);
-  const [currentDate] = useState(moment().format("D MMM YYYY"));
+  const [showPasswordEntry, setShowPasswordEntry] = useState(true); //<---- just set this to false until we go live
+  const [currentDate] = useState(moment().format("D MMM YYYY")); // <---- set to 24 Dec 2020 for development
 
   // For Development
   // const [showPasswordEntry, setShowPasswordEntry] = useState(false); //<---- Use for development only
@@ -47,20 +47,20 @@ function App() {
     }
   };
 
-  const CheckForPete = (returnDay) => {
-    // console.log("return day:", returnDay)
-    const showPeteStatus = () => {
-      if ( returnDay === 21 ) {
-        return true;
-      } else {
-        return false
-      }
-    }
-    setShowPete(showPeteStatus);
-  }
+  // const checkForPete = (returnDay) => {
+  //   // console.log("return day:", returnDay)
+  //   const showPeteStatus = () => {
+  //     if ( returnDay === 21 ) {
+  //       return true
+  //     } else {
+  //       return false
+  //     }
+  //   }
+  //   setShowPete(showPeteStatus);
+  // }
 
-  function togglePopup(showPopup, returnDay) {
-    CheckForPete(returnDay);
+  function togglePopup(showPopup) {
+    // checkForPete(returnDay);
     const popupStatus = () => {
       if (showPopup === true) {
         return false;
@@ -77,13 +77,6 @@ function App() {
       {/* <div className="hiddenPete"><img src="/assets/Pete-tree.gif" alt="Pete" id="treepete" /></div> */}
         {showPete === true ? ( <img className="hiddenPete" style={{visibility: "visible"}} src="/assets/Pete-tree.gif" alt="Pete" id="treepete" /> ) : null }
         <header>
-          {/* {showPete === true ? (
-              <img src="/assets/Pete-Head.gif" alt="Pete" id="logo" />
-              ) : <img
-              id="logo"
-              src="/STA_Christmas20Official2.png"
-              alt="Scottish Tech Army Christmas Logo"
-          />} */}
           <img
             id="logo"
             src="/STA_Christmas20Official2.png"
@@ -100,7 +93,7 @@ function App() {
           />
         </header>
         <ActivateChristmasCheer />
-        <Snowflakes />
+        <Snowflakes showPete={showPete} />
         <main className={showPasswordEntry ? "App-main" : null}>
           <Container fluid>
             <Row>
@@ -111,6 +104,7 @@ function App() {
                     openWindow={openWindow}
                     setOpenWindow={setOpenWindow}
                     allDays={allDays}
+                    setShowPete={setShowPete}
                   />
                 ) : (
                   <CalendarPage
@@ -120,6 +114,7 @@ function App() {
                     setOpenWindow={setOpenWindow}
                     togglePopup={togglePopup}
                     showPopup={showPopup}
+                    setShowPete={setShowPete}
                   />
                 )}
               </Col>
