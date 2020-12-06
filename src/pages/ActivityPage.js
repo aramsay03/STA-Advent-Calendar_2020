@@ -25,9 +25,16 @@ function ActivityPage({ setPage, openWindow, setOpenWindow, currentDate }) {
 
   function activityComponent() {
     if (openWindow.component === "VideoPlayer") {
-      return <VideoPlayer url={openWindow.urls[0]} instructions={openWindow.instructions} />;
+      return (
+        <VideoPlayer
+          url={openWindow.urls[0]}
+          instructions={openWindow.instructions}
+        />
+      );
+    } else if (openWindow.component === "VideoRecorder") {
+      return <VideoRecorder />;
     } else if (openWindow.component === "CarouselComponent") {
-      return <CarouselComponent day={openWindow}/>;
+      return <CarouselComponent day={openWindow} />;
     } else if (openWindow.component === "PhotoChallengeComponent") {
       return (
         <PhotoChallengeComponent
@@ -36,10 +43,7 @@ function ActivityPage({ setPage, openWindow, setOpenWindow, currentDate }) {
         />
       );
     } else if (openWindow.component === "CrosswordComponent") {
-      return (
-        <CrosswordComponent
-        />
-      );
+      return <CrosswordComponent />;
     } else {
       return <></>;
     }
@@ -49,7 +53,9 @@ function ActivityPage({ setPage, openWindow, setOpenWindow, currentDate }) {
     <Container className="activity-page-container">
       <Row className="activity-row">
         <Col sm={12}>{activityComponentHeader()}</Col>
-        <Col className="middle-col" md={12}>{activityComponent()}</Col>
+        <Col className="middle-col" md={12}>
+          {activityComponent()}
+        </Col>
         <Col sm={12}>
           <Button onClick={handleClick}>Back</Button>
         </Col>
