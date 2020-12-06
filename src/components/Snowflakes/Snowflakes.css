@@ -165,3 +165,7 @@
     transform: translateX(80px);
   }
 }
+
+.pete-snowflake {
+  height: 50px;
+}

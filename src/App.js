@@ -18,13 +18,13 @@ function App() {
   const [page, setPage] = useState("calendar-page");
   const [openWindow, setOpenWindow] = useState(null);
 
-  // For Production
-  // const [showPasswordEntry, setShowPasswordEntry] = useState(true);
-  // const [currentDate] = useState(moment().format("D MMM YYYY"));
+  For Production
+  const [showPasswordEntry, setShowPasswordEntry] = useState(true); //<---- just set this to false until we go live
+  const [currentDate] = useState(moment().format("D MMM YYYY")); // <---- set to 24 Dec 2020 for development
 
-  // For Development
-  const [showPasswordEntry, setShowPasswordEntry] = useState(false); //<---- Use for development only
-  const [currentDate, setCurrentDate] = useState("24 Dec 2020");
+  // // For Development
+  // const [showPasswordEntry, setShowPasswordEntry] = useState(false); //<---- Use for development only
+  // const [currentDate, setCurrentDate] = useState("24 Dec 2020");
 
   const allDays = config.days;
   const popupMessage = "You will need to wait for that day!";
@@ -34,6 +34,17 @@ function App() {
   useEffect(() => {
     ActivateChristmasCheer();
   });
+
+  const CheckForPete = (returnDay) => {
+    const showPeteStatus = () => {
+      if (returnDay === 21) {
+        return true;
+      } else {
+        return false;
+      }
+    };
+    setShowPete(showPeteStatus);
+  };
 
   const ActivateChristmasCheer = () => {
     if (showPasswordEntry === true) {
@@ -49,22 +60,8 @@ function App() {
     }
   };
 
-  const CheckForPete = (returnDay) => {
-    // console.log("return day:", returnDay)
-    const showPeteStatus = () => {
-      if (returnDay === 21) {
-        return true;
-      } else {
-        return false;
-      }
-    };
-    setShowPete(showPeteStatus);
-  };
-
-  function togglePopup(showPopup, returnDay) {
-    {
-      /*CheckForPete(returnDay);*/
-    }
+  function togglePopup(showPopup) {
+    /*CheckForPete(returnDay);*/
     const popupStatus = () => {
       if (showPopup === true) {
         return false;
@@ -83,6 +80,7 @@ function App() {
           openWindow={openWindow}
           setOpenWindow={setOpenWindow}
           allDays={allDays}
+          setShowPete={setShowPete}
         />
       );
     } else if (page === "calendar-page") {
@@ -94,6 +92,7 @@ function App() {
           setOpenWindow={setOpenWindow}
           togglePopup={togglePopup}
           showPopup={showPopup}
+          setShowPete={setShowPete}
         />
       );
     } else if (page === "wall-of-awesome") {
@@ -106,19 +105,9 @@ function App() {
   return (
     <div>
       <div className="App">
-        {/* <div className="hiddenPete"><img src="/assets/Pete-tree.gif" alt="Pete" id="treepete" /></div> */}
-        {showPete === true ? (
-          <img
-            className="hiddenPete"
-            style={{ visibility: "visible" }}
-            src="/assets/Pete-tree.gif"
-            alt="Pete"
-            id="treepete"
-          />
-        ) : null}
         <Header page={page} setPage={setPage} />
         <ActivateChristmasCheer />
-        <Snowflakes />
+        <Snowflakes showPete={showPete} />
         <main className={showPasswordEntry ? "App-main" : null}>
           <Container fluid>
             <Row>
