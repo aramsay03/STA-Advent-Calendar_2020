@@ -32,7 +32,7 @@ function ActivityPage({
 
   function activityComponent() {
     if (openWindow.component === "VideoPlayer") {
-      return <VideoPlayer url={openWindow.urls[0]} />;
+      return <VideoPlayer url={openWindow.urls[0]} instructions={openWindow.instructions} />;
     } else if (openWindow.component === "CarouselComponent") {
       return <CarouselComponent day={openWindow} />;
     } else if (openWindow.component === "PhotoChallengeComponent") {

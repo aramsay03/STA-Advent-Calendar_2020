@@ -3,7 +3,7 @@ import "./VideoPlayer.css";
 import ReactPlayer from "react-player/lazy";
 import Container from "react-bootstrap/Container";
 
-function VideoPlayer({ url }) {
+function VideoPlayer({ url, instructions }) {
   const [videoLoaded, setVideoLoaded] = useState(false);
 
   return (
@@ -24,6 +24,9 @@ function VideoPlayer({ url }) {
           animation: videoLoaded ? "videoFadeIn 0.5s 0.5s ease forwards" : "",
         }}
       />
+      <div className="video-instructions">
+        <p>{instructions}</p>
+      </div>
     </>
   );
 }

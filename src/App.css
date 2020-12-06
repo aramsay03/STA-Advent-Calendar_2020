@@ -64,6 +64,15 @@ body {
   margin-left: 10px;
 }
 
+.hiddenPete {
+  visibility: hidden;
+  position: absolute;
+  height: 255px;
+  z-index: -1;
+  bottom: 0px;
+  right: 0px;
+}
+
 .calendar-window {
   display: flex;
   flex-direction: column;
@@ -103,6 +112,7 @@ body {
   padding: 10px 0;
   width: 50vw;
   margin: 0;
+  border-radius: 5px;
 }
 
 Button.btn.btn-primary {
@@ -126,6 +136,7 @@ img {
 }
 
 .challenge-text {
+  padding-top: 20px;
   background-color: #f2f2f2;
   margin: 0;
   color: #3C3C3B;
@@ -149,7 +160,7 @@ img {
 
 @media screen and (max-width: 1150px) {
   .activity-row {
-    width: 100vw;
+    /* width: 100vw; */
   }
 }
 
@@ -183,6 +194,10 @@ img {
   }
   .App header h2 {
     font-size: 1.25rem;
+  }
+  .activity-row {
+    width: 100vw;
+    border-radius: 0px;
   }
 }
 

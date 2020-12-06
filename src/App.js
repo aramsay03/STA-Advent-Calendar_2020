@@ -21,7 +21,7 @@ function App() {
 
   // For Development
   // const [showPasswordEntry, setShowPasswordEntry] = useState(false); //<---- Use for development only
-  // const [currentDate, setCurrentDate] = useState("07 Dec 2020");
+  // const [currentDate, setCurrentDate] = useState("08 Dec 2020");
 
   const allDays = config.days;
   const popupMessage =
@@ -74,6 +74,8 @@ function App() {
   return (
     <div>
       <div className="App">
+      {/* <div className="hiddenPete"><img src="/assets/Pete-tree.gif" alt="Pete" id="treepete" /></div> */}
+        {showPete === true ? ( <img className="hiddenPete" style={{visibility: "visible"}} src="/assets/Pete-tree.gif" alt="Pete" id="treepete" /> ) : null }
         <header>
           <img
             id="logo"
