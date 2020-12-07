@@ -1,10 +1,10 @@
 import React from "react";
 import "./VideoRecorder.css";
-import VideoRecorder from "react-video-recorder";
+import { VideoRecorder as ReactRecorder } from "react-video-recorder";
 
 function VideoRecorder() {
   return (
-    <VideoRecorder
+    <ReactRecorder
       onRecordingComplete={(videoBlob) => {
         // Do something with the video...
         console.log("videoBlob", videoBlob);

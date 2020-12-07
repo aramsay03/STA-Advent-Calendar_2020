@@ -21,11 +21,10 @@ function App() {
 
   // For Development
   // const [showPasswordEntry, setShowPasswordEntry] = useState(false); //<---- Use for development only
-  // const [currentDate, setCurrentDate] = useState("08 Dec 2020");
+  // const [currentDate, setCurrentDate] = useState("24 Dec 2020");
 
   const allDays = config.days;
-  const popupMessage =
-    "You will need to wait for that day!";
+  const popupMessage = "You will need to wait for that day!";
   const [showPopup, setShowPopup] = useState(false);
   const [showPete, setShowPete] = useState(false);
 
@@ -50,14 +49,14 @@ function App() {
   const CheckForPete = (returnDay) => {
     // console.log("return day:", returnDay)
     const showPeteStatus = () => {
-      if ( returnDay === 21 ) {
+      if (returnDay === 21) {
         return true;
       } else {
-        return false
+        return false;
       }
-    }
+    };
     setShowPete(showPeteStatus);
-  }
+  };
 
   function togglePopup(showPopup, returnDay) {
     CheckForPete(returnDay);
@@ -67,15 +66,23 @@ function App() {
       } else {
         return true;
       }
-    }
+    };
     setShowPopup(popupStatus);
   }
 
   return (
     <div>
       <div className="App">
-      {/* <div className="hiddenPete"><img src="/assets/Pete-tree.gif" alt="Pete" id="treepete" /></div> */}
-        {showPete === true ? ( <img className="hiddenPete" style={{visibility: "visible"}} src="/assets/Pete-tree.gif" alt="Pete" id="treepete" /> ) : null }
+        {/* <div className="hiddenPete"><img src="/assets/Pete-tree.gif" alt="Pete" id="treepete" /></div> */}
+        {showPete === true ? (
+          <img
+            className="hiddenPete"
+            style={{ visibility: "visible" }}
+            src="/assets/Pete-tree.gif"
+            alt="Pete"
+            id="treepete"
+          />
+        ) : null}
         <header>
           {/* {showPete === true ? (
               <img src="/assets/Pete-Head.gif" alt="Pete" id="logo" />
@@ -93,11 +100,7 @@ function App() {
             <h1>SCOTTISH TECH ARMY</h1>
             <h2>Advent Calendar 2020</h2>
           </span>
-          <img
-            id="logo"
-            src="/On-It.gif"
-            alt="Scottish Tech Army On It Logo"
-          />
+          <img id="logo" src="/On-It.gif" alt="Scottish Tech Army On It Logo" />
         </header>
         <ActivateChristmasCheer />
         <Snowflakes />
