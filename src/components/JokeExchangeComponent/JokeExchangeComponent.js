@@ -17,6 +17,10 @@ export default function JokeExchange() {
       <div>
         <img src="/assets/comedy_response.gif" alt="Cartoon" />
       </div>
+      <div>
+        <br/>
+        <p><a href="https://scottishtecharmy.slack.com/archives/C01FR2Q170D" target="_blank"><strong>Post you jokes in the #advent-2020 channel</strong></a></p>
+      </div>
       
     </div>
   );
