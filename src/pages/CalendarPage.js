@@ -16,9 +16,9 @@ function CalendarPage({
 }) {
 
   function handleClick(day) {
-    if (day.day === 7) {
-      setShowPete(true);
-    }
+    // if (day.day === 7) {
+    //   setShowPete(true);
+    // }
     setOpenWindow(day);
     setPage("activity-page");
   }

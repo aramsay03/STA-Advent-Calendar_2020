@@ -3,17 +3,12 @@ import "./JokeExchangeComponent.css";
 
 export default function JokeExchange() {
 
-  // use Audio constructor to create HTMLAudioElement
-  const audioTune = new Audio('<YOUR_AUDIO_FILE_PATH.mp3>');
- 
-  
-
   return (
     <div className="joke-container">
       <div>
         <audio
           controls
-          // autoPlay
+          autoPlay
           src="/assets/jokeintro.mp3">
               Your browser does not support the
               <code>audio</code> element.
