@@ -11,6 +11,7 @@ import CalendarPage from "./pages/CalendarPage";
 import ActivityPage from "./pages/ActivityPage";
 import WallOfAwesome from "./pages/WallOfAwesome";
 import Snowflakes from "./components/Snowflakes/Snowflakes";
+import SnowflakesStorm from './components/Snowflakes/SnowflakesStorm';
 import Login from "./components/Login";
 import Popup from "./components/Popup/Popup";
 
@@ -107,7 +108,8 @@ function App() {
       <div className="App">
         <Header page={page} setPage={setPage} />
         <ActivateChristmasCheer />
-        <Snowflakes showPete={showPete} />
+        <SnowflakesStorm showPete={showPete} />
+        {/* <Snowflakes showPete={showPete} /> */}
         <main className={showPasswordEntry ? "App-main" : null}>
           <Container fluid>
             <Row>
