@@ -15,7 +15,7 @@ export default function JokeExchange() {
         </audio>
       </div>
       <div>
-        <img src="/assets/cake-1914463_640.jpg" alt="Cartoon" />
+        <img src="/assets/comedy_response.jpg" alt="Cartoon" />
       </div>
       
     </div>
