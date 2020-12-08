@@ -3,7 +3,7 @@ import CarouselComponent from "../components/CarouselComponent/CarouselComponent
 import CrosswordComponent from "../components/CrosswordComponent/CrosswordComponent";
 import PhotoChallengeComponent from "../components/PhotoChallengeComponent/PhotoChallengeComponent";
 import VideoPlayer from "../components/VideoPlayer/VideoPlayer";
-import VideoRecorder from "../components/VideoRecorder/VideoRecorder";
+import VideoRecorderComponent from "../components/VideoRecorder/VideoRecorderComponent";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
@@ -32,8 +32,8 @@ function ActivityPage({ setPage, openWindow, setOpenWindow, currentDate }) {
           instructions={openWindow.instructions}
         />
       );
-    } else if (openWindow.component === "VideoRecorder") {
-      return <VideoRecorder />;
+    } else if (openWindow.component === "VideoRecorderComponent") {
+      return <VideoRecorderComponent />;
     } else if (openWindow.component === "CarouselComponent") {
       return <CarouselComponent day={openWindow} />;
     } else if (openWindow.component === "PhotoChallengeComponent") {
