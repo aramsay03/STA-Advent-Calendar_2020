@@ -1,6 +1,7 @@
 .loading-text {
   position: absolute;
   left: 50%;
+  top: 50%;
   transform: translateX(-50%);
 }
 
@@ -20,7 +21,7 @@
 
 .video-instructions {
   text-align: left;
-  padding: 0 45px;
+  width: 80%;
   font-size: 1rem;
   margin: auto;
 }
@@ -39,8 +40,9 @@
     width: 80vw !important;
     height: 40vh !important;
   }
-  .video-instructions {
-    padding: 0 85px;
+  .loading-text {
+    width: 80vw;
+    height: 40vh;
   }
 }
 
@@ -51,6 +53,7 @@
   }
   .video-instructions {
     font-size: 0.5rem;
-    padding: 0 20px;
+    width: 100%;
+    padding: 5px;
   }
 }
