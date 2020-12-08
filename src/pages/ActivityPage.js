@@ -1,6 +1,7 @@
 import React from "react";
 import CarouselComponent from "../components/CarouselComponent/CarouselComponent";
 import CrosswordComponent from "../components/CrosswordComponent/CrosswordComponent";
+import JokeExchangeComponent from "../components/JokeExchangeComponent/JokeExchangeComponent";
 import PhotoChallengeComponent from "../components/PhotoChallengeComponent/PhotoChallengeComponent";
 import VideoPlayer from "../components/VideoPlayer/VideoPlayer";
 import Container from "react-bootstrap/Container";
@@ -44,6 +45,8 @@ function ActivityPage({
       );
     } else if (openWindow.component === "CrosswordComponent") {
       return <CrosswordComponent />;
+    } else if (openWindow.component === "JokeExchangeComponent") {
+      return <JokeExchangeComponent />;
     } else {
       return <></>;
     }
