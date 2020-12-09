@@ -23,8 +23,8 @@ function App() {
   const [currentDate] = useState(moment().format("D MMM YYYY")); // <---- set to 24 Dec 2020 for development
 
   // // For Development
-  const [showPasswordEntry, setShowPasswordEntry] = useState(false); //<---- Use for development only
-  const [currentDate, setCurrentDate] = useState("24 Dec 2020");
+  // const [showPasswordEntry, setShowPasswordEntry] = useState(false); //<---- Use for development only
+  // const [currentDate, setCurrentDate] = useState("24 Dec 2020");
 
   const allDays = config.days;
   const popupMessage = "You will need to wait for that day!";
