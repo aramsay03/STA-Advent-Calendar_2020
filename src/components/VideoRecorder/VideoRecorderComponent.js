@@ -12,39 +12,37 @@ function VideoRecorderComponent() {
         throw new Error("Select a file first!");
       }
       const formData = new FormData();
-      formData.append("file", file[0]);
+      formData.append("file", file);
       await axios.post(`/test-upload`, formData, {
         headers: {
-          "Content-Type": "multipart/form-data",
+          "Content-Type": "form-data",
         },
       });
       // handle success
+      console.log("success")
     } catch (error) {
       // handle error
+      console.log(error);
     }
   };
 
-  function recordingComplete(string, recordedVideo) {
-    setFile(string, recordedVideo);
+  function recordingComplete(recordedVideo) {
+    setFile(recordedVideo);
   }
 
   return (
     <>
+    <form onSubmit={submitFile}>
+      <button type="submit">Send</button>
+    </form>
       <VideoRecorder
         onRecordingComplete={(videoBlob) => {
-          recordingComplete("videoBlob", videoBlob);
-          console.log("videoBlob", videoBlob);
-          console.log(file);
+          recordingComplete(videoBlob);
         }}
         replayVideoAutoplayAndLoopOff
         showReplayControls
         timeLimit={15000}
       />
-      <form onSubmit={submitFile}>
-        {/* <label>Upload file</label> */}
-        <input type="file" onChange={(event) => setFile(event.target.files)} />
-        <button type="submit">Send</button>
-      </form>
     </>
   );
 }
