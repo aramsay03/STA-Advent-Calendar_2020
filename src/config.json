@@ -35,8 +35,9 @@
       "Date": "12 Dec 2020",
       "day": 12,
       "activity": "Festive Recipes",
-      "component": "CarouselComponent",
-      "urls": []
+      "component": "PhotoChallengeComponent",
+      "image": "assets/on_it_bake_off.jpg",
+      "instructions": "It's the STA Bake-Off Challenge Think you can do better than this year's winner, the baby-faced assassin Peter Sawkins? Well here's your chance to show us. We want you to create a cake, a cookie or a doughnut that looks like our very own ON IT emoji. Post your landscape photos of you and your creation in the Advent2020 channel. Winning shot makes it to the Wall of Awesome."
     },
     {
       "#": 6,
