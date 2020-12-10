@@ -19,12 +19,12 @@ function App() {
   const [openWindow, setOpenWindow] = useState(null);
 
   // For Production
-  const [showPasswordEntry, setShowPasswordEntry] = useState(true); //<---- just set this to false until we go live
-  const [currentDate] = useState(moment().format("D MMM YYYY")); // <---- set to 24 Dec 2020 for development
+  // const [showPasswordEntry, setShowPasswordEntry] = useState(true); //<---- just set this to false until we go live
+  // const [currentDate] = useState(moment().format("D MMM YYYY")); // <---- set to 24 Dec 2020 for development
 
   // // For Development
   const [showPasswordEntry, setShowPasswordEntry] = useState(false); //<---- Use for development only
-  const [currentDate, setCurrentDate] = useState("24 Dec 2020");
+  const [currentDate, setCurrentDate] = useState("11 Dec 2020");
 
   const allDays = config.days;
   const popupMessage = "You will need to wait for that day!";
