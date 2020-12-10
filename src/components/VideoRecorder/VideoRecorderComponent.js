@@ -11,15 +11,15 @@ function VideoRecorderComponent() {
       if (!file) {
         throw new Error("Select a file first!");
       }
-      const formData = new FormData();
-      formData.append("file", file);
-      await axios.post(`/test-upload`, formData, {
-        headers: {
-          "Content-Type": "form-data",
-        },
-      });
+      // const formData = new FormData();
+      // formData.append("file", file);
+      // await axios.post(`/test-upload`, formData, {
+      //   headers: {
+      //     "Content-Type": "multipart/form-data",
+      //   },
+      // });
       // handle success
-      console.log("success")
+      console.log("success");
     } catch (error) {
       // handle error
       console.log(error);
@@ -32,9 +32,9 @@ function VideoRecorderComponent() {
 
   return (
     <>
-    <form onSubmit={submitFile}>
-      <button type="submit">Send</button>
-    </form>
+      <form onSubmit={submitFile}>
+        <button type="submit">Send</button>
+      </form>
       <VideoRecorder
         onRecordingComplete={(videoBlob) => {
           recordingComplete(videoBlob);
