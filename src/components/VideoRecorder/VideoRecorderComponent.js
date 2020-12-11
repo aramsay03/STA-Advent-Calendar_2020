@@ -11,6 +11,12 @@ function VideoRecorderComponent() {
       if (!file) {
         throw new Error("Select a file first!");
       }
+      // get to receive JSON
+      // parse the JSON
+      // get the uploadUrl
+      // use axios.put with the url and the data
+
+
       // const formData = new FormData();
       // formData.append("file", file);
       // await axios.post(`/test-upload`, formData, {

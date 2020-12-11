@@ -21,11 +21,19 @@ function VideoPlayer({ url, instructions }) {
         }}
         onReady={() => setVideoLoaded(true)}
         style={{
-          animation: videoLoaded ? "videoFadeIn 0.5s 0.5s ease forwards" : "",
+          animation: videoLoaded ? "videoFadeIn 1s 1s ease forwards" : "",
         }}
       />
+      <div
+        className="loading-text"
+        style={{
+          animation: videoLoaded ? "loadingTextFadeOut 0.5s forwards" : "",
+        }}
+      >
+        Loading Video...
+      </div>
       <div className="video-instructions">
-        <p>{instructions}</p>
+        {instructions}
       </div>
     </>
   );

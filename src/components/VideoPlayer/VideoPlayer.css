@@ -1,6 +1,7 @@
 .loading-text {
   position: absolute;
   left: 50%;
+  top: 50%;
   transform: translateX(-50%);
 }
 
@@ -19,10 +20,10 @@
 }
 
 .video-instructions {
-  display: inline-block;
-  /* margin: 20px auto; */
-  max-width: 640px;
-  /* justify-self: center; */
+  text-align: left;
+  width: 80%;
+  font-size: 1rem;
+  margin: auto;
 }
 
 @keyframes videoFadeIn {
@@ -35,64 +36,24 @@
 }
 
 @media screen and (max-width: 1024px) {
-  .calendar-window {
-    height: 17vh;
-    width: 12vh;
-    margin: 0;
-  }
-  .calendar-window img {
-    height: 10vh;
-    width: 10vh;
-  }
-  .calendar-windows-container {
-    overflow-y: scroll;
-    height: 85vh;
-  }
-}
-
-@media screen and (max-width: 770px) {
-  .calendar-window {
-    height: 14vh;
-    width: 11vh;
-  }
-  .calendar-window img {
-    height: 11vh;
-    width: 11vh;
-  }
-  .App header h1 {
-    font-size: 1.5rem;
-  }
-  .App header h2 {
-    font-size: 1.25rem;
-  }
-}
-
-@media screen and (max-width: 500px) {
-  .calendar-window b {
-    font-size: 0.5rem !important;
-    line-height: 1.5rem !important;
-    height: 1.5rem !important;
-    width: 1.5rem !important;
-  }
-  Button.btn.btn-primary {
-    font-size: 0.5rem !important;
-    font-weight: bold;
-  }
-  #logo {
-    height: 3rem;
-  }
-  .App header h1 {
-    font-size: 0.75rem;
-  }
-  .App header h2 {
-    font-size: 0.5rem;
-  }
   .video-player {
-    width: 100vw !important;
-    height: 180px !important;
+    width: 80vw !important;
+    height: 40vh !important;
+  }
+  .loading-text {
+    width: 80vw;
+    height: 40vh;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .video-player {
+    width: 90vw !important;
+    height: 35vh !important;
   }
   .video-instructions {
-    padding-left: 1em;
-    padding-right: 1em;
+    font-size: 0.5rem;
+    width: 100%;
+    padding: 5px;
   }
 }

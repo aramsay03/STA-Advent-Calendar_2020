@@ -1,0 +1,167 @@
+.App header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 10vh;
+}
+
+header .header-col {
+  display: flex;
+  flex-direction: row;
+}
+
+.App header .header-col:nth-child(1),
+.App header .header-col:nth-child(3) {
+  width: 30vw;
+}
+.App header .header-col:nth-child(2) {
+  width: 40vw;
+  justify-content: center;
+}
+
+.App header .title {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.App header h1 {
+  font-size: 2rem;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.App header h2 {
+  color: #ffffff;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.App header h1,
+.App header h2 {
+  color: #f2f2f2;
+  font-weight: bold;
+}
+
+#logo {
+  border-radius: 90px;
+  background-color: #fff;
+  height: 85px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.header-col Button.btn.btn-primary {
+  margin: auto 0;
+}
+
+@media screen and (max-width: 1418px) {
+  .App header .header-col:nth-child(1),
+  .App header .header-col:nth-child(3) {
+    width: 25vw;
+  }
+  .App header .header-col:nth-child(2) {
+    width: 50vw;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .App header .header-col:nth-child(1),
+  .App header .header-col:nth-child(3) {
+    width: 20vw;
+  }
+  .App header .header-col:nth-child(2) {
+    width: 60vw;
+  }
+  .header-col Button.btn.btn-primary {
+    font-size: 0.75rem !important;
+    font-weight: bold;
+    height: auto;
+    width: 100px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .App header .header-col:nth-child(1),
+  .App header .header-col:nth-child(3) {
+    width: 25vw;
+  }
+  .App header .header-col:nth-child(2) {
+    width: 50vw;
+  }
+  #logo {
+    height: 4.25rem !important;
+  }
+  .App header h1 {
+    font-size: 1.25rem !important;
+  }
+  .App header h2 {
+    font-size: 1rem  !important;
+  }
+}
+
+@media screen and (max-width: 855px) {
+  .App header .header-col:nth-child(1),
+  .App header .header-col:nth-child(3) {
+    width: 25vw;
+  }
+  .App header .header-col:nth-child(2) {
+    width: 50vw;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  #logo {
+    height: 3.75rem !important;
+  }
+  .App header h1 {
+    font-size: 0.75rem;
+  }
+  .App header h2 {
+    font-size: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 747px) {
+  .App header .header-col:nth-child(1),
+  .App header .header-col:nth-child(3) {
+    width: 20vw;
+  }
+  .App header .header-col:nth-child(2) {
+    width: 60vw;
+  }
+  .header-col Button.btn.btn-primary {
+    width: 100px;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  #logo {
+    height: 3rem !important;
+  }
+  .App header h1 {
+    font-size: 0.25rem;
+  }
+  .App header h2 {
+    font-size: 0.25rem;
+  }
+  .header-col Button.btn.btn-primary {
+    margin: 10px auto 0;
+    width: auto;
+  }
+  .App header {
+    flex-direction: column;
+    height: 15vh;
+  }
+  .App header .header-col:nth-child(1) {
+    width: 0vw;
+  }
+  .App header .header-col:nth-child(2) {
+    width: 100vw;
+  }
+  .App header .header-col:nth-child(3) {
+    width: 100vw;
+  }
+}

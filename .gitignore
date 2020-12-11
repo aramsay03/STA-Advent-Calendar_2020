@@ -3,6 +3,7 @@
 .eslintcache
 
 # dependencies
+AWS/node_modules
 /node_modules
 /.pnp
 .pnp.js

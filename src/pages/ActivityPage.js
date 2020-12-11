@@ -1,6 +1,7 @@
 import React from "react";
 import CarouselComponent from "../components/CarouselComponent/CarouselComponent";
 import CrosswordComponent from "../components/CrosswordComponent/CrosswordComponent";
+import JokeExchangeComponent from "../components/JokeExchangeComponent/JokeExchangeComponent";
 import PhotoChallengeComponent from "../components/PhotoChallengeComponent/PhotoChallengeComponent";
 import VideoPlayer from "../components/VideoPlayer/VideoPlayer";
 import VideoRecorderComponent from "../components/VideoRecorder/VideoRecorderComponent";
@@ -9,9 +10,16 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
 
-function ActivityPage({ setPage, openWindow, setOpenWindow, currentDate }) {
+function ActivityPage({
+  setPage,
+  openWindow,
+  setOpenWindow,
+  currentDate,
+  setShowPete,
+}) {
   function handleClick() {
     setOpenWindow(null);
+    setShowPete(false);
     setPage("calendar-page");
   }
 

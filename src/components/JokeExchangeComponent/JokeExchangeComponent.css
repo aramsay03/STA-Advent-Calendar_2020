@@ -1,0 +1,19 @@
+.joke-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  margin: 0;
+}
+
+.joke-container img {
+  width: 80%;
+  border-radius: 20px;
+}
+
+@media screen and (max-width: 760px) {
+  .joke-container img {
+    width: 100%;
+    border-radius: 0px;
+  }
+}

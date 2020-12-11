@@ -4,12 +4,12 @@ import config from "../../config.json";
 import Col from "react-bootstrap/Col";
 import VideoPlayer from "../VideoPlayer/VideoPlayer";
 
-function CarouselComponent({day}) {
+function CarouselComponent({day, page}) {
 
-  const carouselPages = day.urls.map((url, index) => {
+  const carouselPagesVideos = day.urls.map((url, index) => {
 
     return (
-      <Carousel.Item>
+      <Carousel.Item  key={index}>
         <VideoPlayer url={url} />
       </Carousel.Item>
     );
@@ -19,8 +19,11 @@ function CarouselComponent({day}) {
   return (
     <Col>
       <Carousel interval={null}>
-        {carouselPages}
+        {carouselPagesVideos}
       </Carousel>
+      <div className="video-instructions">
+        {day.instructions ? (day.instructions) : (<></>)}
+      </div>
     </Col>
   );
 }
