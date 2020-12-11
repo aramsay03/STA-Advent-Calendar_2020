@@ -1,0 +1,94 @@
+.jigsaw__solved-board:before {
+  content: '';
+  background-color: rgba(255, 50, 50, 0.6);
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.jigsaw__solved-board,
+.jigsaw__shuffled-board {
+  position: relative;
+  margin: 20px auto;
+  width: 371px;
+  height: 371px;
+  list-style-type: none;
+  padding: 0;
+  font-size: 0;
+  background-size: 371px 371px;
+  background-repeat: no-repeat;
+}
+
+.jigsaw li {
+  position: relative;
+  text-align: left;
+  display: inline-block;
+  width: 53px;
+  height: 53px;
+  list-style-type: none;
+  border: 1px solid #ddd;
+  border-width: 1px 1px 1px 1px;
+}
+
+.jigsaw li:empty:hover:before {
+  opacity: 1;
+}
+
+.jigsaw li img {
+  width: 51px;
+  height: 51px;
+  position: absolute;
+  cursor: grab;
+  transition: transform 200ms ease, box-shadow 200ms ease;
+}
+
+.jigsaw li img:hover {
+  z-index: 2;
+  transform: scale(1.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
+
+@media screen and (max-width: 390px) {
+  .jigsaw li {
+    width: 48px;
+    height: 48px;
+  }
+
+  .jigsaw li img {
+    width: 46px;
+    height: 46px;
+  }
+
+  .jigsaw__solved-board,
+  .jigsaw__shuffled-board {
+    position: relative;
+    width: 336px;
+    height: 336px;
+    background-size: 336px 336px;
+    background-repeat: no-repeat;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .jigsaw li {
+    width: 43px;
+    height: 43px;
+  }
+
+  .jigsaw li img {
+    width: 41px;
+    height: 41px;
+  }
+
+  .jigsaw__solved-board,
+  .jigsaw__shuffled-board {
+    position: relative;
+    width: 301px;
+    height: 301px;
+    background-size: 331px 331px;
+    background-repeat: no-repeat;
+  }
+}
