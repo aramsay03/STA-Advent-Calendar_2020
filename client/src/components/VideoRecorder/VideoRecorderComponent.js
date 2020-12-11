@@ -6,6 +6,10 @@ import VideoRecorder from "react-video-recorder";
 function VideoRecorderComponent() {
   const [file, setFile] = useState(null);
 
+  function createPresignedUrl() {
+    return fetch('/presign', {method: 'GET'}).then(r => r.json());
+  }
+
   const submitFile = async () => {
     try {
       if (!file) {
@@ -16,14 +20,27 @@ function VideoRecorderComponent() {
       // get the uploadUrl
       // use axios.put with the url and the data
 
+      const formData = new FormData();
+      formData.append("file", file);
+      await axios.put(`/uploadurl`, formData, {
+        headers: {
+          "Content-Type": "multipart/form-data",
+        },
+      });
+      createPresignedUrl()
+        .then((res) => {
+          // upload the file first
+          return uploadFile(res.url, file).then(() => res.filename);
+        })
+        .then((filename) => {
+          // now we know the filename of what got uploaded, send that
+          // to the form in place of the actual file
+          submitForm(filename).then(() => {
+            alert(`Hooray you uploaded ${filename}`);
+            formData.reset();
+          });
+        });
 
-      // const formData = new FormData();
-      // formData.append("file", file);
-      // await axios.post(`/test-upload`, formData, {
-      //   headers: {
-      //     "Content-Type": "multipart/form-data",
-      //   },
-      // });
       // handle success
       console.log("success");
     } catch (error) {
