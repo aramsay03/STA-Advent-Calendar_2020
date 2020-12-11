@@ -5,6 +5,10 @@
   transform: translateX(-50%);
 }
 
+.loading-text-off {
+  display: block;
+}
+
 @keyframes loadingTextFadeOut {
   from {
     opacity: 1;
