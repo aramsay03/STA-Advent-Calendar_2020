@@ -27,7 +27,7 @@
       "#": 4,
       "Date": "15 Dec 2020",
       "day": 15,
-      "activity": "CSS Art",
+      "activity": "Poem to Enjoy and Limerick Challenge",
       "component": ""
     },
     {
@@ -35,8 +35,9 @@
       "Date": "12 Dec 2020",
       "day": 12,
       "activity": "Festive Recipes",
-      "component": "CarouselComponent",
-      "urls": []
+      "component": "PhotoChallengeComponent",
+      "image": "assets/on_it_bake_off.jpg",
+      "instructions": "It's the STA Bake-Off Challenge Think you can do better than this year's winner, the baby-faced assassin Peter Sawkins? Well here's your chance to show us. We want you to create a cake, a cookie or a doughnut that looks like our very own ON IT emoji. Post your landscape photos of you and your creation in the Advent2020 channel. Winning shot makes it to the Wall of Awesome."
     },
     {
       "#": 6,
@@ -62,7 +63,7 @@
       "day": 11,
       "activity": "Town Hall",
       "component": "VideoPlayer",
-      "urls": []
+      "urls": ["https://vimeo.com/489409369/b0a944609b"]
     },
     {
       "#": 9,
@@ -91,10 +92,10 @@
       "#": 12,
       "Date": "10 Dec 2020",
       "day": 10,
-      "activity": "Well Wishing Message Submission",
+      "activity": "Pet Photograph Challenge",
       "component": "PhotoChallengeComponent",
-      "image": "assets/mailbox-3175638_640.jpg",
-      "instructions": "It is the season of good cheer, Goodness knows we need it this year.  A video is what we need, To spread some joy as one good deed. We can’t do this face to face, So share your messages in this space. Mark the calendar day by day, To wait to hear what we all have to say. You have ten days to get it right, Your deadline’s 20th at midnight."
+      "image": "assets/guinea-pig.png",
+      "instructions": "Got a perfect pooch? Brilliant budgie? Coolest Cat? Let's see your pet pics! Post your beauties (snapped in landscape of course) in the Advent2020 channel. Best one gets on the Wall of Awesome."
     },
     {
       "#": 13,
@@ -123,8 +124,10 @@
       "#": 16,
       "Date": "14 Dec 2020",
       "day": 14,
-      "activity": "Poem to Enjoy and Limerick Challenge",
-      "component": ""
+      "activity": "Well Wishing Message Submission",
+      "component": "PhotoChallengeComponent",
+      "image": "assets/mailbox-3175638_640.jpg",
+      "instructions": "It is the season of good cheer, Goodness knows we need it this year.  A video is what we need, To spread some joy as one good deed. We can’t do this face to face, So share your messages in this space. Mark the calendar day by day, To wait to hear what we all have to say. You have ten days to get it right, Your deadline’s 20th at midnight."
     },
     {
       "#": 17,

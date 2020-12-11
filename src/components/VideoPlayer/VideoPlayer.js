@@ -25,7 +25,7 @@ function VideoPlayer({ url, instructions }) {
         }}
       />
       <div
-        className="loading-text"
+        className={videoLoaded ? "loading-text-off" : "loading-text"}
         style={{
           animation: videoLoaded ? "loadingTextFadeOut 0.5s forwards" : "",
         }}
