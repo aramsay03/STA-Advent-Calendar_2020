@@ -177,6 +177,7 @@
       "component": "SpotDifferenceComponent",
       "image1": "assets/STDImage1.png",
       "image2": "assets/STDImage2.png",
+      "solution": "assets/STDSolution.png",
       "instructions": "Try and see if you can spot the 10 Differences & post in the #Advent-2020 channel if you get all ten."
     },
     {

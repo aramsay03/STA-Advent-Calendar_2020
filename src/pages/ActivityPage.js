@@ -50,6 +50,7 @@ function ActivityPage({
           instructions={openWindow.instructions}
           image1={openWindow.image1}
           image2={openWindow.image2}
+          solution={openWindow.solution}
         />
       );
     } else if (openWindow.component === "CrosswordComponent") {
