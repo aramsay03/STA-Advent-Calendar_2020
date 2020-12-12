@@ -10,7 +10,6 @@ function SpotDifferenceComponent({instructions, image1, image2, solution}) {
   const [showSolution, setShowSolution] = useState(false);
 
   function toggleSolution(showshowSolution) {
-    /*CheckForPete(returnDay);*/
     const solutionStatus = () => {
       if (showSolution === true) {
         return false;

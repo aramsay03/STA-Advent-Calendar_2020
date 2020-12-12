@@ -28,7 +28,9 @@
       "Date": "15 Dec 2020",
       "day": 15,
       "activity": "Poem to Enjoy and Limerick Challenge",
-      "component": ""
+      "component": "PhotoChallengeComponent",
+      "image": "assets/poem.png",
+      "instructions": "Question: Where do poems come from?\nAnswer: Poe-trees.\n\nThis is a good team challenge!\n\nWe want your haikus, your limericks, your odes,\nDoesn't matter if its on politics or toads,\nNothing too dirty, shirty or flirty\nLet's laugh, laugh, laugh loads and loads.\n\nBest one makes the Wall of Awesome."
     },
     {
       "#": 5,
