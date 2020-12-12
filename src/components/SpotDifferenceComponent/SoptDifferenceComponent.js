@@ -8,6 +8,9 @@ function SpotDifferenceComponent({instructions, image1, image2}) {
 
   return (
     <Container fluid>
+      <Row className="challenge-instructions">
+        {instructions}
+      </Row>
       <Row>
         <Col className="challenge-img" md={6}>
           <img
@@ -24,9 +27,7 @@ function SpotDifferenceComponent({instructions, image1, image2}) {
           />
         </Col>
       </Row>
-      <Row className="challenge-instructions">
-        {instructions}
-      </Row>
+      
     </Container>
   );
 }
