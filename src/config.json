@@ -173,10 +173,11 @@
       "#": 22,
       "Date": "13 Dec 2020",
       "day": 13,
-      "activity": "Pet Photograph Challenge",
-      "component": "PhotoChallengeComponent",
-      "image": "assets/cavalier-king-charles-spaniel-3923643_640.jpg",
-      "instructions": "Instructions for challenge."
+      "activity": "Spot the Difference Challenge",
+      "component": "SpotDifferenceComponent",
+      "image1": "assets/STDImage1.png",
+      "image2": "assets/STDImage2.png",
+      "instructions": "Try and see if you can spot the 10 Diffrences"
     },
     {
       "#": 23,
