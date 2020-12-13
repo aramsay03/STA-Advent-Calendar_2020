@@ -5,24 +5,23 @@ import VideoRecorder from "react-video-recorder";
 
 function VideoRecorderComponent() {
   const [file, setFile] = useState(null);
+  const PRESIGNEDURL = process.env.GET_PRESIGNEDURL;
 
   const submitFile = async () => {
     try {
       if (!file) {
-        throw new Error("Select a file first!");
+        throw new Error("Record a video first!");
       }
-      // get to receive JSON
-      // parse the JSON
-      // get the uploadUrl
-      // use axios.put with the url and the data
 
-      // const formData = new FormData();
-      // formData.append("file", file);
-      // await axios.put(`/uploadurl`, formData, {
-      //   headers: {
-      //     "Content-Type": "multipart/form-data",
-      //   },
-      // });
+      let response = await axios.get(PRESIGNEDURL);
+
+      const url = "put it back";
+
+      response = await axios.put(url, file, {
+        headers: {
+          "Content-Type": "video",
+        },
+      });
 
       // handle success
       console.log("success");
@@ -38,9 +37,11 @@ function VideoRecorderComponent() {
 
   return (
     <>
-      <form onSubmit={submitFile}>
-        <button type="submit">Send</button>
-      </form>
+      {file ? (
+        <button onClick={submitFile}>Send</button>
+      ) : (
+        <p>Please record a video</p>
+      )}
       <VideoRecorder
         onRecordingComplete={(videoBlob) => {
           recordingComplete(videoBlob);

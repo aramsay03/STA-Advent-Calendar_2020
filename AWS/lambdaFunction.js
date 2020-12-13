@@ -6,8 +6,8 @@ const { S3RequestPresigner } = require("@aws-sdk/s3-request-presigner");
 const { createRequest } = require("@aws-sdk/util-create-request");
 const { formatUrl } = require("@aws-sdk/util-format-url");
 const EXPIRATION = 60 * 60 * 1000;
-const REGION = "eu-west-2"; // TODO - probably eu-west-2
-const MOVIE_BUCKET = "calendar-video-bucket"; //TODO name of bucket
+const REGION = "eu-west-2";
+const MOVIE_BUCKET = "calendar-video-bucket";
 const s3Client = new S3Client(REGION);
 const signer = new S3RequestPresigner({ ...s3Client.config });
 function createSignedUploadUrl(bucket, uploadKey) {
