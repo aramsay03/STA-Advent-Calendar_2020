@@ -5,41 +5,23 @@ import VideoRecorder from "react-video-recorder";
 
 function VideoRecorderComponent() {
   const [file, setFile] = useState(null);
-
-  function createPresignedUrl() {
-    return fetch('/presign', {method: 'GET'}).then(r => r.json());
-  }
+  const PRESIGNEDURL = process.env.GET_PRESIGNEDURL;
 
   const submitFile = async () => {
     try {
       if (!file) {
-        throw new Error("Select a file first!");
+        throw new Error("Record a video first!");
       }
-      // get to receive JSON
-      // parse the JSON
-      // get the uploadUrl
-      // use axios.put with the url and the data
 
-      const formData = new FormData();
-      formData.append("file", file);
-      await axios.put(`/uploadurl`, formData, {
+      let response = await axios.get(PRESIGNEDURL);
+
+      const url = "put it back";
+
+      response = await axios.put(url, file, {
         headers: {
-          "Content-Type": "multipart/form-data",
+          "Content-Type": "video",
         },
       });
-      createPresignedUrl()
-        .then((res) => {
-          // upload the file first
-          return uploadFile(res.url, file).then(() => res.filename);
-        })
-        .then((filename) => {
-          // now we know the filename of what got uploaded, send that
-          // to the form in place of the actual file
-          submitForm(filename).then(() => {
-            alert(`Hooray you uploaded ${filename}`);
-            formData.reset();
-          });
-        });
 
       // handle success
       console.log("success");
@@ -55,9 +37,11 @@ function VideoRecorderComponent() {
 
   return (
     <>
-      <form onSubmit={submitFile}>
-        <button type="submit">Send</button>
-      </form>
+      {file ? (
+        <button onClick={submitFile}>Send</button>
+      ) : (
+        <p>Please record a video</p>
+      )}
       <VideoRecorder
         onRecordingComplete={(videoBlob) => {
           recordingComplete(videoBlob);
