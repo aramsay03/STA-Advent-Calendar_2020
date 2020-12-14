@@ -13,7 +13,7 @@ function VideoRecorderComponent() {
         throw new Error("Record a video first!");
       }
       let response = await axios.get(PRESIGNEDURL);
-      console.log(response)
+      // console.log(response)
       const url = response.data.uploadUrl;
 
       response = await axios.put(url, file, {
