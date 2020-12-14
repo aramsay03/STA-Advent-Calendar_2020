@@ -3,7 +3,7 @@ import CarouselComponent from "../components/CarouselComponent/CarouselComponent
 import CrosswordComponent from "../components/CrosswordComponent/CrosswordComponent";
 import JokeExchangeComponent from "../components/JokeExchangeComponent/JokeExchangeComponent";
 import PhotoChallengeComponent from "../components/PhotoChallengeComponent/PhotoChallengeComponent";
-import SpotDifferenceComponent from "../components/SpotDifferenceComponent/SoptDifferenceComponent";
+import SpotDifferenceComponent from "../components/SpotDifferenceComponent/SpotDifferenceComponent";
 import VideoPlayer from "../components/VideoPlayer/VideoPlayer";
 import VideoRecorderComponent from "../components/VideoRecorder/VideoRecorderComponent";
 import Container from "react-bootstrap/Container";
