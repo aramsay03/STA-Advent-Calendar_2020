@@ -1,0 +1,14 @@
+.challenge-instructions {
+  text-align: center;
+  width: 80%;
+  font-size: 1rem;
+  margin: auto;
+}
+
+@media screen and (max-width: 620px) {
+  .challenge-instructions {
+    font-size: 0.5rem;
+    width: 100%;
+    padding: 5px;
+  }
+}

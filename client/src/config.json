@@ -27,9 +27,11 @@
       "#": 4,
       "Date": "15 Dec 2020",
       "day": 15,
-      "activity": "Poem to Enjoy and Limerick Challenge",
-      "component": ""
-    },
+      "activity": "Well Wishing Message Submission",
+      "component": "PhotoChallengeComponent",
+      "image": "assets/mailbox-3175638_640.jpg",
+      "instructions": "It is the season of good cheer, Goodness knows we need it this year.  A video is what we need, To spread some joy as one good deed. We can’t do this face to face, So share your messages in this space. Mark the calendar day by day, To wait to hear what we all have to say. You have ten days to get it right, Your deadline’s 20th at midnight."
+      },
     {
       "#": 5,
       "Date": "12 Dec 2020",
@@ -124,9 +126,10 @@
       "#": 16,
       "Date": "14 Dec 2020",
       "day": 14,
-      "activity": "Well Wishing Message Submission",
-      "component": "VideoRecorderComponent",
-      "instructions": "It is the season of good cheer, Goodness knows we need it this year.  A video is what we need, To spread some joy as one good deed. We can’t do this face to face, So share your messages in this space. Mark the calendar day by day, To wait to hear what we all have to say. You have ten days to get it right, Your deadline’s 20th at midnight."
+      "activity": "Poem to Enjoy and Limerick Challenge",
+      "component": "PhotoChallengeComponent",
+      "image": "assets/poem.png",
+      "instructions": "Question: Where do poems come from?\nAnswer: Poe-trees.\n\nThis is a good team challenge!\n\nWe want your haikus, your limericks, your odes,\nDoesn't matter if its on politics or toads,\nNothing too dirty, shirty or flirty\nLet's laugh, laugh, laugh loads and loads.\n\nBest one makes the Wall of Awesome."
     },
     {
       "#": 17,
@@ -172,10 +175,12 @@
       "#": 22,
       "Date": "13 Dec 2020",
       "day": 13,
-      "activity": "Pet Photograph Challenge",
-      "component": "PhotoChallengeComponent",
-      "image": "assets/cavalier-king-charles-spaniel-3923643_640.jpg",
-      "instructions": "Instructions for challenge."
+      "activity": "Spot the Difference Challenge",
+      "component": "SpotDifferenceComponent",
+      "image1": "assets/STDImage1.png",
+      "image2": "assets/STDImage2.png",
+      "solution": "assets/STDSolution.png",
+      "instructions": "Try and see if you can spot the 10 Differences & post in the #Advent-2020 channel if you get all ten."
     },
     {
       "#": 23,

@@ -3,6 +3,7 @@ import CarouselComponent from "../components/CarouselComponent/CarouselComponent
 import CrosswordComponent from "../components/CrosswordComponent/CrosswordComponent";
 import JokeExchangeComponent from "../components/JokeExchangeComponent/JokeExchangeComponent";
 import PhotoChallengeComponent from "../components/PhotoChallengeComponent/PhotoChallengeComponent";
+import SpotDifferenceComponent from "../components/SpotDifferenceComponent/SoptDifferenceComponent";
 import VideoPlayer from "../components/VideoPlayer/VideoPlayer";
 import VideoRecorderComponent from "../components/VideoRecorder/VideoRecorderComponent";
 import Container from "react-bootstrap/Container";
@@ -49,6 +50,15 @@ function ActivityPage({
         <PhotoChallengeComponent
           instructions={openWindow.instructions}
           image={openWindow.image}
+        />
+      );
+    } else if (openWindow.component === "SpotDifferenceComponent") {
+      return (
+        <SpotDifferenceComponent
+          instructions={openWindow.instructions}
+          image1={openWindow.image1}
+          image2={openWindow.image2}
+          solution={openWindow.solution}
         />
       );
     } else if (openWindow.component === "CrosswordComponent") {
