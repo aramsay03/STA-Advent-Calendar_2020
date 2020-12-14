@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import "./VideoPlayer.css";
 import ReactPlayer from "react-player/lazy";
-import Container from "react-bootstrap/Container";
 
 function VideoPlayer({ url, instructions }) {
   const [videoLoaded, setVideoLoaded] = useState(false);

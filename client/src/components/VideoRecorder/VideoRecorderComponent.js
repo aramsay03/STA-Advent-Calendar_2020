@@ -5,17 +5,17 @@ import VideoRecorder from "react-video-recorder";
 
 function VideoRecorderComponent() {
   const [file, setFile] = useState(null);
-  const PRESIGNEDURL = process.env.GET_PRESIGNEDURL;
+  const PRESIGNEDURL = process.env.REACT_APP_GET_PRESIGNEDURL;
 
   const submitFile = async () => {
     try {
       if (!file) {
         throw new Error("Record a video first!");
       }
-
+      console.log(PRESIGNEDURL)
       let response = await axios.get(PRESIGNEDURL);
-
-      const url = "put it back";
+      console.log(response)
+      const url = response.data.uploadUrl;
 
       response = await axios.put(url, file, {
         headers: {
