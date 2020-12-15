@@ -5,7 +5,6 @@ import config from "./config.json";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import Button from "react-bootstrap/Button";
 import Header from "./components/Header/Header";
 import CalendarPage from "./pages/CalendarPage";
 import ActivityPage from "./pages/ActivityPage";
@@ -19,12 +18,12 @@ function App() {
   const [openWindow, setOpenWindow] = useState(null);
 
   // For Production
-  // const [showPasswordEntry, setShowPasswordEntry] = useState(true);
-  // const [currentDate] = useState(moment().format("D MMM YYYY"));
+  const [showPasswordEntry, setShowPasswordEntry] = useState(true);
+  const [currentDate] = useState(moment().format("YYYYMMDD"));
 
   // For Development
-  const [showPasswordEntry, setShowPasswordEntry] = useState(false); //<---- Use for development only
-  const [currentDate, setCurrentDate] = useState("24 Dec 2020");
+  // const [showPasswordEntry, setShowPasswordEntry] = useState(false); //<---- Use for development only
+  // const [currentDate] = useState("20201224");
 
   const allDays = config.days;
   const popupMessage = "You will need to wait for that day!";
@@ -49,17 +48,17 @@ function App() {
     }
   };
 
-  const CheckForPete = (returnDay) => {
-    // console.log("return day:", returnDay)
-    const showPeteStatus = () => {
-      if (returnDay === 21) {
-        return true;
-      } else {
-        return false;
-      }
-    };
-    setShowPete(showPeteStatus);
-  };
+  // const CheckForPete = (returnDay) => {
+  //   // console.log("return day:", returnDay)
+  //   const showPeteStatus = () => {
+  //     if (returnDay === 21) {
+  //       return true;
+  //     } else {
+  //       return false;
+  //     }
+  //   };
+  //   setShowPete(showPeteStatus);
+  // };
 
   function togglePopup(showPopup, returnDay) {
     // CheckForPete(returnDay);
