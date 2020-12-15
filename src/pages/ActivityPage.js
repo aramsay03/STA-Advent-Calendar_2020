@@ -65,6 +65,8 @@ function ActivityPage({
           solution={openWindow.solution}
         />
       );
+    } else if (openWindow.component === "JokeExchangeComponent") {
+      return <JokeExchangeComponent />;
     } else if (openWindow.component === "CrosswordComponent") {
       return <CrosswordComponent />;
     } else {
