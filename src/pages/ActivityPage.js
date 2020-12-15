@@ -10,6 +10,7 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
+import moment from "moment";
 
 function ActivityPage({
   setPage,
@@ -25,9 +26,12 @@ function ActivityPage({
   }
 
   function activityComponentHeader() {
+
+    const date = moment(openWindow.Date).format("D MMM YYYY")
+
     return (
       <>
-        <h3>{openWindow.Date}</h3>
+        <h3>{date}</h3>
         <h4>{openWindow.activity}</h4>
       </>
     );

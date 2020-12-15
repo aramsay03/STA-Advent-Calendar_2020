@@ -1,6 +1,5 @@
 import React from "react";
 import Carousel from "react-bootstrap/Carousel";
-import config from "../../config.json";
 import Col from "react-bootstrap/Col";
 import VideoPlayer from "../VideoPlayer/VideoPlayer";
 
