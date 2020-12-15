@@ -3,20 +3,28 @@
 .eslintcache
 
 # dependencies
+AWS/node_modules
+client/node_modules
 /node_modules
 /.pnp
 .pnp.js
+/AWS
 
 # testing
 /coverage
 
 # production
+/client/build
 /build
 
 # misc
 
+/client/.env.local
+/client/.env.development.local
+/client/.env.test.local
+/client/.env.production.local
+
 .DS_Store
-.env
 .env.local
 .env.development.local
 .env.test.local

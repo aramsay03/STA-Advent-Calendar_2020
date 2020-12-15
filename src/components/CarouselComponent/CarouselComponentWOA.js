@@ -10,13 +10,15 @@ function CarouselComponentWOA() {
                         "#": 1,
                         "header": "Wall of Awesome",
                         "subheader": "STA's First Ever Pub Quiz Night",
-                        "image": "./assets/STAPubQuizNight.png"
+                        "image": "./assets/STAPubQuizNight.png",
+                        "imageDescription": "Group picture of particpants on zoom call"
                       },
                       {
                         "#": 2,
                         "header": "STA Pub Quiz Night Winner",
                         "subheader": "Christopher McLellan",
-                        "image": "./assets/ChristopherMcLellan.png"
+                        "image": "./assets/ChristopherMcLellan.png",
+                        "imageDescription": "Picture of the winner Christopher McLellan"
                       }
                     ]
                   }
@@ -27,7 +29,7 @@ function CarouselComponentWOA() {
       <Carousel.Item  className="woa-carousel" key={index}>
         <h1>{competition.header}</h1>
         <h2>{competition.subheader}</h2>
-        <img className="wall-of-awesome-image" src={competition.image}/>
+        <img className="wall-of-awesome-image" src={competition.image} alt={competition.imageDescription}/>
       </Carousel.Item>
     );
 

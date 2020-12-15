@@ -13,9 +13,16 @@ body {
   background-attachment: fixed;
 }
 
-.space-between-header {
-  padding-top: 20px;
+.component-col {
+  display: flex;
   justify-content: center;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 80vw;
+  height: auto;
+}
+.component-footer-col {
+  height: 20vh;
 }
 
 .App-main {
@@ -30,6 +37,11 @@ body {
   z-index: -1;
   bottom: 0px;
   right: 0px;
+}
+
+.calendar-windows-container {
+  overflow-y: scroll;
+  height: 90vh;
 }
 
 .calendar-window {
@@ -65,19 +77,22 @@ body {
   justify-content: center;
   align-items: center;
   color: white;
+  margin-top: 30px;
 }
 
 .activity-row,
 .awesome {
   background-color: rgba(60, 60, 59, 0.75);
   padding: 10px 0;
-  height: auto;
   margin: 0;
   border-radius: 5px;
 }
 
 .activity-row {
-  width: 50vw;
+  width: 100vw;
+  height: auto;
+  display: flex;
+  flex-direction: column;;
 }
 
 .awesome {
@@ -123,18 +138,6 @@ Button.btn.btn-primary {
   padding: 0;
 }
 
-@media screen and (max-width: 1300px) {
-  .activity-row {
-    width: 80vw;
-  }
-}
-
-@media screen and (max-width: 1150px) {
-  .activity-row {
-    width: 100vw;
-  }
-}
-
 @media screen and (max-width: 1024px) {
   .calendar-window {
     height: 17vh;
@@ -145,9 +148,21 @@ Button.btn.btn-primary {
     height: 10vh;
     width: 10vh;
   }
-  .calendar-windows-container {
-    overflow-y: scroll;
-    height: 85vh;
+}
+
+@media screen and (max-width: 1000px) {
+  .wall-of-awesome-image {
+    height: 50vh;
+    width: 100vw;
+  }
+  .awesome {
+    height: 65vh;
+  }
+  .woa-carousel h1 {
+    font-size: 1rem;
+  }
+  .woa-carousel h2 {
+    font-size: 0.75rem;
   }
 }
 
@@ -168,8 +183,13 @@ Button.btn.btn-primary {
   }
   .awesome,
   .activity-row {
-    width: 100vw;
     border-radius: 0px;
+  }
+  .component-header-col {
+    margin-bottom: 0;
+  }
+  .component-footer-col {
+    margin-top: 0;
   }
 }
 
@@ -185,58 +205,33 @@ Button.btn.btn-primary {
     width: 1.5rem !important;
   }
   Button.btn.btn-primary {
-    font-size: 0.5rem !important;
+    font-size: 0.75rem !important;
     font-weight: bold;
   }
-  #logo {
-    height: 4rem !important;
+  .calendar-windows-container {
+    margin-top: 5vh;
   }
-  .App header h1 {
-    font-size: 1rem !important;
+  .activity-row {
+    height: auto;
   }
-  .App header h2 {
-    font-size: 0.75rem  !important;
-  }
-  .middle-col {
-    padding: 0;
+  .component-col {
+    height: auto;
   }
 }
-
-@media screen and (max-width: 1000px) {
-  .wall-of-awesome-image {
-    height: 50vh;
-    width: 100vw;
-  }
-  .awesome {
-    height: 65vh;
-  }
-  .woa-carousel h1 {
-    font-size: 1rem;
-  }
-  .woa-carousel h2 {
-    font-size: 0.75rem;
-  }
-}
-
-@media screen and (max-width: 320px) {
-  #logo {
-    height: 3rem;
-  }
-  .App header h1 {
-    font-size: 0.75rem !important;
-  }
-  .App header h2 {
-    font-size: 0.5rem  !important;
-  }
+@media screen and (max-width: 375px) {
   Button.btn.btn-primary {
-    font-size: 0.25rem !important;
     font-weight: bold;
     padding: 2.5px;
+    display: block;
+    font-size: 0.5rem !important;
+  }
+  .calendar-window {
+    height: 15vh;
   }
   .calendar-window b {
-    font-size: 0.25rem !important;
-    line-height: 1rem !important;
-    height: 1rem !important;
-    width: 1rem !important;
+    font-size: 0.5rem !important;
+    line-height: 1.25rem !important;
+    height: 1.25rem !important;
+    width: 1.25rem !important;
   }
 }

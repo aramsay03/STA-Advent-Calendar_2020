@@ -5,10 +5,6 @@
   transform: translateX(-50%);
 }
 
-.loading-text-off {
-  display: block;
-}
-
 @keyframes loadingTextFadeOut {
   from {
     opacity: 1;
@@ -21,13 +17,15 @@
 .video-player {
   margin: 20px auto;
   opacity: 0;
+  width: 100% !important;
 }
 
 .video-instructions {
   text-align: left;
-  width: 80%;
-  font-size: 1rem;
-  margin: auto;
+  width: 100%;
+  padding: 40px;
+  border: 1px solid White;
+  margin: 10px 0 20px;
 }
 
 @keyframes videoFadeIn {
@@ -39,24 +37,9 @@
   }
 }
 
-@media screen and (max-width: 1024px) {
-  .video-player {
-    width: 80vw !important;
-    height: 40vh !important;
-  }
-  .loading-text {
-    width: 80vw;
-    height: 40vh;
-  }
-}
-
-@media screen and (max-width: 620px) {
-  .video-player {
-    width: 90vw !important;
-    height: 35vh !important;
-  }
+@media screen and (max-width: 685px) {
   .video-instructions {
-    font-size: 0.5rem;
+    font-size: 0.75rem;
     width: 100%;
     padding: 5px;
   }

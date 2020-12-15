@@ -153,7 +153,7 @@ header .header-col {
   }
   .App header {
     flex-direction: column;
-    height: 15vh;
+    height: 10vh;
   }
   .App header .header-col:nth-child(1) {
     width: 0vw;
@@ -163,5 +163,29 @@ header .header-col {
   }
   .App header .header-col:nth-child(3) {
     width: 100vw;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #logo {
+    height: 4rem !important;
+  }
+  .App header h1 {
+    font-size: 1rem !important;
+  }
+  .App header h2 {
+    font-size: 0.75rem  !important;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  #logo {
+    height: 3rem;
+  }
+  .App header h1 {
+    font-size: 0.75rem !important;
+  }
+  .App header h2 {
+    font-size: 0.5rem  !important;
   }
 }

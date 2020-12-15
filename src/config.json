@@ -2,7 +2,7 @@
   "days": [
     {
       "#": 1,
-      "Date": "18 Dec 2020",
+      "Date": "20201218",
       "day": 18,
       "activity": "Town Hall",
       "component": "VideoPlayer",
@@ -10,23 +10,22 @@
     },
     {
       "#": 2,
-      "Date": "16 Dec 2020",
+      "Date": "20201216",
       "day": 16,
       "activity": "Well Wishing Message Submission",
-      "component": "PhotoChallengeComponent",
-      "image": "assets/mailbox-3175638_640.jpg",
+      "component": "VideoRecorderComponent",
       "instructions": "It is the season of good cheer, Goodness knows we need it this year.  A video is what we need, To spread some joy as one good deed. We can’t do this face to face, So share your messages in this space. Mark the calendar day by day, To wait to hear what we all have to say. You have ten days to get it right, Your deadline’s 20th at midnight."
-      },
+    },
     {
       "#": 3,
-      "Date": "17 Dec 2020",
+      "Date": "20201217",
       "day": 17,
       "activity": "STA Jigsaw",
       "component": ""
     },
     {
       "#": 4,
-      "Date": "15 Dec 2020",
+      "Date": "20201215",
       "day": 15,
       "activity": "Homebrew Challenge Video",
       "component": "VideoPlayer",
@@ -34,7 +33,7 @@
       },
     {
       "#": 5,
-      "Date": "12 Dec 2020",
+      "Date": "20201212",
       "day": 12,
       "activity": "Festive Recipes",
       "component": "PhotoChallengeComponent",
@@ -43,7 +42,7 @@
     },
     {
       "#": 6,
-      "Date": "08 Dec 2020",
+      "Date": "20201208",
       "day": 8,
       "activity": "Whisky Kiss Music Video",
       "component": "VideoPlayer",
@@ -52,7 +51,7 @@
     },
     {
       "#": 7,
-      "Date": "05 Dec 2020",
+      "Date": "20201205",
       "day": 5,
       "activity": "Edinburgh Community Food Recipe Videos",
       "component": "VideoPlayer",
@@ -61,7 +60,7 @@
     },
     {
       "#": 8,
-      "Date": "11 Dec 2020",
+      "Date": "20201211",
       "day": 11,
       "activity": "Town Hall",
       "component": "VideoPlayer",
@@ -69,7 +68,7 @@
     },
     {
       "#": 9,
-      "Date": "04 Dec 2020",
+      "Date": "20201204",
       "day": 4,
       "activity": "Town Hall",
       "component": "VideoPlayer",
@@ -77,14 +76,14 @@
     },
     {
       "#": 10,
-      "Date": "21 Dec 2020",
+      "Date": "20201221",
       "day": 21,
       "activity": "Number Puzzle",
       "component": ""
     },
     {
       "#": 11,
-      "Date": "22 Dec 2020",
+      "Date": "20201222",
       "day": 22,
       "activity": "CSS Art Exhibition",
       "component": "CarouselComponent",
@@ -92,7 +91,7 @@
     },
     {
       "#": 12,
-      "Date": "10 Dec 2020",
+      "Date": "20201210",
       "day": 10,
       "activity": "Pet Photograph Challenge",
       "component": "PhotoChallengeComponent",
@@ -101,7 +100,7 @@
     },
     {
       "#": 13,
-      "Date": "03 Dec 2020",
+      "Date": "20201203",
       "day": 3,
       "activity": "White Stripe Donuts - Seven Nation Army/Caledonia",
       "component": "CarouselComponent",
@@ -109,7 +108,7 @@
     },
     {
       "#": 14,
-      "Date": "24 Dec 2020",
+      "Date": "20201224",
       "day": 24,
       "activity": "Christmas Jumper Reveal",
       "component": "CarouselComponent",
@@ -117,14 +116,14 @@
     },
     {
       "#": 15,
-      "Date": "20 Dec 2020",
+      "Date": "20201220",
       "day": 20,
       "activity": "Christmas Bake Off",
       "component": ""
     },
     {
       "#": 16,
-      "Date": "14 Dec 2020",
+      "Date": "20201214",
       "day": 14,
       "activity": "Poem to Enjoy and Limerick Challenge",
       "component": "PhotoChallengeComponent",
@@ -133,14 +132,14 @@
     },
     {
       "#": 17,
-      "Date": "09 Dec 2020",
+      "Date": "20201209",
       "day": 9,
       "activity": "Joke Exchange",
       "component": "JokeExchangeComponent"
     },
     {
       "#": 18,
-      "Date": "06 Dec 2020",
+      "Date": "20201206",
       "day": 6,
       "activity": "Outdoor Photography Challenge",
       "component": "PhotoChallengeComponent",
@@ -149,14 +148,14 @@
     },
     {
       "#": 19,
-      "Date": "02 Dec 2020",
+      "Date": "20201202",
       "day": 2,
       "activity": "Challenge Crossword",
       "component": "CrosswordComponent"
     },
     {
       "#": 20,
-      "Date": "23 Dec 2020",
+      "Date": "20201223",
       "day": 23,
       "activity": "Christmas Food Picture Reveal",
       "component": "CarouselComponent",
@@ -164,7 +163,7 @@
     },
     {
       "#": 21,
-      "Date": "19 Dec 2020",
+      "Date": "20201219",
       "day": 19,
       "activity": "Best Cocktail/Mocktail Photo Challenge",
       "component": "PhotoChallengeComponent",
@@ -173,7 +172,7 @@
     },
     {
       "#": 22,
-      "Date": "13 Dec 2020",
+      "Date": "20201213",
       "day": 13,
       "activity": "Spot the Difference Challenge",
       "component": "SpotDifferenceComponent",
@@ -184,7 +183,7 @@
     },
     {
       "#": 23,
-      "Date": "07 Dec 2020",
+      "Date": "20201207",
       "day": 7,
       "activity": "Origami Challenge",
       "component": "CarouselComponent",
@@ -198,7 +197,7 @@
     },
     {
       "#": 24,
-      "Date": "01 Dec 2020",
+      "Date": "20201201",
       "day": 1,
       "activity": "Christmas Jumper Photo Challenge",
       "component": "VideoPlayer",
