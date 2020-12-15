@@ -12,25 +12,25 @@
       "#": 2,
       "Date": "16 Dec 2020",
       "day": 16,
-      "activity": "STA Themed Crossword",
-      "component": ""
-    },
+      "activity": "Well Wishing Message Submission",
+      "component": "PhotoChallengeComponent",
+      "image": "assets/mailbox-3175638_640.jpg",
+      "instructions": "It is the season of good cheer, Goodness knows we need it this year.  A video is what we need, To spread some joy as one good deed. We can’t do this face to face, So share your messages in this space. Mark the calendar day by day, To wait to hear what we all have to say. You have ten days to get it right, Your deadline’s 20th at midnight."
+      },
     {
       "#": 3,
       "Date": "17 Dec 2020",
       "day": 17,
-      "activity": "Homebrew Challenge Video",
-      "component": "VideoPlayer",
-      "urls": ["https://vimeo.com/485107578"]
+      "activity": "STA Jigsaw",
+      "component": ""
     },
     {
       "#": 4,
       "Date": "15 Dec 2020",
       "day": 15,
-      "activity": "Well Wishing Message Submission",
-      "component": "PhotoChallengeComponent",
-      "image": "assets/mailbox-3175638_640.jpg",
-      "instructions": "It is the season of good cheer, Goodness knows we need it this year.  A video is what we need, To spread some joy as one good deed. We can’t do this face to face, So share your messages in this space. Mark the calendar day by day, To wait to hear what we all have to say. You have ten days to get it right, Your deadline’s 20th at midnight."
+      "activity": "Homebrew Challenge Video",
+      "component": "VideoPlayer",
+      "urls": ["https://vimeo.com/485107578"]
       },
     {
       "#": 5,
