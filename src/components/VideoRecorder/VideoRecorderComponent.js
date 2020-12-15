@@ -41,7 +41,7 @@ function VideoRecorderComponent({ openWindow }) {
         </button>
       ) : (
         <>
-          <p className="submit-vr-message">Please record a video</p>
+          <p className="submit-vr-message">Please record your video (15 secs max)</p>
         </>
       )}
       <VideoRecorder

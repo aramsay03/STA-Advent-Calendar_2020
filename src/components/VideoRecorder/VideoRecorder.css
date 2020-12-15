@@ -9,6 +9,10 @@
 .submit-vr {
   margin-bottom: 10px;
 }
+.submit-vr-message {
+  font-size: 1rem;
+  margin: 0 auto 10px;
+}
 
 @media screen and (max-width: 770px) {
   .vr-instructions {
@@ -19,6 +23,9 @@
   .submit-vr {
     height: 1.75rem;
     font-size: 0.75rem;
+  }
+  .submit-vr-message {
+    font-size: 0.5rem;
   }
 }
 @media screen and (max-width: 320px) {
