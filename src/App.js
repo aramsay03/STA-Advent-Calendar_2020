@@ -111,7 +111,7 @@ function App() {
         <main className={showPasswordEntry ? "App-main" : null}>
           <Container fluid>
             <Row>
-              <Col className="space-between-header">{pageInView(page)}</Col>
+              <Col>{pageInView(page)}</Col>
               {showPopup ? (
                 <Popup
                   text={popupMessage}

@@ -26,8 +26,7 @@ function ActivityPage({
   }
 
   function activityComponentHeader() {
-
-    const date = moment(openWindow.Date).format("D MMM YYYY")
+    const date = moment(openWindow.Date).format("D MMM YYYY");
 
     return (
       <>
@@ -46,7 +45,7 @@ function ActivityPage({
         />
       );
     } else if (openWindow.component === "VideoRecorderComponent") {
-      return <VideoRecorderComponent />;
+      return <VideoRecorderComponent openWindow={openWindow} />;
     } else if (openWindow.component === "CarouselComponent") {
       return <CarouselComponent day={openWindow} />;
     } else if (openWindow.component === "PhotoChallengeComponent") {
@@ -77,11 +76,11 @@ function ActivityPage({
   return (
     <Container className="activity-page-container">
       <Row className="activity-row">
-        <Col sm={12}>{activityComponentHeader()}</Col>
-        <Col className="middle-col" md={12}>
+        <Col className="component-header-col"  sm={12}>{activityComponentHeader()}</Col>
+        <Col className="component-col" md={12}>
           {activityComponent()}
         </Col>
-        <Col sm={12}>
+        <Col className="component-footer-col" sm={12}>
           <Button onClick={handleClick}>Back</Button>
         </Col>
       </Row>

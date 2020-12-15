@@ -1,0 +1,34 @@
+.vr-instructions {
+  text-align: left;
+  font-size: 1rem;
+  width: 100%;
+  padding: 40px;
+  border: 1px solid White;
+  margin: 10px 0 20px;
+}
+.submit-vr {
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 770px) {
+  .vr-instructions {
+    font-size: 0.75rem;
+    padding: 10px;
+    margin: 10px 0 0;
+  }
+  .submit-vr {
+    height: 1.75rem;
+    font-size: 0.75rem;
+  }
+}
+@media screen and (max-width: 320px) {
+  .vr-instructions {
+    font-size: 0.5rem;
+    padding: 5px;
+    margin: 10px 0 5px;
+  }
+  .submit-vr {
+    height: 1.5rem;
+    font-size: 0.5rem;
+  }
+}

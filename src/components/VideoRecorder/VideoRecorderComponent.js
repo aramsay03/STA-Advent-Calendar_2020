@@ -3,7 +3,7 @@ import axios from "axios";
 import "./VideoRecorder.css";
 import VideoRecorder from "react-video-recorder";
 
-function VideoRecorderComponent() {
+function VideoRecorderComponent({ openWindow }) {
   const [file, setFile] = useState(null);
   const PRESIGNEDURL = process.env.REACT_APP_GET_PRESIGNEDURL;
 
@@ -36,9 +36,13 @@ function VideoRecorderComponent() {
   return (
     <>
       {file ? (
-        <button onClick={submitFile}>Send</button>
+        <button className="submit-vr" onClick={submitFile}>
+          Send
+        </button>
       ) : (
-        <p>Please record a video</p>
+        <>
+          <p className="submit-vr-message">Please record a video</p>
+        </>
       )}
       <VideoRecorder
         onRecordingComplete={(videoBlob) => {
@@ -48,6 +52,7 @@ function VideoRecorderComponent() {
         showReplayControls
         timeLimit={15000}
       />
+      <p className="vr-instructions">{openWindow.instructions}</p>
     </>
   );
 }

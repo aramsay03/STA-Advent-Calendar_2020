@@ -6,11 +6,13 @@ function VideoPlayer({ url, instructions }) {
   const [videoLoaded, setVideoLoaded] = useState(false);
 
   return (
-    <>
+    <div className="wrapper">
       <ReactPlayer
         className="video-player"
         url={url}
         controls={true}
+        height={"30vh"}
+        width={"90vw"}
         config={{
           vimeo: {
             playOptions: {
@@ -24,17 +26,17 @@ function VideoPlayer({ url, instructions }) {
         }}
       />
       <div
-        className={videoLoaded ? "loading-text-off" : "loading-text"}
+        className="loading-text"
         style={{
           animation: videoLoaded ? "loadingTextFadeOut 0.5s forwards" : "",
         }}
       >
         Loading Video...
       </div>
-      <div className="video-instructions">
-        {instructions}
-      </div>
-    </>
+      { instructions? (<div>
+        <p className="video-instructions">{instructions}</p>
+      </div>):(<></>)}
+    </div>
   );
 }
 

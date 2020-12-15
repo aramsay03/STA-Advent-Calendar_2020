@@ -16,7 +16,7 @@ function CarouselComponent({day, page}) {
   });
 
   return (
-    <Col>
+    <Col className="carousel-col">
       <Carousel interval={null}>
         {carouselPagesVideos}
       </Carousel>
