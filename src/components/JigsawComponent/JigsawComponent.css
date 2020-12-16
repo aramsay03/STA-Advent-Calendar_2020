@@ -1,6 +1,17 @@
+.jigsaw-container {
+  max-width: 45vw;
+}
+
+.jigsaw {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
 .jigsaw__solved-board:before {
   content: '';
-  background-color: rgba(255, 50, 50, 0.6);
+  background-color: rgba(0, 102, 102, 0.6);
   display: block;
   position: absolute;
   top: 0;
@@ -51,44 +62,30 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
 }
 
-@media screen and (max-width: 390px) {
-  .jigsaw li {
-    width: 48px;
-    height: 48px;
+@media screen and (max-width: 1024px) {
+  .jigsaw-container {
+    max-width: 100vw;
   }
-
-  .jigsaw li img {
-    width: 46px;
-    height: 46px;
-  }
-
-  .jigsaw__solved-board,
-  .jigsaw__shuffled-board {
-    position: relative;
-    width: 336px;
-    height: 336px;
-    background-size: 336px 336px;
-    background-repeat: no-repeat;
+  .jigsaw {
+    flex-direction: column;
   }
 }
 
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 530px) {
   .jigsaw li {
-    width: 43px;
-    height: 43px;
+    width: 5vh;
+    height: 5vh;
   }
 
   .jigsaw li img {
-    width: 41px;
-    height: 41px;
+    width: 5vh;
+    height: 5vh;
   }
 
   .jigsaw__solved-board,
   .jigsaw__shuffled-board {
-    position: relative;
-    width: 301px;
-    height: 301px;
-    background-size: 331px 331px;
-    background-repeat: no-repeat;
+    width: 35vh;
+    height: 35vh;
+    background-size: 35vh 35vh;
   }
 }

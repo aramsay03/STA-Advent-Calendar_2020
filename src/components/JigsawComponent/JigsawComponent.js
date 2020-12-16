@@ -1,7 +1,9 @@
-import React, { useEffect, useState } from 'react';
-import Button from 'react-bootstrap/Button';
-import originalImage from './images/original.jpg';
-import './JigsawComponent.css';
+import React, { useEffect, useState } from "react";
+import Button from "react-bootstrap/Button";
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
+import "./JigsawComponent.css";
 
 const JigsawComponent = () => {
   const [pieces, setPieces] = useState([]);
@@ -10,18 +12,17 @@ const JigsawComponent = () => {
 
   useEffect(() => {
     const piecesArray = [...Array(49)].map((_, index) => ({
-      img: `${('0' + (index + 1)).substr(-2)}.jpg`,
+      img: `${("0" + (index + 1)).substr(-2)}.jpg`,
       order: index,
-      board: 'shuffled',
+      board: "shuffled",
     }));
-
     setPieces(piecesArray);
     setShuffled(shufflePieces(piecesArray));
     setSolved([...Array(49)]);
   }, []);
 
   const handleDragStart = (e, order) => {
-    e.dataTransfer.setData('text/plain', order);
+    e.dataTransfer.setData("text/plain", order);
   };
 
   const handleDrop = (e, index, targetName) => {
@@ -29,22 +30,22 @@ const JigsawComponent = () => {
     let origin = null;
 
     //set destination board
-    if (targetName === 'shuffled') {
+    if (targetName === "shuffled") {
       target = shuffled;
-    } else if (targetName === 'solved') {
+    } else if (targetName === "solved") {
       target = solved;
     }
 
     if (target[index]) return; //<------if there's already a piece there, disregard the move
 
     //calculate which piece is moving
-    const pieceOrder = e.dataTransfer.getData('text');
+    const pieceOrder = e.dataTransfer.getData("text");
     const pieceData = pieces.find((piece) => piece.order === +pieceOrder);
 
     //set origin board
-    if (pieceData.board === 'shuffled') {
+    if (pieceData.board === "shuffled") {
       origin = shuffled;
-    } else if (pieceData.board === 'solved') {
+    } else if (pieceData.board === "solved") {
       origin = solved;
     }
 
@@ -59,12 +60,12 @@ const JigsawComponent = () => {
     pieceData.board = targetName;
 
     //commit to the move - update the state of the boards (with conditions for moving a piece on the same board)
-    if (pieceData.board === 'solved') {
+    if (pieceData.board === "solved") {
       setSolved([...target]);
       if (target !== origin) {
         setShuffled([...origin]);
       }
-    } else if (pieceData.board === 'shuffled') {
+    } else if (pieceData.board === "shuffled") {
       setShuffled([...target]);
       if (target !== origin) {
         setSolved([...origin]);
@@ -86,6 +87,7 @@ const JigsawComponent = () => {
   };
 
   const renderPieceContainer = (piece, index, boardName) => {
+    console.log(piece)
     return (
       <li
         key={index}
@@ -97,7 +99,7 @@ const JigsawComponent = () => {
             draggable
             alt="puzzle-piece"
             onDragStart={(e) => handleDragStart(e, piece.order)}
-            src={require(`./images/${piece.img}`).default}
+            src={"/assets/images/" + piece.img}
           />
         )}
       </li>
@@ -111,33 +113,37 @@ const JigsawComponent = () => {
       );
 
       if (completed) {
-        alert('Congratulations! You have completed the puzzle.');
+        alert("Congratulations! You have completed the puzzle.");
       } else alert("Hmm...something's not quite right.");
     } else alert("You haven't finished yet!");
   };
 
   return (
-    <>
-      <div className="jigsaw">
-        <>
+    <Container fluid className="jigsaw-container">
+      <Row className="jigsaw">
+        <Col>
           <ul className="jigsaw__shuffled-board">
             {shuffled.map((puzzlePiece, index) => {
-              return renderPieceContainer(puzzlePiece, index, 'shuffled');
+              return renderPieceContainer(puzzlePiece, index, "shuffled");
             })}
-          </ul>
-
+          {" "}
+        </ul>
+        </Col>
+        <Col>
           <ol
             className="jigsaw__solved-board"
-            style={{ backgroundImage: `url(${originalImage})` }}
+            style={{ backgroundImage: "url(/assets/images/original.jpg)" }}
           >
             {solved.map((puzzlePiece, index) => {
-              return renderPieceContainer(puzzlePiece, index, 'solved');
+              return renderPieceContainer(puzzlePiece, index, "solved");
             })}
           </ol>
-        </>
+        </Col>
+      </Row>
+      <Row>
         <Button onClick={() => checkIfPuzzleIsComplete()}>Check Puzzle</Button>
-      </div>
-    </>
+      </Row>
+    </Container>
   );
 };
 

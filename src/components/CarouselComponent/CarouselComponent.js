@@ -1,6 +1,5 @@
 import React from "react";
 import Carousel from "react-bootstrap/Carousel";
-import config from "../../config.json";
 import Col from "react-bootstrap/Col";
 import VideoPlayer from "../VideoPlayer/VideoPlayer";
 
@@ -17,13 +16,13 @@ function CarouselComponent({day, page}) {
   });
 
   return (
-    <Col>
+    <Col className="carousel-col">
       <Carousel interval={null}>
         {carouselPagesVideos}
       </Carousel>
-      <div className="video-instructions">
+      {day.instructions ? (<div className="video-instructions">
         {day.instructions ? (day.instructions) : (<></>)}
-      </div>
+      </div>): (<></>)}
     </Col>
   );
 }

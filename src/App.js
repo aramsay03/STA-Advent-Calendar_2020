@@ -5,7 +5,6 @@ import config from "./config.json";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import Button from "react-bootstrap/Button";
 import Header from "./components/Header/Header";
 import CalendarPage from "./pages/CalendarPage";
 import ActivityPage from "./pages/ActivityPage";
@@ -19,12 +18,12 @@ function App() {
   const [openWindow, setOpenWindow] = useState(null);
 
   // For Production
-  const [showPasswordEntry, setShowPasswordEntry] = useState(true); //<---- just set this to false until we go live
-  const [currentDate] = useState(moment().format("D MMM YYYY")); // <---- set to 24 Dec 2020 for development
+  // const [showPasswordEntry, setShowPasswordEntry] = useState(true);
+  // const [currentDate] = useState(moment().format("YYYYMMDD"));
 
-  // // For Development
-  // const [showPasswordEntry, setShowPasswordEntry] = useState(false); //<---- Use for development only
-  // const [currentDate, setCurrentDate] = useState("24 Dec 2020");
+  // For Development
+const [showPasswordEntry, setShowPasswordEntry] = useState(false); 
+const [currentDate] = useState("20201224");
 
   const allDays = config.days;
   const popupMessage = "You will need to wait for that day!";
@@ -34,17 +33,6 @@ function App() {
   useEffect(() => {
     ActivateChristmasCheer();
   });
-
-  const CheckForPete = (returnDay) => {
-    const showPeteStatus = () => {
-      if (returnDay === 21) {
-        return true;
-      } else {
-        return false;
-      }
-    };
-    setShowPete(showPeteStatus);
-  };
 
   const ActivateChristmasCheer = () => {
     if (showPasswordEntry === true) {
@@ -60,8 +48,20 @@ function App() {
     }
   };
 
-  function togglePopup(showPopup) {
-    /*CheckForPete(returnDay);*/
+  // const CheckForPete = (returnDay) => {
+  //   // console.log("return day:", returnDay)
+  //   const showPeteStatus = () => {
+  //     if (returnDay === 21) {
+  //       return true;
+  //     } else {
+  //       return false;
+  //     }
+  //   };
+  //   setShowPete(showPeteStatus);
+  // };
+
+  function togglePopup(showPopup, returnDay) {
+    // CheckForPete(returnDay);
     const popupStatus = () => {
       if (showPopup === true) {
         return false;
@@ -111,7 +111,7 @@ function App() {
         <main className={showPasswordEntry ? "App-main" : null}>
           <Container fluid>
             <Row>
-              <Col className="space-between-header">{pageInView(page)}</Col>
+              <Col>{pageInView(page)}</Col>
               {showPopup ? (
                 <Popup
                   text={popupMessage}
