@@ -20,9 +20,9 @@ function CarouselComponent({day, page}) {
       <Carousel interval={null}>
         {carouselPagesVideos}
       </Carousel>
-      <div className="video-instructions">
+      {day.instructions ? (<div className="video-instructions">
         {day.instructions ? (day.instructions) : (<></>)}
-      </div>
+      </div>): (<></>)}
     </Col>
   );
 }
