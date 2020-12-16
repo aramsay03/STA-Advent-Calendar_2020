@@ -41,7 +41,13 @@ body {
 
 .calendar-windows-container {
   overflow-y: scroll;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
   height: 90vh;
+}
+
+.calendar-windows-container::-webkit-scrollbar {
+  display: none; /* Hide scrollbar for Chrome, Safari and Opera */
 }
 
 .calendar-window {
