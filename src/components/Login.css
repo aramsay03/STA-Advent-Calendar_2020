@@ -4,21 +4,23 @@ p {
   color: #ffffff;
 }
 
+.login {
+  display: flex;
+  justify-content: center;
+}
+
 .box {
   text-align: center;
-
+  border: 1px solid White;
   background-size: 56.57px 56.57px;
-  width: 50%;
-  border-radius: 6px;
-
   z-index: 1;
   width: 300px;
   padding: 20px;
   position: absolute;
-  top: 40%;
-  left: 50%;
-  margin: -70px 0 0 -170px;
-
+  margin: 20px auto;
+  top: 30%;
+  left: 41%;
+  background-color: rgba(60, 60, 59, 0.75);
 }
 
 .password {
@@ -32,20 +34,15 @@ p {
   display: block;
   margin: 0 auto;
   opacity: 0.4;
-}  
-
-
-
+}
 
 .password-text {
   color: white;
-   
 }
 
 .checkbox-container {
   margin-top: 3%;
   color: white;
-
 }
 
 .show-hide-checkbox {
@@ -67,12 +64,44 @@ p {
   font-weight: 900;
   font-size: 1.5em;
   text-align: center;
-  
+
 }
 
 .login-btn:hover {
   background: #A6A6A6;
 }
 
-
-
+@media screen and (max-width: 1024px) {
+  .box {
+    top: 30%;
+    left: 35%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .box {
+    top: 30%;
+    left: 31%;
+  }
+}
+@media screen and (max-width: 414px) {
+  .box {
+    top: 20%;
+    left: 15%;
+  }
+}
+@media screen and (max-width: 375px) {
+  .box {
+    top: 20%;
+    left: 10%;
+  }
+}
+@media screen and (max-width: 320px) {
+  .box {
+    top: 20%;
+    left: 3%;
+  }
+  .box h3,
+  .box input {
+    font-size: 1rem;
+  }
+}

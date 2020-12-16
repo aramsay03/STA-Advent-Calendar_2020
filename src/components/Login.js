@@ -23,8 +23,8 @@ export default function Login({ setShowPasswordEntry }) {
   };
 
   return (
-    <div>
-      <form onSubmit={handleSubmit}>
+    <div className="login">
+      <form onSubmit={handleSubmit}  className="login-form">
         <div className="box">
           <h3 className="password-text">Welcome Back STA Volunteer!</h3>
 

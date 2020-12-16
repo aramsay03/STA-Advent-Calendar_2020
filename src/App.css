@@ -13,6 +13,17 @@ body {
   background-attachment: fixed;
 }
 
+.main-page {
+  height: 80vh;
+  overflow-y: auto; /* Added to help header stay fixed */
+  -ms-overflow-style: none;  /* IE and Edge */ /* Added to help header stay fixed */
+  scrollbar-width: none;  /* Firefox */ /* Added to help header stay fixed */
+}
+
+.main-page::-webkit-scrollbar { /* Added to help header stay fixed */
+  display: none; /* Hide scrollbar for Chrome, Safari and Opera */
+}
+
 .component-col {
   display: flex;
   justify-content: center;
@@ -41,7 +52,12 @@ body {
 
 .calendar-windows-container {
   overflow-y: scroll;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
   height: 90vh;
+}
+.calendar-windows-container::-webkit-scrollbar {
+  display: none; /* Hide scrollbar for Chrome, Safari and Opera */
 }
 
 .calendar-window {
@@ -85,7 +101,6 @@ body {
   background-color: rgba(60, 60, 59, 0.75);
   padding: 10px 0;
   margin: 0;
-  border-radius: 5px;
 }
 
 .activity-row {
@@ -97,7 +112,7 @@ body {
 
 .awesome {
   width: 70vw;
-  height: 70vh;
+  height: auto;
 }
 
 Button.btn.btn-primary {
@@ -107,8 +122,8 @@ Button.btn.btn-primary {
 }
 
 .wall-of-awesome-image {
-  height: 50vh;
-  width: 50vw;
+  height: 55vh;
+  width: 100%;
 }
 
 .carousel-caption {
@@ -138,6 +153,23 @@ Button.btn.btn-primary {
   padding: 0;
 }
 
+.woa-carousel h1 {
+  font-size: 1.25rem;
+}
+.woa-carousel h2 {
+  font-size: 1rem;
+}
+.woa-carousel h3 {
+  font-size: 0.75rem;
+}
+
+.woa-text {
+  border: 1px solid White;
+  padding: 5px;
+  margin: 10px auto 15px;
+  width: 100%;
+}
+
 @media screen and (max-width: 1024px) {
   .calendar-window {
     height: 17vh;
@@ -152,17 +184,20 @@ Button.btn.btn-primary {
 
 @media screen and (max-width: 1000px) {
   .wall-of-awesome-image {
-    height: 50vh;
-    width: 100vw;
+    height: 40vh;
+    width: 100%;
   }
-  .awesome {
-    height: 65vh;
+  .woa-text {
+    width: auto;
   }
   .woa-carousel h1 {
     font-size: 1rem;
   }
   .woa-carousel h2 {
     font-size: 0.75rem;
+  }
+  .woa-carousel h3 {
+    font-size: 0.5rem;
   }
 }
 
@@ -213,6 +248,7 @@ Button.btn.btn-primary {
   }
   .activity-row {
     height: auto;
+    overflow-y: scroll;
   }
   .component-col {
     height: auto;

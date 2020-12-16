@@ -1,6 +1,7 @@
 import React from "react";
 import CarouselComponent from "../components/CarouselComponent/CarouselComponent";
 import CrosswordComponent from "../components/CrosswordComponent/CrosswordComponent";
+import JigsawComponent from '../components/JigsawComponent/JigsawComponent';
 import JokeExchangeComponent from "../components/JokeExchangeComponent/JokeExchangeComponent";
 import PhotoChallengeComponent from "../components/PhotoChallengeComponent/PhotoChallengeComponent";
 import SpotDifferenceComponent from "../components/SpotDifferenceComponent/SpotDifferenceComponent";
@@ -22,7 +23,7 @@ function ActivityPage({
   function handleClick() {
     setOpenWindow(null);
     setShowPete(false);
-    setPage("calendar-page");
+    setPage('calendar-page');
   }
 
   function activityComponentHeader() {
@@ -48,13 +49,15 @@ function ActivityPage({
       return <VideoRecorderComponent openWindow={openWindow} />;
     } else if (openWindow.component === "CarouselComponent") {
       return <CarouselComponent day={openWindow} />;
-    } else if (openWindow.component === "PhotoChallengeComponent") {
+    } else if (openWindow.component === 'PhotoChallengeComponent') {
       return (
         <PhotoChallengeComponent
           instructions={openWindow.instructions}
           image={openWindow.image}
         />
       );
+    } else if (openWindow.component === 'JigsawComponent') {
+      return <JigsawComponent />;
     } else if (openWindow.component === "SpotDifferenceComponent") {
       return (
         <SpotDifferenceComponent

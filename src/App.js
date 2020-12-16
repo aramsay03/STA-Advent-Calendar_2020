@@ -17,12 +17,13 @@ function App() {
   const [page, setPage] = useState("calendar-page");
   const [openWindow, setOpenWindow] = useState(null);
 
-  // For Production
-  const [showPasswordEntry, setShowPasswordEntry] = useState(true);
-  const [currentDate] = useState(moment().format("YYYYMMDD"));
+// For Production
+const [showPasswordEntry, setShowPasswordEntry] = useState(true);
+const [currentDate] = useState(moment().format("YYYYMMDD"));
 
-  // For Development
-// const [showPasswordEntry, setShowPasswordEntry] = useState(false); //<---- Use for development only
+
+// For Development
+// const [showPasswordEntry, setShowPasswordEntry] = useState(false);
 // const [currentDate] = useState("20201224");
 
   const allDays = config.days;
@@ -111,7 +112,7 @@ function App() {
         <main className={showPasswordEntry ? "App-main" : null}>
           <Container fluid>
             <Row>
-              <Col>{pageInView(page)}</Col>
+              <Col className="main-page">{pageInView(page)}</Col>
               {showPopup ? (
                 <Popup
                   text={popupMessage}
