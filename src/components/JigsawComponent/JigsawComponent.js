@@ -87,7 +87,6 @@ const JigsawComponent = () => {
   };
 
   const renderPieceContainer = (piece, index, boardName) => {
-    console.log(piece)
     return (
       <li
         key={index}
