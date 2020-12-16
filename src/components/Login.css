@@ -19,7 +19,8 @@ p {
   position: absolute;
   margin: 20px auto;
   top: 30%;
-  left: 40%;
+  left: 41%;
+  background-color: rgba(60, 60, 59, 0.75);
 }
 
 .password {
@@ -35,18 +36,13 @@ p {
   opacity: 0.4;
 }
 
-
-
-
 .password-text {
   color: white;
-
 }
 
 .checkbox-container {
   margin-top: 3%;
   color: white;
-
 }
 
 .show-hide-checkbox {
@@ -103,5 +99,9 @@ p {
   .box {
     top: 20%;
     left: 3%;
+  }
+  .box h3,
+  .box input {
+    font-size: 1rem;
   }
 }

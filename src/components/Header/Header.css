@@ -167,6 +167,9 @@ header .header-col {
 }
 
 @media screen and (max-width: 500px) {
+  .App header {
+    height: 20vh;
+  }
   #logo {
     height: 4rem !important;
   }
