@@ -5,6 +5,9 @@
   align-items: center;
   width: 100vw;
   height: 10vh;
+  position: sticky;
+  top: 0px;
+  z-index: 1;
 }
 
 header .header-col {
@@ -153,7 +156,7 @@ header .header-col {
   }
   .App header {
     flex-direction: column;
-    height: 10vh;
+    height: 16vh;
   }
   .App header .header-col:nth-child(1) {
     width: 0vw;

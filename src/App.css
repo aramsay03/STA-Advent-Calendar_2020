@@ -13,6 +13,17 @@ body {
   background-attachment: fixed;
 }
 
+.main-page {
+  height: 80vh;
+  overflow-y: auto; /* Added to help header stay fixed */
+  -ms-overflow-style: none;  /* IE and Edge */ /* Added to help header stay fixed */
+  scrollbar-width: none;  /* Firefox */ /* Added to help header stay fixed */
+}
+
+.main-page::-webkit-scrollbar { /* Added to help header stay fixed */
+  display: none; /* Hide scrollbar for Chrome, Safari and Opera */
+}
+
 .component-col {
   display: flex;
   justify-content: center;
@@ -41,7 +52,12 @@ body {
 
 .calendar-windows-container {
   overflow-y: scroll;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
   height: 90vh;
+}
+.calendar-windows-container::-webkit-scrollbar {
+  display: none; /* Hide scrollbar for Chrome, Safari and Opera */
 }
 
 .calendar-window {
@@ -232,6 +248,7 @@ Button.btn.btn-primary {
   }
   .activity-row {
     height: auto;
+    overflow-y: scroll;
   }
   .component-col {
     height: auto;
