@@ -86,8 +86,7 @@ body {
   border-radius: 50%;
 }
 
-.activity-page-container,
-.awesome-container {
+.activity-page-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -96,8 +95,7 @@ body {
   margin-top: 30px;
 }
 
-.activity-row,
-.awesome {
+.activity-row {
   background-color: rgba(60, 60, 59, 0.75);
   padding: 10px 0;
   margin: 0;
@@ -110,11 +108,6 @@ body {
   flex-direction: column;;
 }
 
-.awesome {
-  width: 70vw;
-  height: auto;
-}
-
 Button.btn.btn-primary {
   margin: 10px auto;
   background-color: rgba(60, 60, 59, 0.75);
@@ -124,16 +117,6 @@ Button.btn.btn-primary {
 .wall-of-awesome-image {
   height: 55vh;
   width: 100%;
-}
-
-.carousel-caption {
-  background-color: rgba(60, 60, 59, 0.75);
-}
-
-.carousel-caption h2,
-.carousel-caption h3 {
-  margin: 0;
-  padding: 0;
 }
 
 .challenge-text {
@@ -153,23 +136,6 @@ Button.btn.btn-primary {
   padding: 0;
 }
 
-.woa-carousel h1 {
-  font-size: 1.25rem;
-}
-.woa-carousel h2 {
-  font-size: 1rem;
-}
-.woa-carousel h3 {
-  font-size: 0.75rem;
-}
-
-.woa-text {
-  border: 1px solid White;
-  padding: 5px;
-  margin: 10px auto 15px;
-  width: 100%;
-}
-
 @media screen and (max-width: 1024px) {
   .calendar-window {
     height: 17vh;
@@ -179,25 +145,6 @@ Button.btn.btn-primary {
   .calendar-window img {
     height: 10vh;
     width: 10vh;
-  }
-}
-
-@media screen and (max-width: 1000px) {
-  .wall-of-awesome-image {
-    height: 40vh;
-    width: 100%;
-  }
-  .woa-text {
-    width: auto;
-  }
-  .woa-carousel h1 {
-    font-size: 1rem;
-  }
-  .woa-carousel h2 {
-    font-size: 0.75rem;
-  }
-  .woa-carousel h3 {
-    font-size: 0.5rem;
   }
 }
 
