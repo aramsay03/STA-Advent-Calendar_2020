@@ -22,6 +22,7 @@ function VideoRecorderComponent({ openWindow }) {
       });
 
       // handle success
+      alert("Congratulations! Your video has been saved.");
       console.log("success");
     } catch (error) {
       // handle error
