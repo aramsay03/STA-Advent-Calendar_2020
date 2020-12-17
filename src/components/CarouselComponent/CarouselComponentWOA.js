@@ -1,6 +1,7 @@
 import React from "react";
 import Carousel from "react-bootstrap/Carousel";
 import Col from "react-bootstrap/Col";
+import "./CarouselComponent.css";
 
 function CarouselComponentWOA() {
   const winners = {

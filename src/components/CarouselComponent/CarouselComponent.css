@@ -1,0 +1,105 @@
+.woa-carousel h1 {
+  font-size: 1.5rem;
+}
+.woa-carousel h2 {
+  font-size: 1.25rem;
+}
+.woa-carousel h3 {
+  font-size: 1rem;
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  height: 3rem;
+  width: 3rem;
+}
+
+.woa-text {
+  border: 1px solid White;
+  padding: 5px;
+  margin: 5px auto 15px;
+  width: 100%;
+}
+
+.wall-of-awesome-image {
+  height: 60vh;
+  width: 100%;
+}
+
+.awesome-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.awesome {
+  background-color: rgba(60, 60, 59, 0.75);
+  padding: 10px 0;
+  margin: 2rem 0 0;
+  width: 90%;
+  height: auto;
+}
+
+@media screen and (max-width: 1024px) {
+  .woa-text {
+    width: auto;
+  }
+  .woa-carousel h1 {
+    font-size: 1rem;
+  }
+  .woa-carousel h2 {
+    font-size: 0.75rem;
+  }
+  .woa-carousel h3 {
+    font-size: 0.5rem;
+  }
+  .wall-of-awesome-image {
+    height: 50vh;
+  }
+  .carousel-control-next-icon,
+  .carousel-control-prev-icon {
+    height: 2rem;
+    width: 2rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .wall-of-awesome-image {
+    height: 40vh;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .wall-of-awesome-image {
+    height: 30vh;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .woa-text {
+    margin: 0 auto 10px;
+  }
+  .wall-of-awesome-image {
+    height: 20vh;
+  }
+  .woa-carousel h1 {
+    font-size: 0.75rem;
+  }
+  .woa-carousel h2 {
+    font-size: 0.5rem;
+  }
+  .woa-carousel h3 {
+    font-size: 0.25rem;
+  }
+  .carousel-control-next-icon,
+  .carousel-control-prev-icon {
+    height: 1rem;
+    width: 1rem;
+    margin-top: 5rem;
+  }
+  .carousel-indicators {
+    margin-bottom: 0;
+  }
+}
