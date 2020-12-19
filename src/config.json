@@ -118,8 +118,10 @@
       "#": 15,
       "Date": "20201220",
       "day": 20,
-      "activity": "Christmas Bake Off",
-      "component": ""
+      "activity": "Christmas Decoration Challenge",
+      "component": "PhotoChallengeComponent",
+      "image": "assets/christmastreeimage.png",
+      "instructions": "It's time to share your Christmas decorations, tree or outside lights. Share your photos or videos on the #Advent-2020 Channel for a chance to be featured on the Wall of awsome."
     },
     {
       "#": 16,
