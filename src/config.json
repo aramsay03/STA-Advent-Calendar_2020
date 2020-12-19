@@ -78,8 +78,8 @@
       "#": 10,
       "Date": "20201221",
       "day": 21,
-      "activity": "Number Puzzle",
-      "component": ""
+      "activity": "Sudoku Challenge",
+      "component": "SudokuComponent"
     },
     {
       "#": 11,
