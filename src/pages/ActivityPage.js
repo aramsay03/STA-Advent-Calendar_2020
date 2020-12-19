@@ -7,6 +7,7 @@ import PhotoChallengeComponent from "../components/PhotoChallengeComponent/Photo
 import SpotDifferenceComponent from "../components/SpotDifferenceComponent/SpotDifferenceComponent";
 import VideoPlayer from "../components/VideoPlayer/VideoPlayer";
 import VideoRecorderComponent from "../components/VideoRecorder/VideoRecorderComponent";
+import SudokuComponent from "../components/SudokuComponent/SudokuComponent";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
@@ -71,6 +72,8 @@ function ActivityPage({
       return <JokeExchangeComponent />;
     } else if (openWindow.component === "CrosswordComponent") {
       return <CrosswordComponent />;
+    } else if (openWindow.component === "SudokuComponent") {
+        return <SudokuComponent />;
     } else {
       return <></>;
     }
