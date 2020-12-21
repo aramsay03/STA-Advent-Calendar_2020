@@ -85,9 +85,9 @@
       "#": 11,
       "Date": "20201222",
       "day": 22,
-      "activity": "CSS Art Exhibition",
-      "component": "CarouselComponent",
-      "urls": []
+      "activity": "Medieval helpdesk",
+      "component": "VideoPlayer",
+      "urls": ["https://www.youtube.com/watch?v=pQHX-SjgQvQ&fmt=18"]
     },
     {
       "#": 12,
