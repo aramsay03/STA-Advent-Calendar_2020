@@ -8,6 +8,7 @@ import SpotDifferenceComponent from "../components/SpotDifferenceComponent/SpotD
 import VideoPlayer from "../components/VideoPlayer/VideoPlayer";
 import VideoRecorderComponent from "../components/VideoRecorder/VideoRecorderComponent";
 import SudokuComponent from "../components/SudokuComponent/SudokuComponent";
+import ImageCarouselComponent from "../components/CarouselComponent/ImageCarouselComponent";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
@@ -74,6 +75,8 @@ function ActivityPage({
       return <CrosswordComponent />;
     } else if (openWindow.component === "SudokuComponent") {
         return <SudokuComponent />;
+    } else if (openWindow.component === "ImageCarouselComponent") {
+      return <ImageCarouselComponent day={openWindow} />;
     } else {
       return <></>;
     }
