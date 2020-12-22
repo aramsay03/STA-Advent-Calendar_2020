@@ -9,7 +9,7 @@ function ImageCarouselComponent({day, page}) {
 
     return (
       <Carousel.Item  key={index}>
-        <img src={url} alt={url} />
+        <img className="carousel-image" src={url} alt={url} />
       </Carousel.Item>
     );
 
