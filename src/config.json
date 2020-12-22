@@ -159,9 +159,10 @@
       "#": 20,
       "Date": "20201223",
       "day": 23,
-      "activity": "Christmas Food Picture Reveal",
-      "component": "CarouselComponent",
-      "urls": []
+      "activity": "STA Festive Fun",
+      "component": "ImageCarouselComponent",
+      "images": ["assets/ChristmasZoom.png", "assets/STAPanto.png"],
+      "instructions": "Details of events"
     },
     {
       "#": 21,
