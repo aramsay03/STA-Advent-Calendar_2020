@@ -6,7 +6,7 @@ export default function PodcastExchange() {
   return (
     <div className="pod-container">
       <div>
-      <iframe src="https://anchor.fm/scottish-tech-army/embed/episodes/Episode-19---Global-Stories-1---AIME-Mentoring--Australia-enkmel/a-a43c4gm" className="pod-iframe" frameborder="0" scrolling="no"></iframe>
+      <iframe src="https://anchor.fm/scottish-tech-army/embed/episodes/Episode-20---Series-1-ends-with-a-look-back-and-forward-eo5tb2/a-a46ttfp" className="pod-iframe" frameborder="0" scrolling="no"></iframe>
         {/* <audio
           controls
           autoPlay
