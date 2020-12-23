@@ -110,9 +110,8 @@
       "#": 14,
       "Date": "20201224",
       "day": 24,
-      "activity": "Christmas Jumper Reveal",
-      "component": "CarouselComponent",
-      "urls": []
+      "activity": "Podcast Episode 20",
+      "component": "PodcastComponent"
     },
     {
       "#": 15,

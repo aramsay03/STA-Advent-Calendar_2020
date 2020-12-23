@@ -18,13 +18,13 @@ function App() {
   const [openWindow, setOpenWindow] = useState(null);
 
 // For Production
-const [showPasswordEntry, setShowPasswordEntry] = useState(true);
-const [currentDate] = useState(moment().format("YYYYMMDD"));
+// const [showPasswordEntry, setShowPasswordEntry] = useState(true);
+// const [currentDate] = useState(moment().format("YYYYMMDD"));
 
 
 // For Development
-// const [showPasswordEntry, setShowPasswordEntry] = useState(false);
-// const [currentDate] = useState("20201224");
+const [showPasswordEntry, setShowPasswordEntry] = useState(false);
+const [currentDate] = useState("20201224");
 
   const allDays = config.days;
   const popupMessage = "You will need to wait for that day!";

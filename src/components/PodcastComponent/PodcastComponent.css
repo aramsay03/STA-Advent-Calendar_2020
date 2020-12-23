@@ -1,0 +1,27 @@
+.pod-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  margin: 0;
+}
+
+.pod-container img {
+  width: 80%;
+  border-radius: 20px;
+}
+
+.pod-iframe {
+  max-height: 102px;
+  max-width: 400px;
+}
+
+@media screen and (max-width: 760px) {
+  .pod-container img {
+    width: 100%;
+    border-radius: 0px;
+  }
+  .pod-iframe {
+    width: 70vw;
+  }
+}
