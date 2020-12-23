@@ -9,6 +9,7 @@ import VideoPlayer from "../components/VideoPlayer/VideoPlayer";
 import VideoRecorderComponent from "../components/VideoRecorder/VideoRecorderComponent";
 import SudokuComponent from "../components/SudokuComponent/SudokuComponent";
 import ImageCarouselComponent from "../components/CarouselComponent/ImageCarouselComponent";
+import PodcastComponent from "../components/PodcastComponent/PodcastComponent";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
@@ -71,6 +72,8 @@ function ActivityPage({
       );
     } else if (openWindow.component === "JokeExchangeComponent") {
       return <JokeExchangeComponent />;
+    } else if (openWindow.component === "PodcastComponent") {
+      return <PodcastComponent />;
     } else if (openWindow.component === "CrosswordComponent") {
       return <CrosswordComponent />;
     } else if (openWindow.component === "SudokuComponent") {
