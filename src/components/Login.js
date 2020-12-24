@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import "./Login.css";
+import moment from "moment";
 
-export default function Login({ setShowPasswordEntry }) {
+export default function Login({ setShowPasswordEntry, currentDate, setDay25Window }) {
   const [passwordInput, setPasswordInput] = useState("");
   const XMAS_PASSWORD = process.env.REACT_APP_XMAS_PASSWORD;
 
@@ -10,6 +11,9 @@ export default function Login({ setShowPasswordEntry }) {
     setPasswordInput(e);
     if (passwordInput === XMAS_PASSWORD) {
       setShowPasswordEntry(false);
+      if (moment(currentDate).isSameOrAfter("20201225") === true) {
+        setDay25Window(true);
+      }
     }
   };
 

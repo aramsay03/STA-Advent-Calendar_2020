@@ -11,11 +11,13 @@ import ActivityPage from "./pages/ActivityPage";
 import WallOfAwesome from "./pages/WallOfAwesome";
 import Snowflakes from "./components/Snowflakes/Snowflakes";
 import Login from "./components/Login";
+import Day25 from "./components/Day25";
 import Popup from "./components/Popup/Popup";
 
 function App() {
   const [page, setPage] = useState("calendar-page");
   const [openWindow, setOpenWindow] = useState(null);
+  const [show25Window, setShowDay25Window] = useState(false);
 
 // For Production
 const [showPasswordEntry, setShowPasswordEntry] = useState(true);
@@ -24,7 +26,7 @@ const [currentDate] = useState(moment().format("YYYYMMDD"));
 
 // For Development
 // const [showPasswordEntry, setShowPasswordEntry] = useState(false);
-// const [currentDate] = useState("20201224");
+// const [currentDate] = useState("20201225");
 
   const allDays = config.days;
   const popupMessage = "You will need to wait for that day!";
@@ -41,10 +43,21 @@ const [currentDate] = useState(moment().format("YYYYMMDD"));
         <Login
           showPasswordEntry={showPasswordEntry}
           setShowPasswordEntry={setShowPasswordEntry}
+          setDay25Window={setShowDay25Window}
+          currentDate={currentDate}
         />
       );
     }
-    if (showPasswordEntry === false) {
+    if (show25Window === true) {
+      return (
+        <Day25
+          setDay25Window={setShowDay25Window}
+          setOpenWindow={setOpenWindow}
+          setPage={setPage}
+        />
+      );
+    }
+    if (showPasswordEntry === false && show25Window === false) {
       return null;
     }
   };
