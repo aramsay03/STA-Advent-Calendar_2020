@@ -23,6 +23,24 @@ p {
   background-color: rgba(60, 60, 59, 0.75);
 }
 
+.box25 {
+  text-align: center;
+  border: 1px solid White;
+  background-size: 56.57px 56.57px;
+  z-index: 1;
+  width: 300px;
+  padding: 20px;
+  position: absolute;
+  margin: 20px auto;
+  top: 30%;
+  left: 41%;
+  background-color: rgba(60, 60, 59, 0.75);
+}
+
+.box img {
+  width: 100%;
+}
+
 .password {
   border-radius: 4px;
   background: #ecf0f1;
