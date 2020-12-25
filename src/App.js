@@ -122,7 +122,7 @@ const [currentDate] = useState(moment().format("YYYYMMDD"));
         <Header page={page} setPage={setPage} />
         <ActivateChristmasCheer />
         <Snowflakes showPete={showPete} />
-        <main className={showPasswordEntry ? "App-main" : null}>
+        <main className={showPasswordEntry || show25Window ? "App-main" : null}>
           <Container fluid>
             <Row>
               <Col className="main-page">{pageInView(page)}</Col>
